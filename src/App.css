@@ -1,0 +1,39 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.start-page{
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./images/StartBackground.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* object-fit: cover; */
+}
+
+.start-logo{
+  
+  position: relative;
+  left: 1060px;
+  top: 400px;
+  width: 1381px;
+  height: 585px;
+  background-image: url('./images/Logo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* object-fit: cover; */
+}
+
+.start-btn{
+  
+  position: relative;
+  left: 1550px;
+  top: 500px;
+  width: 357px;
+  height: 37px;
+  background-image: url('./images/StartBtn.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* object-fit: cover; */
+}
