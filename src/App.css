@@ -14,7 +14,6 @@ html {
 }
 
 .start-logo{
-  
   position: absolute;
   width: 50%;
   height: 50%;
@@ -27,7 +26,7 @@ html {
   /* object-fit: cover; */
 }
 
- .start-btn{
+ .start-btn {
   position: absolute;
   width: 20%;
   height: 20%;
