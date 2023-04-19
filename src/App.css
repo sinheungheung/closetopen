@@ -158,3 +158,27 @@ box-shadow: none;
   /* object-fit: cover;} */
  } 
 
+ .NocheckOsaka {
+  width: 100vw;
+  height: 100vh;
+  background-repeat : no-repeat;
+  background-size : cover;
+  background-image: url('./images/NocheckOsaka.png');
+}
+
+.NocheckTokyo {
+  width: 100vw;
+  height: 100vh;
+  background-repeat : no-repeat;
+  background-size : cover;
+  background-image: url('./images/NocheckTokyo.png');
+}
+
+.NocheckSapporo {
+  width: 100vw;
+  height: 100vh;
+  background-repeat : no-repeat;
+  background-size : cover;
+  background-image: url('./images/NocheckSapporo.png');
+}
+

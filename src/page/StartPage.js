@@ -5,13 +5,13 @@ import { useNavigate } from 'react-router-dom';
 const StartPage = () => {
 const movePage = useNavigate();
 
-  function goChooseSpot(){
+  function goButton(){
     movePage('/Button');
   }
   return (
     <div className="start-page" >
       <div className='start-logo'></div>
-      <div className='start-btn'  onClick={goChooseSpot}></div>
+      <div className='start-btn'  onClick={goButton}></div>
     </div>
   )
 }

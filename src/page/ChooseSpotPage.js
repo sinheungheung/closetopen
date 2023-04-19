@@ -1,47 +1,23 @@
 import React from 'react'
+import '../App.css';
+import { useNavigate } from 'react-router-dom';
 
 const ChooseSpotPage = () => {
-  return (
+const movePage = useNavigate();
 
-    <div>
-      <img
-        className="osaka-map"
-        alt="오사카"
-        src="./images/NocheckOsaka.png"
-      />
-       <img
-        className="tokyo-map"
-        alt="도쿄"
-        src="./images/NocheckTokyo.png"
-      />
-       <img
-        className="sapporo-map"
-        alt="삿포로"
-        src="./images/NocheckSapporo.png"
-      />
-    </div>
+function goGameStart(){
+  movePage('/GameStart');
+}
+return (
+  <div className="chooseSpotPage" >
+    <div className='NocheckOsaka' onClick={goGameStart}></div>
+    <div className='NocheckTokyo'  onClick={goGameStart}></div>
+    <div className='NocheckSapporo' onClick={goGameStart}></div>
+  </div>
   )
 }
 
-export default ChooseSpotPage
+export default ChooseSpotPage;
 
 
-// import React from 'react'
-// import { useNavigate } from 'react-router-dom';
-
-// const StartPage = () => {
-// const movePage = useNavigate();
-
-//   function goChooseSpot(){
-//     movePage('/choosespots');
-//   }
-//   return (
-//     <div className="start-page" >
-//       <div className='start-logo'></div>
-//       <div className='start-btn'  onClick={goChooseSpot}></div>
-//     </div>
-//   )
-// }
-
-// export default StartPage
 

@@ -10,7 +10,7 @@ function App() {
     <div>
       <Routes>
         <Route path='/' element={<StartPage/>}/>
-        <Route path='/Choosespots' element={<ChooseSpotPage/>}/>
+        <Route path='/ChooseSpotPage' element={<ChooseSpotPage/>}/>
         <Route path='/Button' element={<Button/>}/>
         {/* <Route path='/checkPage' element={<CheckPage/>}/> */}
       </Routes>
