@@ -12,7 +12,6 @@ function App() {
         <Route path='/' element={<StartPage/>}/>
         <Route path='/ChooseSpotPage' element={<ChooseSpotPage/>}/>
         <Route path='/Button' element={<Button/>}/>
-        {/* <Route path='/checkPage' element={<CheckPage/>}/> */}
       </Routes>
     </div>
   );
