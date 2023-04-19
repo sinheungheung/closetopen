@@ -2,6 +2,7 @@ import React from 'react'
 
 const ChooseSpotPage = () => {
   return (
+    
     <div>
       <img
         className="osaka-map"

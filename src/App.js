@@ -3,6 +3,7 @@ import ChooseSpotPage from './page/ChooseSpotPage';
 import StartPage from './page/StartPage';
 import { Route, Routes } from 'react-router-dom';
 
+
 function App() {
   return (
     <div>

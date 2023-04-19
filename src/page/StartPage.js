@@ -3,7 +3,7 @@ import '../App.css';
 import { useNavigate } from 'react-router-dom';
 
 const StartPage = () => {
-  const movePage = useNavigate();
+const movePage = useNavigate();
 
   function goChooseSpot(){
     movePage('/choosespots');
