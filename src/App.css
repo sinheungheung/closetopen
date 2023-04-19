@@ -52,13 +52,22 @@ body{
 .map{
   width: 100vw;
   height: 100vh;
+  background-repeat : no-repeat;
+  background-size : cover;
+  background-image: url('./images/map.png');
 }
 
 .osaka-btn{
   position: absolute;
-  top: 53%;
-  left: 40%;
+  width: 20%;
+  height: 20%;
+  top: 61%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   cursor: pointer;
+  background-image: url('./images/osaka-btn.png');
+  background-size: contain;
+  background-repeat: no-repeat;
    /* 버튼 클릭 기능 */
    transition-duration: 0.3s;
 }
@@ -71,9 +80,15 @@ body{
 
 .tokyo-btn{
   position: absolute;
-  top: 46%;
-  left: 52%;
+  width: 20%;
+  height: 20%;
+  top: 54%;
+  left: 62%;
+  transform: translate(-50%, -50%);
   cursor: pointer;
+  background-image: url('./images/tokyo-btn.png');
+  background-size: contain;
+  background-repeat: no-repeat;
   /* 버튼 클릭 기능 */
   transition-duration: 0.3s;
 
@@ -88,9 +103,15 @@ box-shadow: none;
 
 .sapporo-btn{
   position: absolute;
-  top: 15%;
-  left: 55%;
+  width: 20%;
+  height: 20%;
+  top: 22%;
+  left: 65%;
+  transform: translate(-50%, -50%);
   cursor: pointer;
+  background-image: url('./images/sapporo-btn.png');
+  background-size: contain;
+  background-repeat: no-repeat;
    /* 버튼 클릭 기능 */
    transition-duration: 0.3s;
 }

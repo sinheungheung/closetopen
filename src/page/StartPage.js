@@ -6,7 +6,7 @@ const StartPage = () => {
 const movePage = useNavigate();
 
   function goChooseSpot(){
-    movePage('/choosespots');
+    movePage('/Button');
   }
   return (
     <div className="start-page" >
