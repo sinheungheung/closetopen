@@ -10,7 +10,7 @@ function goGameStart(){
 }
 return (
   <div className="gotokyo" >
-    <div className='NocheckTokyo'  onClick={goGameStart}></div>
+    <div className='CheckTokyo'  onClick={goGameStart}></div>
   </div>
   )
 }
