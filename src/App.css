@@ -163,7 +163,7 @@ box-shadow: none;
   height: 100vh;
   background-repeat : no-repeat;
   background-size : cover;
-  background-image: url('./images/CheckOsaka.png');
+  background-image: url('./images/checkOsaka.png');
 }
 
 .CheckTokyo {
@@ -171,7 +171,7 @@ box-shadow: none;
   height: 100vh;
   background-repeat : no-repeat;
   background-size : cover;
-  background-image: url('./images/CheckTokyo.png');
+  background-image: url('./images/checkTokyo.png');
 }
 
 .CheckSapporo {
@@ -179,6 +179,6 @@ box-shadow: none;
   height: 100vh;
   background-repeat : no-repeat;
   background-size : cover;
-  background-image: url('./images/CheckSapporo.png');
+  background-image: url('./images/checkSapporo.png');
 }
 
