@@ -8,14 +8,13 @@ const movePage = useNavigate();
 function goGameStart(){
   movePage('/GameStart');
 }
+
 return (
   <div className="gosapporo" >
     <div className='CheckSapporo' onClick={goGameStart}></div>
   </div>
   )
 }
-
-
 export default GoSapporo;
 
 
