@@ -158,15 +158,25 @@ box-shadow: none;
   /* object-fit: cover;} */
  } 
 
- .CheckOsaka {
+ .parent {
   width: 100vw;
   height: 100vh;
   background-repeat : no-repeat;
   background-size : cover;
   background-image: url('./images/CheckBackGround.png');
+  z-index:1;
 }
 
 
+.parent > div:nth-child(2){
+  width: 455px;
+  height: 108px;
+  background-image: url('./images/OSAKA.png');
+  position: absolute;
+  top: 90px;
+  left: 150px;
+  z-index: 1;
+}
 .CheckTokyo {
   width: 100vw;
   height: 100vh;
