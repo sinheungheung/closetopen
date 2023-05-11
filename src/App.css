@@ -158,6 +158,7 @@ box-shadow: none;
   /* object-fit: cover;} */
  } 
 
+ /* Osaka */
  .parent {
   width: 100vw;
   height: 100vh;
@@ -168,100 +169,122 @@ box-shadow: none;
 
 .parent > div:nth-child(2){
   /* 이미지 크기 */
-  width: 453px; 
-  height: 108px;
+  width: 350px; 
+  height: 83px;
+  position: absolute;
   background-image: url('./images/OSAKA.png');
   position: absolute;
   /* 이미지 위치 */
-  top: 150px;
+  top: 170px;
   left: 240px;
   z-index: 1;
+  /* 이미지 가로 세로 비율은 그대로, 크기 줄이기 */
+  background-size: 100%;
+ 
 }
 .parent > div:nth-child(3){
-  width: 754px;
-  height: 90px;
+  width: 700px;
+  height: 85px;
+  position: absolute;
   background-image: url('./images/OSAKA-ex.png');
   position: absolute;
-  top: 160px;
-  left: 700px;
+  top: 170px;
+  left: 630px;
   z-index: 2;
+  background-size: 100%;
 }
 .parent > div:nth-child(4){
   width: 261px;
   height: 28px;
   background-image: url('./images/SomeArea.png');
   position: absolute;
-  top: 350px;
+  top: 320px;
   left: 245px;
+  background-size: 100%;
   z-index: 3;
 }
 .parent > div:nth-child(5){
-  width: 428px;
-  height: 390px;
+  width: 350px;
+  height: 325px;
   background-image: url('./images/Harukas-img.png');
   position: absolute;
   top: 390px;
-  left: 200px;
+  left: 240px;
+  background-size: 100%;
   z-index: 4;
 }
 .parent > div:nth-child(6){
-  width: 428px;
-  height: 390px;
+  width: 350px;
+  height: 326px;
   background-image: url('./images/Glycosan-img.png');
   position: absolute;
   top: 390px;
-  left: 650px;
+  left: 620px;
+  background-size: 100%;
   z-index: 5;
 }
 .parent > div:nth-child(7){
-  width: 428px;
-  height: 390px;
+  width: 350px;
+  height: 326px;
   background-image: url('./images/Zoo-img.png');
   position: absolute;
   top: 390px;
   left: 1000px;
+  background-size: 100%;
   z-index: 6;
 }
 .parent > div:nth-child(8){
-  width: 455px;
-  height: 108px;
+  width: 34px;
+  height: 34px;
   background-image: url('./images/CloseButton.png');
   position: absolute;
-  top: 100px;
-  left: 3000px;
-  bottom: 200px;
+  top: 110px;
+  left: 1330px;
+  background-size: 100%;
   z-index: 7;
 }
 .parent > div:nth-child(9){
-  width: 455px;
-  height: 108px;
+  width: 150px;
+  height: 22px;
   background-image: url('./images/Harukas-kr.png');
   position: absolute;
-  top: 100px;
-  left: 3000px;
-  bottom: 200px;
+  top: 725px;
+  left: 340px;
+  background-size: 100%;
   z-index: 8;
 }
 .parent > div:nth-child(10){
-  width: 455px;
-  height: 108px;
+  width: 165px;
+  height: 22px;
   background-image: url('./images/Glycosan-kr.png');
   position: absolute;
-  top: 100px;
-  left: 3000px;
-  bottom: 200px;
+  top: 725px;
+  left:710px;
+  background-size: 100%;
   z-index: 9;
 }
 .parent > div:nth-child(11){
-  width: 455px;
-  height: 108px;
+  width: 130px;
+  height: 22px;
   background-image: url('./images/Zoo-kr.png');
   position: absolute;
-  top: 100px;
-  left: 3000px;
-  bottom: 200px;
+  top: 725px;
+  left: 1110px;
+  background-size: 100%;
   z-index: 10;
 }
+
+.parent > div:nth-child(12){
+  width: 100px;
+  height: 48px;
+  background-image: url('./images/NextButton.png');
+  position: absolute;
+  top: 310px;
+  left: 1230px;
+  background-size: 100%;
+  z-index: 11;
+}
+
 .CheckTokyo {
   width: 100vw;
   height: 100vh;

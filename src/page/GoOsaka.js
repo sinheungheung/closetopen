@@ -43,6 +43,7 @@ const GoOsaka = () => {
       <div class="Glycosan-kr"></div>
       <div class="Zoo-img"></div>
       <div class="Zoo-kr"></div>
+      <div class="NextButton"></div>
       </div>
 
   );
