@@ -10,11 +10,23 @@ function goGameStart(){
 }
 
 return (
-  <div className="gosapporo" >
-    <div className='CheckSapporo' onClick={goGameStart}></div>
-  </div>
-  )
-}
+   <div class="parent1">
+      <div className="CheckOsaka" onClick={goGameStart}></div>
+      <div class="SAPPORO"></div>
+      <div class="SAPPORO-ex"></div>
+      <div class="CloseButton"></div>
+      <div class="SomeArea"></div>
+      <div class="IceFestival-img"></div>
+      <div class="IceFestival-kr"></div>
+      <div class="ArtMuseum-img"></div>
+      <div class="ArtMuseum-kr"></div>
+      <div class="ShoppingStore-img"></div>
+      <div class="ShoppingStore-kr"></div>
+      <div class="NextButton"></div>
+      </div>
+
+  );
+};
 export default GoSapporo;
 
 
