@@ -11,7 +11,7 @@ function goGameStart(){
 
 return (
    <div class="parent1">
-      <div className="CheckOsaka" onClick={goGameStart}></div>
+      <div className="CheckSapporo" onClick={goGameStart}></div>
       <div class="SAPPORO"></div>
       <div class="SAPPORO-ex"></div>
       <div class="CloseButton"></div>
