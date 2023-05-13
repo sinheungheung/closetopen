@@ -18,6 +18,13 @@ const GoOsaka = () => {
     setHover(false);
   };
 
+  // X를 누르면 Button페이지로 이동
+  const navigate = useNavigate();
+
+  function handleClick() {
+    navigate('/Button');
+  }
+
   return (
     <div class="parent">
       <div className="CheckOsaka" onClick={goGameStart}></div>
@@ -27,13 +34,11 @@ const GoOsaka = () => {
       <div class="Harukas-img"></div>
       <div class="Glycosan-img"></div>
       <div class="Zoo-img"></div>
-      <div class="CloseButton">
-      <a href="/Button"></a>
-      </div>
+      <div class="CloseButton" onClick={handleClick}></div>
       <div class="Harukas-kr"></div>     
       <div class="Glycosan-kr"></div>
       <div class="Zoo-kr"></div>
-      <div class="NextButton"></div>
+      {/* <div class="NextButton"></div> */}
       </div>
       
   );
