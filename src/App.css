@@ -317,11 +317,11 @@ box-shadow: none;
 
 /* 버튼 클릭 효과 */
  /* 버튼 클릭시 위아래로 움직이는 효과 */
-.NextButton:active{
+/* .NextButton:active{
   margin-left: 2px; 
   margin-top: 2px;
   box-shadow: none;
-  } */
+  }  */
 
 /* Tokyo */
 .parent2 {
@@ -505,6 +505,25 @@ box-shadow: none;
   background-size: 100%;
   z-index: 4;
 }
+.IceFestival-img{
+  border: 3px solid transparent;
+  transition: border-color 0.3s ease-in-out;
+  display: block;
+  margin: auto;
+  /* 버튼 클릭 기능 */
+  transition-duration: 0.3s;
+}
+.IceFestival-img:hover {
+  border-color: red;
+  position: relative;
+}
+/* 버튼 클릭 효과 */
+.IceFestival-img:active{
+  margin-left: 2px;
+  margin-top: 2px;
+  box-shadow: none;
+   
+  }
 .parent1 > div:nth-child(6){
   width: 350px;
   height: 326px;
@@ -534,7 +553,16 @@ box-shadow: none;
   left: 1330px;
   background-size: 100%;
   z-index: 7;
+   /* 버튼 클릭 기능 */
+   transition-duration: 0.3s;
 }
+/* 버튼 클릭 효과 */
+.CloseButton:active{
+  margin-left: 2px;
+  margin-top: 2px;
+  box-shadow: none;
+   
+  }
 .parent1 > div:nth-child(9){
   width: 200px;
   height: 22px;
