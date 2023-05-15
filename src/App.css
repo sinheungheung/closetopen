@@ -398,6 +398,25 @@ box-shadow: none;
   background-size: 100%;
   z-index: 6;
 }
+.Meiji-img {
+  border: 3px solid transparent;
+  transition: border-color 0.3s ease-in-out;
+  display: block;
+  margin: auto;
+  /* 버튼 클릭 기능 */
+  transition-duration: 0.3s;
+}
+.Meiji-img:hover {
+  border-color: red;
+  position: relative;
+}
+/* 버튼 클릭 효과 */
+.Meiji-img:active{
+  margin-left: 2px;
+  margin-top: 2px;
+  box-shadow: none;
+   
+  }
 .parent2 > div:nth-child(8){
   width: 34px;
   height: 34px;
@@ -407,7 +426,16 @@ box-shadow: none;
   left: 1330px;
   background-size: 100%;
   z-index: 7;
+  /* 버튼 클릭 기능 */
+  transition-duration: 0.3s;
 }
+/* 버튼 클릭 효과 */
+.CloseButton:active{
+  margin-left: 2px;
+  margin-top: 2px;
+  box-shadow: none;
+   
+  }
 .parent2 > div:nth-child(9){
   width: 120px;
   height: 22px;
