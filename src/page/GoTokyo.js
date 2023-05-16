@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import '../App.css';
+import '../css/GoTokyo.css';
 import { useNavigate } from 'react-router-dom';
 
 const GoTokyo = () => {

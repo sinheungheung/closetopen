@@ -1,0 +1,109 @@
+.map{
+    width: 100vw;
+    height: 100vh;
+    background-repeat : no-repeat;
+    background-size : cover;
+    background-image: url('../images/map.png');
+  }
+  
+  .osaka-btn{
+    position: absolute;
+    width: 10%;
+    height: 20%;
+    top: 66%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    background-image: url('../images/osaka-btn.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+     /* 버튼 클릭 기능 */
+     transition-duration: 0.3s;
+  }
+  
+  .osaka-btn:active{
+    margin-left: 5px;
+    margin-top: 5px;
+    box-shadow: none;
+  }
+  
+  .tokyo-btn{
+    position: absolute;
+    width: 10%;
+    height: 20%;
+    top: 57%;
+    left: 57.8%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    background-image: url('../images/tokyo-btn.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* 버튼 클릭 기능 */
+    transition-duration: 0.3s;
+  
+  }
+  /* 버튼 클릭 효과 */
+  .tokyo-btn:active{
+  margin-left: 5px;
+  margin-top: 5px;
+  box-shadow: none;
+   
+  }
+  
+  .sapporo-btn{
+    position: absolute;
+    width: 13%;
+    height: 20%;
+    top: 26%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    background-image: url('../images/sapporo-btn.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+     /* 버튼 클릭 기능 */
+     transition-duration: 0.3s;
+  }
+  .sapporo-btn:active{
+    margin-left: 5px;
+    margin-top: 5px;
+    box-shadow: none;
+  }
+  
+  
+  .start-page{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/StartBackground.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    /* object-fit: cover; */
+  }
+  
+  .start-logo{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('../images/Logo.png');
+    background-size: contain; 
+    background-repeat: no-repeat;
+    /* object-fit: cover; */
+  }
+  
+   .start-btn {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('../images/StartBtn.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* object-fit: cover;} */
+   } 
+  

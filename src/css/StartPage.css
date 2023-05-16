@@ -1,0 +1,46 @@
+.start-page{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/StartBackground.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    /* object-fit: cover; */
+  }
+  
+  .start-logo{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('../images/Logo.png');
+    background-size: contain; 
+    background-repeat: no-repeat;
+    /* object-fit: cover; */
+  }
+  
+   .start-btn {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('../images/StartBtn.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* object-fit: cover;} */
+   } 
+   *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  
