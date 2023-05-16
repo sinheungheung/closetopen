@@ -17,4 +17,4 @@ const movePage = useNavigate();
   )
 }
 
-export default StartPage
+export default StartPage;

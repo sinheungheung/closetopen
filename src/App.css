@@ -59,10 +59,10 @@ body{
 
 .osaka-btn{
   position: absolute;
-  width: 20%;
+  width: 10%;
   height: 20%;
-  top: 61%;
-  left: 50%;
+  top: 66%;
+  left: 46%;
   transform: translate(-50%, -50%);
   cursor: pointer;
   background-image: url('./images/osaka-btn.png');
@@ -80,10 +80,10 @@ body{
 
 .tokyo-btn{
   position: absolute;
-  width: 20%;
+  width: 10%;
   height: 20%;
-  top: 54%;
-  left: 62%;
+  top: 57%;
+  left: 57.8%;
   transform: translate(-50%, -50%);
   cursor: pointer;
   background-image: url('./images/tokyo-btn.png');
@@ -103,9 +103,9 @@ box-shadow: none;
 
 .sapporo-btn{
   position: absolute;
-  width: 20%;
+  width: 13%;
   height: 20%;
-  top: 22%;
+  top: 26%;
   left: 65%;
   transform: translate(-50%, -50%);
   cursor: pointer;
@@ -158,27 +158,477 @@ box-shadow: none;
   /* object-fit: cover;} */
  } 
 
- .CheckOsaka {
+ /* Osaka */
+ .parent {
   width: 100vw;
   height: 100vh;
   background-repeat : no-repeat;
   background-size : cover;
-  background-image: url('./images/checkOsaka.png');
+  background-image: url('./images/CheckBackGround.png');
 }
 
-.CheckTokyo {
+.parent > div:nth-child(2){
+  /* 이미지 크기 */
+  width: 350px; 
+  height: 83px;
+  position: absolute;
+  background-image: url('./images/OSAKA.png');
+  position: absolute;
+  /* 이미지 위치 */
+  top: 170px;
+  left: 240px;
+  z-index: 1;
+  /* 이미지 가로 세로 비율은 그대로, 크기 줄이기 */
+  background-size: 100%;
+ 
+}
+.parent > div:nth-child(3){
+  width: 700px;
+  height: 85px;
+  position: absolute;
+  background-image: url('./images/OSAKA-ex.png');
+  position: absolute;
+  top: 170px;
+  left: 630px;
+  z-index: 2;
+  background-size: 100%;
+}
+.parent > div:nth-child(4){
+  width: 261px;
+  height: 28px;
+  background-image: url('./images/SomeArea.png');
+  position: absolute;
+  top: 320px;
+  left: 245px;
+  background-size: 100%;
+  z-index: 3;
+}
+.parent > div:nth-child(5){
+  width: 350px;
+  height: 325px;
+  background-image: url('./images/Harukas-img.png');
+  position: absolute;
+  top: 390px;
+  left: 240px;
+  background-size: 100%;
+  z-index: 4;
+}
+.parent > div:nth-child(6){
+  width: 350px;
+  height: 323px;
+  background-image: url('./images/Glycosan-img.png');
+  position: absolute;
+  top: 390px;
+  left: 620px;
+  background-size: 100%;
+  z-index: 5;
+}
+.Glycosan-img {
+  border: 3px solid transparent;
+  transition: border-color 0.3s ease-in-out;
+  display: block;
+  margin: auto;
+  /* 버튼 클릭 기능 */
+  transition-duration: 0.3s;
+}
+.Glycosan-img:hover {
+  border-color: red;
+  position: relative;
+}
+/* 버튼 클릭 효과 */
+.Glycosan-img:active{
+  margin-left: 2px;
+  margin-top: 2px;
+  box-shadow: none;
+   
+  }
+.parent > div:nth-child(7){
+  width: 350px;
+  height: 326px;
+  background-image: url('./images/Zoo-img.png');
+  position: absolute;
+  top: 390px;
+  left: 1000px;
+  background-size: 100%;
+  z-index: 6;
+}
+.parent > div:nth-child(8){
+  width: 34px;
+  height: 34px;
+  background-image: url('./images/CloseButton.png');
+  position: absolute;
+  top: 110px;
+  left: 1330px;
+  background-size: 100%;
+  z-index: 7;
+  /* 버튼 클릭 기능 */
+  transition-duration: 0.3s;
+}
+/* 버튼 클릭 효과 */
+.CloseButton:active{
+  margin-left: 2px;
+  margin-top: 2px;
+  box-shadow: none;
+   
+  }
+.parent > div:nth-child(9){
+  width: 150px;
+  height: 22px;
+  background-image: url('./images/Harukas-kr.png');
+  position: absolute;
+  top: 725px;
+  left: 340px;
+  background-size: 100%;
+  z-index: 8;
+}
+.parent > div:nth-child(10){
+  width: 165px;
+  height: 22px;
+  background-image: url('./images/Glycosan-kr.png');
+  position: absolute;
+  top: 725px;
+  left:710px;
+  background-size: 100%;
+  z-index: 9;
+}
+.parent > div:nth-child(11){
+  width: 130px;
+  height: 22px;
+  background-image: url('./images/Zoo-kr.png');
+  position: absolute;
+  top: 725px;
+  left: 1110px;
+  background-size: 100%;
+  z-index: 10;
+}
+
+/* .parent > div:nth-child(12){
+  width: 100px;
+  height: 48px;
+  background-image: url('./images/NextButton.png');
+  position: absolute;
+  top: 310px;
+  left: 1230px;
+  background-size: 100%;
+  z-index: 11;
+  /* 버튼 클릭 기능 */
+  /* transition-duration: 0.3s; */
+/* } */
+
+/* 버튼 클릭 효과 */
+ /* 버튼 클릭시 위아래로 움직이는 효과 */
+/* .NextButton:active{
+  margin-left: 2px; 
+  margin-top: 2px;
+  box-shadow: none;
+  }  */
+
+/* Tokyo */
+.parent2 {
   width: 100vw;
   height: 100vh;
   background-repeat : no-repeat;
   background-size : cover;
-  background-image: url('./images/checkTokyo.png');
+  background-image: url('./images/CheckBackGround.png');
 }
 
-.CheckSapporo {
+.parent2 > div:nth-child(2){
+  /* 이미지 크기 */
+  width: 380px; 
+  height: 92px;
+  position: absolute;
+  background-image: url('./images/TOKYO.png');
+  position: absolute;
+  /* 이미지 위치 */
+  top: 170px;
+  left: 240px;
+  z-index: 1;
+  /* 이미지 가로 세로 비율은 그대로, 크기 줄이기 */
+  background-size: 100%;
+ 
+}
+.parent2 > div:nth-child(3){
+  width: 660px;
+  height: 80px;
+  position: absolute;
+  background-image: url('./images/TOKYO-ex.png');
+  position: absolute;
+  top: 180px;
+  left: 680px;
+  z-index: 2;
+  background-size: 100%;
+}
+.parent2 > div:nth-child(4){
+  width: 261px;
+  height: 28px;
+  background-image: url('./images/SomeArea.png');
+  position: absolute;
+  top: 320px;
+  left: 245px;
+  background-size: 100%;
+  z-index: 3;
+}
+.parent2 > div:nth-child(5){
+  width: 350px;
+  height: 325px;
+  background-image: url('./images/Disneyland-img.png');
+  position: absolute;
+  top: 390px;
+  left: 240px;
+  background-size: 100%;
+  z-index: 4;
+}
+.parent2 > div:nth-child(6){
+  width: 350px;
+  height: 326px;
+  background-image: url('./images/UenoPark-img.png');
+  position: absolute;
+  top: 390px;
+  left: 620px;
+  background-size: 100%;
+  z-index: 5;
+}
+.parent2 > div:nth-child(7){
+  width: 350px;
+  height: 326px;
+  background-image: url('./images/Meiji-img.png');
+  position: absolute;
+  top: 390px;
+  left: 1000px;
+  background-size: 100%;
+  z-index: 6;
+}
+.Meiji-img {
+  border: 3px solid transparent;
+  transition: border-color 0.3s ease-in-out;
+  display: block;
+  margin: auto;
+  /* 버튼 클릭 기능 */
+  transition-duration: 0.3s;
+}
+.Meiji-img:hover {
+  border-color: red;
+  position: relative;
+}
+/* 버튼 클릭 효과 */
+.Meiji-img:active{
+  margin-left: 2px;
+  margin-top: 2px;
+  box-shadow: none;
+   
+  }
+.parent2 > div:nth-child(8){
+  width: 34px;
+  height: 34px;
+  background-image: url('./images/CloseButton.png');
+  position: absolute;
+  top: 110px;
+  left: 1330px;
+  background-size: 100%;
+  z-index: 7;
+  /* 버튼 클릭 기능 */
+  transition-duration: 0.3s;
+}
+/* 버튼 클릭 효과 */
+.CloseButton:active{
+  margin-left: 2px;
+  margin-top: 2px;
+  box-shadow: none;
+   
+  }
+.parent2 > div:nth-child(9){
+  width: 120px;
+  height: 22px;
+  background-image: url('./images/Disneyland-kr.png');
+  position: absolute;
+  top: 725px;
+  left: 350px;
+  background-size: 100%;
+  z-index: 8;
+}
+.parent2 > div:nth-child(10){
+  width: 130px;
+  height: 23px;
+  background-image: url('./images/UenoPark-kr.png');
+  position: absolute;
+  top: 725px;
+  left:730px;
+  background-size: 100%;
+  z-index: 9;
+}
+.parent2 > div:nth-child(11){
+  width: 130px;
+  height: 24px;
+  background-image: url('./images/Meiji-kr.png');
+  position: absolute;
+  top: 725px;
+  left: 1109px;
+  background-size: 100%;
+  z-index: 10;
+}
+
+.parent2 > div:nth-child(12){
+  width: 100px;
+  height: 48px;
+  background-image: url('./images/NextButton.png');
+  position: absolute;
+  top: 310px;
+  left: 1230px;
+  background-size: 100%;
+  z-index: 11;
+}
+
+/* Sapporo */
+.parent1 {
   width: 100vw;
   height: 100vh;
   background-repeat : no-repeat;
   background-size : cover;
-  background-image: url('./images/checkSapporo.png');
+  background-image: url('./images/CheckBackGround.png');
 }
 
+.parent1 > div:nth-child(2){
+  /* 이미지 크기 */
+  width: 450px; 
+  height: 77px;
+  position: absolute;
+  background-image: url('./images/SAPPORO.png');
+  position: absolute;
+  /* 이미지 위치 */
+  top: 170px;
+  left: 240px;
+  z-index: 1;
+  /* 이미지 가로 세로 비율은 그대로, 크기 줄이기 */
+  background-size: 100%;
+ 
+}
+.parent1 > div:nth-child(3){
+  width: 510px;
+  height: 80px;
+  position: absolute;
+  background-image: url('./images/SAPPORO-ex.png');
+  position: absolute;
+  top: 170px;
+  left: 740px;
+  z-index: 2;
+  background-size: 100%;
+}
+.parent1 > div:nth-child(4){
+  width: 261px;
+  height: 28px;
+  background-image: url('./images/SomeArea.png');
+  position: absolute;
+  top: 320px;
+  left: 245px;
+  background-size: 100%;
+  z-index: 3;
+}
+.parent1 > div:nth-child(5){
+  width: 350px;
+  height: 325px;
+  background-image: url('./images/IceFestival-img.png');
+  position: absolute;
+  top: 390px;
+  left: 240px;
+  background-size: 100%;
+  z-index: 4;
+}
+.IceFestival-img{
+  border: 3px solid transparent;
+  transition: border-color 0.3s ease-in-out;
+  display: block;
+  margin: auto;
+  /* 버튼 클릭 기능 */
+  transition-duration: 0.3s;
+}
+.IceFestival-img:hover {
+  border-color: red;
+  position: relative;
+}
+/* 버튼 클릭 효과 */
+.IceFestival-img:active{
+  margin-left: 2px;
+  margin-top: 2px;
+  box-shadow: none;
+   
+  }
+.parent1 > div:nth-child(6){
+  width: 350px;
+  height: 326px;
+  background-image: url('./images/ArtMuseum-img.png');
+  position: absolute;
+  top: 390px;
+  left: 620px;
+  background-size: 100%;
+  z-index: 5;
+}
+.parent1 > div:nth-child(7){
+  width: 350px;
+  height: 326px;
+  background-image: url('./images/ShoppingStore-img.png');
+  position: absolute;
+  top: 390px;
+  left: 1000px;
+  background-size: 100%;
+  z-index: 6;
+}
+.parent1 > div:nth-child(8){
+  width: 34px;
+  height: 34px;
+  background-image: url('./images/CloseButton.png');
+  position: absolute;
+  top: 110px;
+  left: 1330px;
+  background-size: 100%;
+  z-index: 7;
+   /* 버튼 클릭 기능 */
+   transition-duration: 0.3s;
+}
+/* 버튼 클릭 효과 */
+.CloseButton:active{
+  margin-left: 2px;
+  margin-top: 2px;
+  box-shadow: none;
+   
+  }
+.parent1 > div:nth-child(9){
+  width: 200px;
+  height: 22px;
+  background-image: url('./images/IceFestival-kr.png');
+  position: absolute;
+  top: 725px;
+  left: 310px;
+  background-size: 100%;
+  z-index: 8;
+}
+.parent1 > div:nth-child(10){
+  width: 165px;
+  height: 22px;
+  background-image: url('./images/ArtMuseum-kr.png');
+  position: absolute;
+  top: 725px;
+  left:710px;
+  background-size: 100%;
+  z-index: 9;
+}
+.parent1 > div:nth-child(11){
+  width: 180px;
+  height: 22px;
+  background-image: url('./images/ShoppingStore-kr.png');
+  position: absolute;
+  top: 725px;
+  left: 1089px;
+  background-size: 100%;
+  z-index: 10;
+}
+
+.parent1 > div:nth-child(12){
+  width: 100px;
+  height: 48px;
+  background-image: url('./images/NextButton.png');
+  position: absolute;
+  top: 310px;
+  left: 1230px;
+  background-size: 100%;
+  z-index: 11;
+}
