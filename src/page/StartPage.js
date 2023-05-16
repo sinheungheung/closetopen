@@ -8,6 +8,7 @@ const movePage = useNavigate();
   function goButton(){
     movePage('/Button');
   }
+  
   return (
     <div className="start-page" >
       <div className='start-logo'></div>
