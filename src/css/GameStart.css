@@ -1,0 +1,24 @@
+.main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/roombg.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .character{
+    position: absolute;
+    height: 92%;
+    right: 40%;
+    top: 5%;
+  }
+
+  .closet{
+    position: absolute;
+    height: 100%;
+    bottom: 3%;  
+    left: 2%;
+}
+  
