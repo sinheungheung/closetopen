@@ -32,7 +32,7 @@ const GoOsaka = () => {
       <div class="OSAKA-ex"></div>
       <div class="SomeArea"></div> 
       <div class="Harukas-img"></div>
-      <div class="Glycosan-img"></div>
+      <div class="Glycosan-img" onClick={goGameStart}></div>
       <div class="Zoo-img"></div>
       <div class="CloseButton" onClick={handleClick}></div>
       <div class="Harukas-kr"></div>     

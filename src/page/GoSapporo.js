@@ -30,7 +30,7 @@ return (
       <div class="SAPPORO"></div>
       <div class="SAPPORO-ex"></div>
       <div class="SomeArea"></div>
-      <div class="IceFestival-img"></div>
+      <div class="IceFestival-img" onClick={goGameStart}></div>
       <div class="ArtMuseum-img"></div>
       <div class="ShoppingStore-img"></div>
       <div class="CloseButton" onClick={handleClick}></div>

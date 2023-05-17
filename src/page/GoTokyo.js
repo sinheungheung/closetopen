@@ -31,7 +31,7 @@ return (
   <div class="SomeArea"></div>
   <div class="Disneyland-img"></div>
   <div class="UenoPark-img"></div>
-  <div class="Meiji-img"></div>
+  <div class="Meiji-img" onClick={goGameStart}></div>
   <div class="CloseButton" onClick={handleClick}></div>
   <div class="Disneyland-kr"></div>
   <div class="UenoPark-kr"></div>
