@@ -1,11 +1,12 @@
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
 import StartPage from './page/StartPage';
 import Button from './page/Button';
 import GoTokyo from './page/GoTokyo';
 import GoOsaka from './page/GoOsaka';
 import GoSapporo from './page/GoSapporo';
-import { Route, Routes } from 'react-router-dom';
 import GameStart from './page/GameStart';
+import OsakaChangeClothes from './page/OsakaChangeClothes';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/GoOsaka' element={<GoOsaka/>}/>
         <Route path='/GoSapporo' element={<GoSapporo/>}/>
         <Route path='/GameStart' element={<GameStart/>}/>
+        <Route path='/OsakaChangeClothes' element={<OsakaChangeClothes/>}/>
       </Routes>
     </div>
   );
