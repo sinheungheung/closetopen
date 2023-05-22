@@ -1,0 +1,30 @@
+.MainGame {
+    background-repeat : no-repeat;
+    background-size : cover;
+    background-image: url('../images/roombg.png');
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .MainGame > div:nth-child(1){ 
+    /*  OpenCloset */
+    width: 40px; 
+    height: 62px;
+    position: absolute;
+    z-index: 1;
+    /* 이미지 위치 */
+    top: 120px;
+    left: 240px;
+  }
+
+  .MainGame > div:nth-child(2){
+    /* Character */
+    width: 280px; 
+    height: 92px;
+    position: absolute;
+    z-index: 2;
+    /* 이미지 위치 */
+    top: 270px;
+    left: 130px;
+}
+  

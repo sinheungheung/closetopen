@@ -25,7 +25,7 @@ function handleClick() {
 }
 return (
   <div class="parent2">
-  <div className="CheckTokyo" onClick={goGameStart}></div>
+  <div class="CheckTokyo" onClick={goGameStart}></div>
   <div class="TOKYO"></div>
   <div class="TOKYO-ex"></div>
   <div class="SomeArea"></div>
