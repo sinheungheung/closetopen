@@ -7,7 +7,7 @@ const movePage = useNavigate();
 const [hover, setHover] = useState(false);
 
 function goGameStart(){
-  movePage('/GameStart');
+  movePage('/ChangeCloth');
 }
 const handleMouseOver = () => {
   setHover(true);
@@ -36,7 +36,6 @@ return (
   <div class="Disneyland-kr"></div>
   <div class="UenoPark-kr"></div>
   <div class="Meiji-kr"></div>
-  {/* <div class="NextButton"></div> */}
   </div>
   );
 };

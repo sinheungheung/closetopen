@@ -1,8 +1,8 @@
 import React from "react";
-import '../css/OsakaChangeCloset.css';
+import '../css/ChangeCloth.css';
 
 
-const OsakaChangeCloset= () => {
+const ChangeCloth= () => {
     return (
       <div class="MainGame">
          <img class='OpenCloset' src="../images/OpenCloset.png" ></img>
@@ -11,4 +11,4 @@ const OsakaChangeCloset= () => {
     )
   }
   
-  export default OsakaChangeCloset;
+  export default ChangeCloth;

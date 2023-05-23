@@ -6,7 +6,7 @@ import GoTokyo from './page/GoTokyo';
 import GoOsaka from './page/GoOsaka';
 import GoSapporo from './page/GoSapporo';
 import GameStart from './page/GameStart';
-import OsakaChangeCloset from './page/OsakaChangeCloset';
+import ChangeCloth from './page/ChangeCloth';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         <Route path='/GoOsaka' element={<GoOsaka/>}/>
         <Route path='/GoSapporo' element={<GoSapporo/>}/>
         <Route path='/GameStart' element={<GameStart/>}/>
-        <Route path='/OsakaChangeCloset' element={<OsakaChangeCloset/>}/>
+        <Route path='/ChangeCloth' element={<ChangeCloth/>}/>
       </Routes>
     </div>
   );

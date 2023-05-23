@@ -8,7 +8,7 @@ const GoOsaka = () => {
   const [hover, setHover] = useState(false);
 
   function goGameStart() {
-    movePage('/GameStart');
+    movePage('/ChangeCloth');
   }
   const handleMouseOver = () => {
     setHover(true);
@@ -38,7 +38,6 @@ const GoOsaka = () => {
       <div class="Harukas-kr"></div>     
       <div class="Glycosan-kr"></div>
       <div class="Zoo-kr"></div>
-      {/* <div class="NextButton"></div> */}
       </div>
       
   );
