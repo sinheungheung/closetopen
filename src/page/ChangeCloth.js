@@ -1,14 +1,28 @@
-import React from "react";
+import React, { useState } from 'react'
 import '../css/ChangeCloth.css';
+import { useNavigate } from 'react-router-dom';
 
+const ChangeCloth = () => {
+const movePage = useNavigate();
+const [hover, setHover] = useState(false);
 
-const ChangeCloth= () => {
+// function (){
+//   movePage('/');
+// }
+const handleMouseOver = () => {
+  setHover(true);
+};
+
+const handleMouseOut = () => {
+  setHover(false);
+};
+
     return (
-      <div class="MainGame">
-         <img class='OpenCloset' src="../images/OpenCloset.png" ></img>
-         <img class='Character'  src="../images/Character.png" ></img>
+      <div className="MainGame">
+         <div className="OpenCloset"></div>
+         <div className="Character"></div>         
       </div>
-    )
-  }
+    );
+  };
   
   export default ChangeCloth;

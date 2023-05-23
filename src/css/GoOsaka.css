@@ -29,7 +29,6 @@ body{
     height: 83px;
     position: absolute;
     background-image: url('../images/OSAKA.png');
-    position: absolute;
     /* 이미지 위치 */
     top: 170px;
     left: 240px;
@@ -43,7 +42,6 @@ body{
     height: 85px;
     position: absolute;
     background-image: url('../images/OSAKA-ex.png');
-    position: absolute;
     top: 170px;
     left: 630px;
     z-index: 2;
