@@ -50,6 +50,7 @@ body{
     background-size: 100%;
 }
 
+/* 상의 이미지 */
 .MainGame > .ShortTshirt-Empty{
     width: 1300px; 
     height: 1500px;
@@ -92,6 +93,55 @@ body{
   position: absolute;
   background-image: url('../images/Short-Empty.png');
   z-index: 3;
+  /* 이미지 위치 */
+  top: 30px;
+  left: 580px;
+  background-size: 100%;
+}
+
+/* 하의 이미지 */
+.MainGame > .LongSkirt{
+  width: 1300px; 
+  height: 1500px;
+  position: absolute;
+  background-image: url('../images/LongSkirt.png');
+  z-index: 4;
+  /* 이미지 위치 */
+  top: 30px;
+  left: 580px;
+  background-size: 100%;
+}
+
+.MainGame > .Slacks{
+  width: 1300px; 
+  height: 1500px;
+  position: absolute;
+  background-image: url('../images/Slacks.png');
+  z-index: 5;
+  /* 이미지 위치 */
+  top: 30px;
+  left: 580px;
+  background-size: 100%;
+}
+
+.MainGame > .JoggerPants{
+  width: 1300px; 
+  height: 1500px;
+  position: absolute;
+  background-image: url('../images/JoggerPants.png');
+  z-index: 6;
+  /* 이미지 위치 */
+  top: 30px;
+  left: 580px;
+  background-size: 100%;
+}
+
+.MainGame > .CargoPants{
+  width: 1300px; 
+  height: 1500px;
+  position: absolute;
+  background-image: url('../images/CargoPants.png');
+  z-index: 7;
   /* 이미지 위치 */
   top: 30px;
   left: 580px;

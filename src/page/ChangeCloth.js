@@ -65,6 +65,11 @@ function downclothesBotton(){
          <div className="Knit-Empty"></div>         
          <div className="WindBreaker-Empty"></div>  
          <div className="Short-Empty"></div>  
+         {/* 하의 이미지 */}
+         <div className="LongSkirt"></div>  
+         <div className="Slacks"></div>         
+         <div className="JoggerPants"></div>  
+         <div className="CargoPants"></div>  
       </div>
     );
   };
