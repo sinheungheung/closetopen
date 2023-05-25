@@ -9,7 +9,7 @@
 
 body{
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: hidden; 
 }
 
 .MainGame {
@@ -17,10 +17,14 @@ body{
     height: 100vh;
     background-repeat : no-repeat;
     background-size : cover;
+    /* background-image: url('../images/ShortTshirt-Empty.png');
+    background-image: url('../images/Knit-Empty.png');
+    background-image: url('../images/WindBreaker-Empty.png');
+    background-image: url('../images/Short-Empty.png'); */
     background-image: url('../images/roombg.png');
   }
-  
-  .MainGame > div:nth-child(1){ 
+
+  .MainGame > .OpenCloset{ 
     /*  OpenCloset */
     width: 1500px; 
     height: 900px;
@@ -33,7 +37,7 @@ body{
     background-size: 110%;
   }
 
-  .MainGame > div:nth-child(2){
+  .MainGame > .Character{
     /* Character */
     width: 1200px; 
     height: 1000px;
@@ -45,4 +49,51 @@ body{
     left: -180px;
     background-size: 100%;
 }
-  
+
+.MainGame > .ShortTshirt-Empty{
+    width: 1300px; 
+    height: 1500px;
+    position: absolute;
+    background-image: url('../images/ShortTshirt-Empty.png');
+    z-index: 3;
+    /* 이미지 위치 */
+    top: 30px;
+    left: 280px;
+    background-size: 100%;
+}
+
+.MainGame > .Knit-Empty{
+  width: 1300px; 
+  height: 1500px;
+  position: absolute;
+  background-image: url('../images/Knit-Empty.png');
+  z-index: 3;
+  /* 이미지 위치 */
+  top: 30px;
+  left: 380px;
+  background-size: 100%;
+}
+
+.MainGame > .WindBreaker-Empty{
+  width: 1300px; 
+  height: 1500px;
+  position: absolute;
+  background-image: url('../images/WindBreaker-Empty.png');
+  z-index: 3;
+  /* 이미지 위치 */
+  top: 30px;
+  left: 480px;
+  background-size: 100%;
+}
+
+.MainGame > .Short-Empty{
+  width: 1300px; 
+  height: 1500px;
+  position: absolute;
+  background-image: url('../images/Short-Empty.png');
+  z-index: 3;
+  /* 이미지 위치 */
+  top: 30px;
+  left: 580px;
+  background-size: 100%;
+}
