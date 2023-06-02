@@ -7,12 +7,21 @@ import ShortTshirtEmpty from '../images/ShortTshirt-Empty.png';
 import Knit from '../images/Knit-Empty.png';
 import WindBreaker from '../images/WindBreaker-Empty.png';
 import ShortEmpty from '../images/Short-Empty.png';
+import Cardigan from '../images/Cardigan-Empty.png';
+import Blouse from '../images/Blouse-Empty.png';
 
 // 하의 이미지
 import LongSkirt from '../images/LongSkirt.png';
 import Slacks from '../images/Slacks.png';
 import JoggerPants from '../images/JoggerPants.png';
 import CargoPants from '../images/CargoPants.png';
+import Jeans from '../images/Jeans.png';
+import Skirt from '../images/Skirt.png';
+
+// 세트 이미지
+import Onepiece from '../images/Onepiece-Empty.png';
+import Tteokbokkicoat  from '../images/Tteokbokkicoat - Empty.png';
+import Kimono from '../images/Kimono-Empty.png';
 
 const ChangeCloth = () => {
   const movePage = useNavigate();
