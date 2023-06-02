@@ -144,8 +144,24 @@ body{
   background-size: 100%;
 }
 
-.MainGame > .LeftButton{
-  width: 100px; 
+
+.TopSlider {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.TopSlider img {
+  width: 50px; /* 이미지 버튼의 크기를 조정하세요 */
+  height: 50px;
+  cursor: pointer;
+  margin: 0 10px; /* 이미지 버튼 사이의 간격을 조정하세요 */
+}
+
+.LeftButton {
+  width: 100px;
   height: 100px;
   position: absolute;
   background-image: url('../images/LeftButton.png');
@@ -154,32 +170,12 @@ body{
   top: 30px;
   left: 580px;
   background-size: 100%;
- /* 버튼 클릭 기능 */
- transition-duration: 0.3s;
+  cursor: pointer;
+  transition-duration: 0.3s;
 }
-  /* 버튼 클릭 효과 */
-  .LeftButton:active{
-    margin-left: 2px;
-    margin-top: 2px;
-    box-shadow: none;
-    }
 
-.MainGame > .RightButton{
-  width: 100px; 
-  height: 100px;
-  position: absolute;
-  background-image: url('../images/RightButton.png');
-  z-index: 9;
-  /* 이미지 위치 */
-  top: 30px;
-  left: 280px;
-  background-size: 100%;
-   /* 버튼 클릭 기능 */
-   transition-duration: 0.3s;
-}
-/* 버튼 클릭 효과 */
-.RightButton:active{
+.LeftButton:active {
   margin-left: 2px;
   margin-top: 2px;
   box-shadow: none;
-  }
+}
