@@ -12,6 +12,7 @@ const ChangeCloth = () => {
     '../images/Knit-Empty.png',
     '../images/WindBreaker-Empty.png',
     '../images/Short-Empty.png',
+
     '../images/LongSkirt.png',
     '../images/Slacks.png',
     '../images/JoggerPants.png',
@@ -29,7 +30,11 @@ const ChangeCloth = () => {
 
   function handleDrop(event) {
     event.preventDefault();
-    document.getElementById('MainGame').src = draggedItem.src;
+    document.getElementById('Character').src = draggedItem.src;
+    const mainGameElement = document.getElementById('MainGame');
+    if (mainGameElement) {
+      mainGameElement.src = draggedItem.src;
+    }
   }
 
   function changeOnFooter() {
@@ -46,7 +51,7 @@ const ChangeCloth = () => {
     } else {
       clothes_index++;
     }
-    document.getElementById('MainGame').src = clothes_img[clothes_index];
+    document.getElementById('Character').src = clothes_img[clothes_index];
   }
 
   function downclothesBotton() {
@@ -55,14 +60,31 @@ const ChangeCloth = () => {
     } else {
       clothes_index--;
     }
-    document.getElementById('MainGame').src = clothes_img[clothes_index];
+    document.getElementById('Character').src = clothes_img[clothes_index];
   }
 
   return (
     <div className="MainGame">
+
+      <img src="Img/Character.png" id="character" style={{width:'100%', height:'100%', objectFit:'contain'}}></img>
+
+      <img src='../images/ShortTshirt-Empty.png' id="ShortTshirt" style={{width:'100%', height:'100%', objectFit:'contain'}} draggable="true" onDragStart={handleDragStart} ></img>
+      <img src= '../images/Knit-Empty.png' id="Knit" style={{width:'100%', height:'100%', objectFit:'contain'}} draggable="true" onDragStart={handleDragStart}></img>
+      <img src='../images/WindBreaker-Empty.png' id="WindBreaker" style={{width:'100%', height:'100%', objectFit:'contain'}} draggable="true" onDragStart={handleDragStart}></img>
+      <img src= '../images/Short-Empty.png' id="Short" style={{width:'100%', height:'100%', objectFit:'contain'}} draggable="true" onDragStart={handleDragStart} ></img>
+
+      <img src='../images/LongSkirt.png' id="LongSkirt" style={{width:'100%', height:'100%', objectFit:'contain'}} draggable="true" onDragStart={handleDragStart}></img>
+      <img src='../images/Slacks.png' id="Slacks" style={{width:'100%', height:'100%', objectFit:'contain'}} draggable="true" onDragStart={handleDragStart} ></img>
+      <img src='../images/JoggerPants.png' id="JoggerPants" style={{width:'100%', height:'100%', objectFit:'contain'}} draggable="true" onDragStart={handleDragStart} ></img>
+      <img src= '../images/CargoPants.png'id="CargoPants" style={{width:'100%', height:'100%', objectFit:'contain'}} draggable="true" onDragStart={handleDragStart}></img>
+      
+      <i class="fa fa-share fa-flip-horizontal fa-3x" id="icon" aria-hidden="true" onclick="downclothesBotton()"></i>
+                <i class="fa fa-share fa-3x" aria-hidden="true" onclick="upclothesBotton()"></i>
+
       <div className="OpenCloset"></div>
       <div className="Character"></div>
 
+  
       {/* 상의 이미지 */}
       <div
         className="ShortTshirt-Empty"
@@ -117,6 +139,22 @@ const ChangeCloth = () => {
       ></div>
       <div
         className="CargoPants"
+        draggable="true"
+        onDragStart={handleDragStart}
+        onDragOver={handleDragOver}
+        onDrop={handleDrop}
+      ></div>
+
+      <div
+        className="LeftButton"
+        draggable="true"
+        onDragStart={handleDragStart}
+        onDragOver={handleDragOver}
+        onDrop={handleDrop}
+      ></div>
+
+<div
+        className="RightButton"
         draggable="true"
         onDragStart={handleDragStart}
         onDragOver={handleDragOver}
