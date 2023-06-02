@@ -144,6 +144,43 @@ body{
   background-size: 100%;
 }
 
+.MainGame > .Onepiece{
+  width: 1300px; 
+  height: 1500px;
+  position: absolute;
+  background-image: url('../images/Onepiece-Empty.png');
+  z-index: 8;
+  /* 이미지 위치 */
+  top: 30px;
+  left: 580px;
+  background-size: 100%;
+}
+
+.MainGame > .Tteokbokkicoat{
+  width: 1300px; 
+  height: 1500px;
+  position: absolute;
+  background-image: url('../images/Tteokbokkicoat-Empty.png');
+  z-index: 9;
+  /* 이미지 위치 */
+  top: 30px;
+  left: 580px;
+  background-size: 100%;
+}
+
+.MainGame > .Kimono{
+  width: 1300px; 
+  height: 1500px;
+  position: absolute;
+  background-image: url('../images/Kimono-Empty.png');
+  z-index: 10;
+  /* 이미지 위치 */
+  top: 30px;
+  left: 580px;
+  background-size: 100%;
+}
+
+
 
 .TopSlider {
   position: relative;
