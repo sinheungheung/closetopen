@@ -60,14 +60,17 @@ const ChangeCloth = () => {
   };
 
   return (
+
     <div className="MainGame">
-      <div className="OpenCloset"></div>
-      <div className="Character"></div>
+    <div className="OpenCloset"></div>
+    <div className="CharacterScreen">
+      <img style={{ position: "absolute", width: 500 }} src="/static/media/Character.7095c84f89cd85df496c.png" />
+      <img style={{ position: "absolute", left: 23, top: 14, width: 453 }} src={topClothes[currentTopIndex]} />
+      <img style={{ position: "absolute", left: 3, top: 13, width: 493 }} src={bottomClothes[currentTopIndex]} />
+    </div>
 
-      {/* 상의 이미지 */}
-      <div className="TopSlider">
-
-
+    {/* 상의 이미지 */}
+    <div className="TopSlider">
         <img src={require('../images/LeftButton.png')} onClick={previousTopSlide} alt="왼쪽" className="LeftButton" /> 
         <img src={topClothes[currentTopIndex]} alt="상의 이미지" />
         <img src={require('../images/RightButton.png')} onClick={nextTopSlide} alt="오른쪽" className="RightButton" /> 

@@ -45,16 +45,10 @@ body{
     left: -180px;
     background-size: 100%;
 }
+/* 
+.MainGame > .TopSlider{
 
-/* .MainGame > .TopSlider{
-  width: 1500px; 
-  height: 2000px;
-  position: absolute;
-  top: 800px;
-  left: 180px;
-  background-size: 100%;
 } */
-
 
 
 .TopSlider {
@@ -66,7 +60,6 @@ body{
 }
 
 .TopSlider img {
-  top: 350px;
   width: 50px; /* 이미지 버튼의 크기를 조정하세요 */
   height: 50px;
   cursor: pointer;
@@ -81,7 +74,7 @@ body{
   z-index: 8;
   /* 이미지 위치 */
   top: 30px;
-  left: 1250px;
+  left: 580px;
   background-size: 100%;
   cursor: pointer;
   transition-duration: 0.3s;
@@ -101,7 +94,7 @@ body{
   z-index: 8;
   /* 이미지 위치 */
   top: 30px;
-  left: 850px;
+  left: 380px;
   background-size: 100%;
   cursor: pointer;
   transition-duration: 0.3s;
