@@ -67,6 +67,7 @@ const ChangeCloth = () => {
       <img style={{ position: "absolute", width: 500 }} src="/static/media/Character.7095c84f89cd85df496c.png" />
       <img style={{ position: "absolute", left: 23, top: 14, width: 453 }} src={topClothes[currentTopIndex]} />
       <img style={{ position: "absolute", left: 3, top: 13, width: 493 }} src={bottomClothes[currentTopIndex]} />
+      <img style={{ position: "absolute", left: 23, top: 13, width: 493 }} src={setClothes[currentTopIndex]} />
     </div>
 
     {/* 상의 이미지 */}
