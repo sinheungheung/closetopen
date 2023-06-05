@@ -46,139 +46,14 @@ body{
     background-size: 100%;
 }
 
-/* 상의 이미지 */
-.MainGame > .ShortTshirt-Empty{
-    width: 1300px; 
-    height: 1500px;
-    position: absolute;
-    background-image: url('../images/ShortTshirt-Empty.png');
-    z-index: 3;
-    /* 이미지 위치 */
-    top: 30px;
-    left: 280px;
-    background-size: 100%;
-}
-
-.MainGame > .Knit-Empty{
-  width: 1300px; 
-  height: 1500px;
+/* .MainGame > .TopSlider{
+  width: 1500px; 
+  height: 2000px;
   position: absolute;
-  background-image: url('../images/Knit-Empty.png');
-  z-index: 3;
-  /* 이미지 위치 */
-  top: 30px;
-  left: 380px;
+  top: 800px;
+  left: 180px;
   background-size: 100%;
-}
-
-.MainGame > .WindBreaker-Empty{
-  width: 1300px; 
-  height: 1500px;
-  position: absolute;
-  background-image: url('../images/WindBreaker-Empty.png');
-  z-index: 3;
-  /* 이미지 위치 */
-  top: 30px;
-  left: 480px;
-  background-size: 100%;
-}
-
-.MainGame > .Short-Empty{
-  width: 1300px; 
-  height: 1500px;
-  position: absolute;
-  background-image: url('../images/Short-Empty.png');
-  z-index: 3;
-  /* 이미지 위치 */
-  top: 30px;
-  left: 580px;
-  background-size: 100%;
-}
-
-/* 하의 이미지 */
-.MainGame > .LongSkirt{
-  width: 1300px; 
-  height: 1500px;
-  position: absolute;
-  background-image: url('../images/LongSkirt.png');
-  z-index: 4;
-  /* 이미지 위치 */
-  top: 30px;
-  left: 580px;
-  background-size: 100%;
-}
-
-.MainGame > .Slacks{
-  width: 1300px; 
-  height: 1500px;
-  position: absolute;
-  background-image: url('../images/Slacks.png');
-  z-index: 5;
-  /* 이미지 위치 */
-  top: 30px;
-  left: 580px;
-  background-size: 100%;
-}
-
-.MainGame > .JoggerPants{
-  width: 1300px; 
-  height: 1500px;
-  position: absolute;
-  background-image: url('../images/JoggerPants.png');
-  z-index: 6;
-  /* 이미지 위치 */
-  top: 30px;
-  left: 580px;
-  background-size: 100%;
-}
-
-.MainGame > .CargoPants{
-  width: 1300px; 
-  height: 1500px;
-  position: absolute;
-  background-image: url('../images/CargoPants.png');
-  z-index: 7;
-  /* 이미지 위치 */
-  top: 30px;
-  left: 580px;
-  background-size: 100%;
-}
-
-.MainGame > .Onepiece{
-  width: 1300px; 
-  height: 1500px;
-  position: absolute;
-  background-image: url('../images/Onepiece-Empty.png');
-  z-index: 8;
-  /* 이미지 위치 */
-  top: 30px;
-  left: 580px;
-  background-size: 100%;
-}
-
-.MainGame > .Tteokbokkicoat{
-  width: 1300px; 
-  height: 1500px;
-  position: absolute;
-  background-image: url('../images/Tteokbokkicoat-Empty.png');
-  z-index: 9;
-  /* 이미지 위치 */
-  top: 30px;
-  left: 580px;
-  background-size: 100%;
-}
-
-.MainGame > .Kimono{
-  width: 1300px; 
-  height: 1500px;
-  position: absolute;
-  background-image: url('../images/Kimono-Empty.png');
-  z-index: 10;
-  /* 이미지 위치 */
-  top: 30px;
-  left: 580px;
-  background-size: 100%;
-}
+} */
 
 
 
@@ -191,6 +66,7 @@ body{
 }
 
 .TopSlider img {
+  top: 350px;
   width: 50px; /* 이미지 버튼의 크기를 조정하세요 */
   height: 50px;
   cursor: pointer;
@@ -205,7 +81,7 @@ body{
   z-index: 8;
   /* 이미지 위치 */
   top: 30px;
-  left: 580px;
+  left: 1250px;
   background-size: 100%;
   cursor: pointer;
   transition-duration: 0.3s;
@@ -225,7 +101,7 @@ body{
   z-index: 8;
   /* 이미지 위치 */
   top: 30px;
-  left: 380px;
+  left: 850px;
   background-size: 100%;
   cursor: pointer;
   transition-duration: 0.3s;
