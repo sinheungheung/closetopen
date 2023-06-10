@@ -48,7 +48,7 @@ const ChangeCloth = () => {
     setCurrentBottomIndex(index2);
   };
   const previousSetSlide = () => {
-    const lastIndex3 = bottomClothes.length - 1;
+    const lastIndex3 = setClothes.length - 1;
     const index3 = currentSetIndex === 0 ? lastIndex3 : currentSetIndex - 1;
     setCurrentSetIndex(index3);
   };
@@ -59,13 +59,13 @@ const ChangeCloth = () => {
     setCurrentTopIndex(index1);
   };
   const nextBottomSlide = () => {
-    const lastIndex2 = topClothes.length - 1;
-    const index2 = currentTopIndex === lastIndex2 ? 0 : currentTopIndex + 1;
+    const lastIndex2 = bottomClothes.length - 1;
+    const index2 = currentBottomIndex === lastIndex2 ? 0 : currentBottomIndex + 1;
     setCurrentTopIndex(index2);
   };
   const nextSetSlide = () => {
-    const lastIndex3 = topClothes.length - 1;
-    const index3 = currentTopIndex === lastIndex3 ? 0 : currentTopIndex + 1;
+    const lastIndex3 = setClothes.length - 1;
+    const index3 = currentSetIndex === lastIndex3 ? 0 : currentSetIndex + 1;
     setCurrentTopIndex(index3);
   };
 
