@@ -3,7 +3,6 @@ import '../css/ChangeCloth.css';
 import { useNavigate } from 'react-router-dom';
 
 
-
 // 상의 이미지
 import ShortTshirt from '../images/ShortTshirt-Empty.png';
 import Knit from '../images/Knit-Empty.png';
@@ -61,12 +60,13 @@ const ChangeCloth = () => {
   const nextBottomSlide = () => {
     const lastIndex2 = bottomClothes.length - 1;
     const index2 = currentBottomIndex === lastIndex2 ? 0 : currentBottomIndex + 1;
-    setCurrentTopIndex(index2);
+    setCurrentBottomIndex(index2);
   };
   const nextSetSlide = () => {
     const lastIndex3 = setClothes.length - 1;
     const index3 = currentSetIndex === lastIndex3 ? 0 : currentSetIndex + 1;
-    setCurrentTopIndex(index3);
+    setCurrentSetIndex(index3);
+
   };
 
   return (
