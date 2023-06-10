@@ -39,14 +39,12 @@ const ChangeCloth = () => {
     const lastIndex1 = topClothes.length - 1;
     const index1 = currentTopIndex === 0 ? lastIndex1 : currentTopIndex - 1;
     setCurrentTopIndex(index1);
-    setCurrentSetIndex(0); // 상의 변경 시 세트 이미지 초기화
 
   };
   const previousBottomSlide = () => {
     const lastIndex2 = bottomClothes.length - 1;
     const index2 = currentBottomIndex === 0 ? lastIndex2 : currentBottomIndex - 1;
     setCurrentBottomIndex(index2);
-    setCurrentSetIndex(0); // 상의 변경 시 세트 이미지 초기화
   };
   const previousSetSlide = () => {
     const lastIndex3 = setClothes.length - 1;
@@ -58,13 +56,11 @@ const ChangeCloth = () => {
     const lastIndex1 = topClothes.length - 1;
     const index1 = currentTopIndex === lastIndex1 ? 0 : currentTopIndex + 1;
     setCurrentTopIndex(index1);
-    setCurrentSetIndex(0); // 상의 변경 시 세트 이미지 초기화
   };
   const nextBottomSlide = () => {
     const lastIndex2 = bottomClothes.length - 1;
     const index2 = currentBottomIndex === lastIndex2 ? 0 : currentBottomIndex + 1;
     setCurrentBottomIndex(index2);
-    setCurrentSetIndex(0); // 상의 변경 시 세트 이미지 초기화
   };
   const nextSetSlide = () => {
     const lastIndex3 = setClothes.length - 1;
@@ -81,8 +77,7 @@ const ChangeCloth = () => {
       <img style={{ position: "absolute", width: 500 }} src="/static/media/Character.7095c84f89cd85df496c.png" />
       <img style={{ position: "absolute", left: -1, top: 1, width: 500 }} src={topClothes[currentTopIndex]} />
       <img style={{ position: "absolute", left: -24, top: -20, width: 550 }} src={bottomClothes[currentBottomIndex]} />
-      {/* <img style={{ position: "absolute", left: 4, top: 2, width: 493 }} src={setClothes[currentSetIndex]} /> */}
-      {currentSetIndex === 0 && <img style={{ position: "absolute", left: 4, top: 2, width: 493 }} src={setClothes[currentSetIndex]} />}
+      <img style={{ position: "absolute", left: 4, top: 2, width: 493 }} src={setClothes[currentSetIndex]} />
     </div>
 
     {/* 상의 이미지 */}
@@ -105,7 +100,7 @@ const ChangeCloth = () => {
       {/* 세트 이미지 */}
       <div className="TopSlider">
         <img src={require('../images/LeftButton.png')} onClick={previousSetSlide} alt="왼쪽" className="LeftButton" /> 
-        {currentSetIndex !== 0 && <img src={setClothes[currentSetIndex]} alt="세트 이미지" />}
+        <img src={setClothes[currentSetIndex]} alt="세트 이미지" />
         <img src={require('../images/RightButton.png')} onClick={nextSetSlide} alt="오른쪽" className="RightButton" /> 
       </div>
       </div>
