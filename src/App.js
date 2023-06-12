@@ -1,5 +1,8 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
+import { useState } from 'react';
+import AudioPlayer from 'react-audio-player';
+
 import StartPage from './page/StartPage';
 import Button from './page/Button';
 import GoTokyo from './page/GoTokyo';
@@ -9,9 +12,19 @@ import GameStart from './page/GameStart';
 import ChangeCloth from './page/ChangeCloth';
 import Storytelling1 from './page/Storytelling1';
 
+import backgroundMusicFile from './sound/Music.mp3';
+
 function App() {
+  const [isPlaying, setIsPlaying] = useState(true);
+
   return (
     <div>
+      <AudioPlayer
+        src={backgroundMusicFile}
+        autoPlay={isPlaying}
+        loop={true} // 무한반복
+      />
+
       <Routes>
         <Route path='/' element={<StartPage/>}/>
         <Route path='/Button' element={<Button/>}/>
@@ -21,8 +34,6 @@ function App() {
         <Route path='/GameStart' element={<GameStart/>}/>
         <Route path='/ChangeCloth' element={<ChangeCloth/>}/>
         <Route path='/firststorytelling' element={<Storytelling1/>}/>
-        {/* <Route path='/FirstStoryOsaka1' element={<FirstStoryOsaka1/>}/> */}
-
       </Routes>
     </div>
   );
