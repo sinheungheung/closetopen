@@ -6,9 +6,10 @@ const GoTokyo = () => {
 const movePage = useNavigate();
 const [hover, setHover] = useState(false);
 
-function goGameStart(){
-  movePage('/ChangeCloth');
+function goStory() {
+  navigate('/firststorytelling', { state : { value : 'tokyo'}});
 }
+
 const handleMouseOver = () => {
   setHover(true);
 };
@@ -25,13 +26,13 @@ function handleClick() {
 }
 return (
   <div class="parent2">
-  <div class="CheckTokyo" onClick={goGameStart}></div>
+  <div class="CheckTokyo" onClick={goStory}></div>
   <div class="TOKYO"></div>
   <div class="TOKYO-ex"></div>
   <div class="SomeArea"></div>
   <div class="Disneyland-img"></div>
   <div class="UenoPark-img"></div>
-  <div class="Meiji-img" onClick={goGameStart}></div>
+  <div class="Meiji-img" onClick={goStory}></div>
   <div class="CloseButton" onClick={handleClick}></div>
   <div class="Disneyland-kr"></div>
   <div class="UenoPark-kr"></div>
