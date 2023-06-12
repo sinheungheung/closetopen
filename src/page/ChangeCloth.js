@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useState } from 'react';
 import '../css/ChangeCloth.css';
 import { useNavigate } from 'react-router-dom';
 
@@ -30,9 +31,9 @@ import Kimono from '../images/Kimono-Empty.png';
 const ChangeCloth = () => {
   const movePage = useNavigate();
 
-  const topClothes = [ShortTshirt, Knit, WindBreaker, Short, Cardigan, Blouse];
-  const bottomClothes = [LongSkirt, Slacks, JoggerPants, CargoPants, Jeans, Skirt];
-  const setClothes = [EmptyTop, EmptyBottom, Onepiece, Tteokbokkicoat, Kimono];
+  const topClothes = [EmptyTop, ShortTshirt, Knit, WindBreaker, Short, Cardigan, Blouse];
+  const bottomClothes = [EmptyBottom, LongSkirt, Slacks, JoggerPants, CargoPants, Jeans, Skirt];
+  const setClothes = [null, Onepiece, Tteokbokkicoat, Kimono];
 
   const [currentTopIndex, setCurrentTopIndex] = useState(0);
   const [currentBottomIndex, setCurrentBottomIndex] = useState(0);
@@ -77,12 +78,15 @@ const ChangeCloth = () => {
       <div className="CharacterScreen">
         <img style={{ position: 'absolute', width: 500 }} src="/static/media/Character.7095c84f89cd85df496c.png" />
         {!currentSetIndex && (
-          <img style={{ position: 'absolute', left: -1, top: 1, width: 500 }} src={topClothes[currentTopIndex]} />
+          <img
+            style={{ position: 'absolute', left: -1, top: 1, width: 500 }}
+            src={!currentSetIndex ? topClothes[currentTopIndex] : EmptyTop}
+          />
         )}
         {!currentSetIndex && (
           <img
             style={{ position: 'absolute', left: -24, top: -20, width: 550 }}
-            src={bottomClothes[currentBottomIndex]}
+            src={!currentSetIndex ? bottomClothes[currentBottomIndex] : EmptyBottom}
           />
         )}
         <img style={{ position: 'absolute', left: 4, top: 2, width: 493 }} src={setClothes[currentSetIndex]} />
