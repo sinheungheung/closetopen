@@ -28,7 +28,7 @@ body{
     background-image: url('../images/closet-open.png');
     z-index: 1;
     /* 이미지 위치 */
-    top: -40px;
+    top: 40px;
     left: 20px;
     background-size: 110%;
   }
@@ -41,7 +41,7 @@ body{
     background-image: url('../images/Character.png');
     z-index: 2;
     /* 이미지 위치 */
-    top: -30px;
+    top: 80%;
     left: -180px;
     background-size: 100%;
 }
@@ -52,13 +52,15 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100px;
+  height: 50px;
 }
 
 .TopSlider img {
-  width: 50px; /* 이미지 버튼의 크기를 조정하세요 */
+  width: 50px; /* 이미지 버튼의 크기를 조정*/
   height: 50px;
   cursor: pointer;
-  margin: 0 10px; /* 이미지 버튼 사이의 간격을 조정하세요 */
+  margin: 70px 30px; /* 이미지 버튼 사이의 간격을 조정 */
 }
 
 .LeftButton {
@@ -68,8 +70,8 @@ body{
   background-image: url('../images/LeftButton.png');
   z-index: 8;
   /* 이미지 위치 */
-  top: 30px;
-  left: 580px;
+  top: 250px;
+  left: 1250px;
   background-size: 100%;
   cursor: pointer;
   transition-duration: 0.3s;
@@ -88,8 +90,8 @@ body{
   background-image: url('../images/RightButton.png');
   z-index: 8;
   /* 이미지 위치 */
-  top: 30px;
-  left: 380px;
+  top: 250px;
+  left: 810px;
   background-size: 100%;
   cursor: pointer;
   transition-duration: 0.3s;
@@ -100,3 +102,4 @@ body{
   margin-top: 2px;
   box-shadow: none;
 }
+
