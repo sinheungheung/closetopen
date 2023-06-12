@@ -6,7 +6,7 @@ const FirstStoryOsaka1 = () => {
 const movePage = useNavigate();
 const [hover, setHover] = useState(false);
 
-function goOsakaStory2(){
+function goFirstStory(){
   movePage('/FirstStoryOsaka2');
 }
 const handleMouseOver = () => {
@@ -21,11 +21,11 @@ const handleMouseOut = () => {
 const navigate = useNavigate();
 
 function handleClick() {
-  navigate('/TriangleButton');
+  navigate('/FirstStoryOsaka2');
 }
 return (
-  <div class="parent3">
-  <div class="FirstStoryOsaka1" onClick={goOsakaStory2}></div>
+  <div class="parent">
+  <div class="ClosetBackground"></div>
   <div class="SquareBalloon"></div>
   <div class="OsakaFirst-1"></div>
   <div class="TriangleButton" onClick={handleClick}></div>
