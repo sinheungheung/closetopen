@@ -47,7 +47,10 @@ function Storytelling1() {
     const startTyping = () => {
       intervalId = setInterval(() => {
         if (currentIndex < pl.length) {
-          setDisplayText(prevText => prevText + pl[currentIndex]);
+          setDisplayText(prevText => {
+            const currentChar = pl[currentIndex] === ' ' ? '\u00A0' : pl[currentIndex];
+            return prevText + currentChar;
+          });
           currentIndex++;
         } else {
           clearInterval(intervalId);
