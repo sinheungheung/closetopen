@@ -1,0 +1,62 @@
+.FirstStoryOsaka1{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/ClosetBackground.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    /* object-fit: cover; */
+}
+
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  
+.parent3 > div:nth-child(2){
+    width: 1300px; 
+    height: 340px;
+    position: absolute;
+    z-index: 1;
+    top: 510px;
+    left: 200px;
+    background-image: url('../images/SquareBalloon.png');
+    background-size: 100%;
+}
+
+.parent3 > div:nth-child(3){
+    /* 이미지 크기 */
+    width: 500px; 
+    height: 20px;
+    position: absolute;
+    background-image: url('../images/OsakaFirst-1.png');
+    /* 이미지 위치 */
+    top: 620px;
+    left: 290px;
+    z-index: 2;
+    /* 이미지 가로 세로 비율은 그대로, 크기 줄이기 */
+    background-size: 100%;
+  }
+  .parent3 > div:nth-child(4){
+    width: 15px;
+    height: 8px;
+    position: absolute;
+    background-image: url('../images/TriangleButton.png');
+    top: 626px;
+    left: 810px;
+    z-index: 3;
+    background-size: 100%;
+  }
+  .TriangleButton{
+    display: block;
+    margin: auto;
+    /* 버튼 클릭 기능 */
+    transition-duration: 0.3s;
+  }
+    /* 버튼 클릭 효과 */
+    .TriangleButton:active{
+        margin-left: 2px;
+        margin-top: 2px;
+        box-shadow: none;   
+        }

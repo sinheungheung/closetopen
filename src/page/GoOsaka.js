@@ -7,8 +7,8 @@ const GoOsaka = () => {
   const movePage = useNavigate();
   const [hover, setHover] = useState(false);
 
-  function goGameStart() {
-    movePage('/ChangeCloth');
+  function goOsakaStory() {
+    movePage('/FirstStoryOsaka1');
   }
   const handleMouseOver = () => {
     setHover(true);
@@ -27,12 +27,12 @@ const GoOsaka = () => {
 
   return (
     <div class="parent">
-      <div className="CheckOsaka" onClick={goGameStart}></div>
+      <div className="CheckOsaka" onClick={goOsakaStory}></div>
       <div class="OSAKA"></div>
       <div class="OSAKA-ex"></div>
       <div class="SomeArea"></div> 
       <div class="Harukas-img"></div>
-      <div class="Glycosan-img" onClick={goGameStart}></div>
+      <div class="Glycosan-img" onClick={goOsakaStory}></div>
       <div class="Zoo-img"></div>
       <div class="CloseButton" onClick={handleClick}></div>
       <div class="Harukas-kr"></div>     
