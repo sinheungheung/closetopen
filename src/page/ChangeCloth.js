@@ -33,7 +33,7 @@ const ChangeCloth = () => {
 
   const topClothes = [EmptyTop, ShortTshirt, Knit, WindBreaker, Short, Cardigan, Blouse];
   const bottomClothes = [EmptyBottom, LongSkirt, Slacks, JoggerPants, CargoPants, Jeans, Skirt];
-  const setClothes = [null, Onepiece, Tteokbokkicoat, Kimono];
+  const setClothes = [Onepiece, Tteokbokkicoat, Kimono];
 
   const [currentTopIndex, setCurrentTopIndex] = useState(0);
   const [currentBottomIndex, setCurrentBottomIndex] = useState(0);

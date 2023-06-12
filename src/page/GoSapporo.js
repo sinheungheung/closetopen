@@ -6,8 +6,8 @@ const GoSapporo = () => {
 const movePage = useNavigate();
 const [hover, setHover] = useState(false);
 
-function goGameStart(){
-  movePage('/ChangeCloth');
+function goStory() {
+  navigate('/firststorytelling', { state : { value : 'sapporo'}});
 }
 const handleMouseOver = () => {
   setHover(true);
@@ -26,11 +26,11 @@ function handleClick() {
 
 return (
    <div class="parent1">
-      <div className="CheckSapporo" onClick={goGameStart}></div>
+      <div className="CheckSapporo" onClick={goStory}></div>
       <div class="SAPPORO"></div>
       <div class="SAPPORO-ex"></div>
       <div class="SomeArea"></div>
-      <div class="IceFestival-img" onClick={goGameStart}></div>
+      <div class="IceFestival-img" onClick={goStory}></div>
       <div class="ArtMuseum-img"></div>
       <div class="ShoppingStore-img"></div>
       <div class="CloseButton" onClick={handleClick}></div>

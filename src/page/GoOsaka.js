@@ -4,11 +4,11 @@ import { useNavigate } from 'react-router-dom';
 
 
 const GoOsaka = () => {
-  const movePage = useNavigate();
+  const navigate = useNavigate();
   const [hover, setHover] = useState(false);
 
-  function goOsakaStory() {
-    movePage('/FirstStoryOsaka1');
+  function goStory() {
+    navigate('/firststorytelling', { state : { value : 'osaka'}});
   }
   const handleMouseOver = () => {
     setHover(true);
@@ -19,20 +19,18 @@ const GoOsaka = () => {
   };
 
   // X를 누르면 Button페이지로 이동
-  const navigate = useNavigate();
-
   function handleClick() {
     navigate('/Button');
   }
 
   return (
     <div class="parent">
-      <div className="CheckOsaka" onClick={goOsakaStory}></div>
+      <div className="CheckOsaka" onClick={goStory}></div>
       <div class="OSAKA"></div>
       <div class="OSAKA-ex"></div>
       <div class="SomeArea"></div> 
       <div class="Harukas-img"></div>
-      <div class="Glycosan-img" onClick={goOsakaStory}></div>
+      <div class="Glycosan-img" onClick={goStory}></div>
       <div class="Zoo-img"></div>
       <div class="CloseButton" onClick={handleClick}></div>
       <div class="Harukas-kr"></div>     
