@@ -4,6 +4,7 @@ import '../css/ChangeCloth.css';
 import { useNavigate } from 'react-router-dom';
 
 // // 빈 이미지
+import Empty from  '../images/Empty.png'; 
 import EmptyTop from '../images/EmptyTop.png'; //상의 초기화
 import EmptyBottom from '../images/EmptyBottom.png'; //하의 초기화
 
@@ -33,7 +34,7 @@ const ChangeCloth = () => {
 
   const topClothes = [EmptyTop, ShortTshirt, Knit, WindBreaker, Short, Cardigan, Blouse];
   const bottomClothes = [EmptyBottom, LongSkirt, Slacks, JoggerPants, CargoPants, Jeans, Skirt];
-  const setClothes = [Onepiece, Tteokbokkicoat, Kimono];
+  const setClothes = [Empty,Onepiece, Tteokbokkicoat, Kimono];
 
   const [currentTopIndex, setCurrentTopIndex] = useState(0);
   const [currentBottomIndex, setCurrentBottomIndex] = useState(0);
