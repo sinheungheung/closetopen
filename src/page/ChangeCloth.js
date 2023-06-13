@@ -75,10 +75,10 @@ const ChangeCloth = () => {
   // 캐릭터 이미지 위치와 크기 수정하기
   const characterStyle = {
     position: 'relative',
-    width: 1200,
-    height: 900,
-    left: 10,
-    top: 40,
+    width: 1500,
+    height: 1100,
+    left: -250,
+    top: -50,
   };
 
   return (
@@ -87,16 +87,16 @@ const ChangeCloth = () => {
       <div className="CharacterScreen">
         <img style={characterStyle} src="/static/media/Character.7095c84f89cd85df496c.png" />
         <img
-          style={{ position: 'absolute', left: 6, top: 40, width: 1200 }}
+          style={{ position: 'absolute', left: -250, top: -60, width: 1500 }}
           src={!currentSetIndex ? topClothes[currentTopIndex] : EmptyTop}
           alt="상의 이미지"
         />
         <img
-          style={{ position: 'absolute', left: 9, top: 40, width: 1200 }}
+          style={{ position: 'absolute', left: -250, top: -60, width: 1500 }}
           src={!currentSetIndex ? bottomClothes[currentBottomIndex] : EmptyBottom}
           alt="하의 이미지"
         />
-        <img style={{ position: 'absolute', left: 10, top: 40, width: 1200 }} src={setClothes[currentSetIndex]} alt="세트 이미지" />
+        <img style={{ position: 'absolute', left: -250, top: -60, width: 1500 }} src={setClothes[currentSetIndex]} alt="세트 이미지" />
       </div>
 
       {/* 상의 이미지 */}

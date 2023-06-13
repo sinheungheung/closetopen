@@ -24,13 +24,14 @@ body{
   .MainGame > .OpenCloset{ 
     /*  OpenCloset */
     width: 1500px; 
-    height: 900px;
+    height: 1200px;
     position: absolute;
     background-image: url('../images/closet-open.png');
+    width: 1900px;
     z-index: 1;
     /* 이미지 위치 */
-    top: 40px;
-    left: 70px;
+    top: -100px;
+    left: -180px;
     background-size: 110%;
   }
 
@@ -85,7 +86,6 @@ body{
   align-items: center;
   justify-content: center;
 }
-
 
 .SetSlider img{
   width: 200px; /* 이미지 버튼의 크기를 조정 */
