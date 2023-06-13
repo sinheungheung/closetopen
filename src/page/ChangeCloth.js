@@ -73,6 +73,7 @@ const ChangeCloth = () => {
     setCurrentSetIndex(index3);
   };
 
+  // 캐릭터 이미지 위치와 크기 수정하기
   const characterStyle = {
     position: 'relative',
     width: 1200,
@@ -88,13 +89,13 @@ const ChangeCloth = () => {
         <img style={characterStyle} src="/static/media/Character.7095c84f89cd85df496c.png" />
         {!currentSetIndex && (
           <img
-            style={{ position: 'absolute', left: -1, top: 1, width: 500 }}
+            style={{ position: 'absolute', left: 6, top: 40, width: 1200 }}
             src={!currentSetIndex ? topClothes[currentTopIndex] : EmptyTop}
           />
         )}
         {!currentSetIndex && (
           <img
-            style={{ position: 'absolute', left: -24, top: -20, width: 550 }}
+            style={{ position: 'absolute', left: 9, top: 40, width: 1200 }}
             src={!currentSetIndex ? bottomClothes[currentBottomIndex] : EmptyBottom}
           />
         )}
