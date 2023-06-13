@@ -67,7 +67,6 @@ const ChangeCloth = () => {
     setCurrentBottomIndex(index2);
   };
   const nextSetSlide = () => {
-    console.log('nextSetSlide');
     const lastIndex3 = setClothes.length - 1;
     const index3 = currentSetIndex === lastIndex3 ? 0 : currentSetIndex + 1;
     setCurrentSetIndex(index3);
@@ -78,48 +77,50 @@ const ChangeCloth = () => {
     position: 'relative',
     width: 1200,
     height: 900,
-    left: 10, 
-    top: 40, 
-  }
+    left: 10,
+    top: 40,
+  };
 
   return (
     <div className="MainGame">
       <div className="OpenCloset"></div>
       <div className="CharacterScreen">
         <img style={characterStyle} src="/static/media/Character.7095c84f89cd85df496c.png" />
-        {!currentSetIndex && (
-          <img
-            style={{ position: 'absolute', left: 6, top: 40, width: 1200 }}
-            src={!currentSetIndex ? topClothes[currentTopIndex] : EmptyTop}
-          />
-        )}
-        {!currentSetIndex && (
-          <img
-            style={{ position: 'absolute', left: 9, top: 40, width: 1200 }}
-            src={!currentSetIndex ? bottomClothes[currentBottomIndex] : EmptyBottom}
-          />
-        )}
-        <img style={{ position: 'absolute', left: 10, top: 40, width: 1200 }} src={setClothes[currentSetIndex]} />
+        <img
+          style={{ position: 'absolute', left: 6, top: 40, width: 1200 }}
+          src={!currentSetIndex ? topClothes[currentTopIndex] : EmptyTop}
+          alt="상의 이미지"
+        />
+        <img
+          style={{ position: 'absolute', left: 9, top: 40, width: 1200 }}
+          src={!currentSetIndex ? bottomClothes[currentBottomIndex] : EmptyBottom}
+          alt="하의 이미지"
+        />
+        <img style={{ position: 'absolute', left: 10, top: 40, width: 1200 }} src={setClothes[currentSetIndex]} alt="세트 이미지" />
       </div>
 
       {/* 상의 이미지 */}
       <div className="TopSlider">
-        <img src={require('../images/LeftButton.png')} onClick={previousTopSlide} alt="왼쪽" className="LeftButton" />
-        {!currentSetIndex && <img src={topClothes[currentTopIndex]} alt="상의 이미지" />}
-        <img src={require('../images/RightButton.png')} onClick={nextTopSlide} alt="오른쪽" className="RightButton" />
+        <>
+          <img src={require('../images/LeftButton.png')} onClick={previousTopSlide} alt="왼쪽" className="LeftButton" />
+          <img src={topClothes[currentTopIndex]} alt="상의 이미지" />
+          <img src={require('../images/RightButton.png')} onClick={nextTopSlide} alt="오른쪽" className="RightButton" />
+        </>
       </div>
 
       {/* 하의 이미지 */}
-      <div className="TopSlider">
-        <img src={require('../images/LeftButton.png')} onClick={previousBottomSlide} alt="왼쪽" className="LeftButton" />
-        {!currentSetIndex && <img src={bottomClothes[currentBottomIndex]} alt="하의 이미지" />}
-        <img src={require('../images/RightButton.png')} onClick={nextBottomSlide} alt="오른쪽" className="RightButton" />
+      <div className="BottomSlider">
+        <>
+          <img src={require('../images/LeftButton.png')} onClick={previousBottomSlide} alt="왼쪽" className="LeftButton" />
+          <img src={bottomClothes[currentBottomIndex]} alt="하의 이미지" />
+          <img src={require('../images/RightButton.png')} onClick={nextBottomSlide} alt="오른쪽" className="RightButton" />
+        </>
       </div>
 
       {/* 세트 이미지 */}
-      <div className="TopSlider">
+      <div className="SetSlider">
         <img src={require('../images/LeftButton.png')} onClick={previousSetSlide} alt="왼쪽" className="LeftButton" />
-        <img src={setClothes[currentSetIndex]} alt="세트 이미지" />
+        {!currentSetIndex && <img src={setClothes[currentSetIndex]} alt="세트 이미지" />}
         <img src={require('../images/RightButton.png')} onClick={nextSetSlide} alt="오른쪽" className="RightButton" />
       </div>
     </div>

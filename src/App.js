@@ -15,7 +15,7 @@ import Storytelling1 from './page/Storytelling1';
 import backgroundMusicFile from './sound/Music.mp3';
 
 function App() {
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying] = useState(true);
 
   return (
     <div>

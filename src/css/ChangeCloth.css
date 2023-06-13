@@ -62,6 +62,39 @@ body{
   margin: 60px 10px; /* 이미지 버튼 사이의 간격을 조정 */
 }
 
+.BottomSlider{
+  position: relative;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.BottomSlider img{
+  width: 200px; /* 이미지 버튼의 크기를 조정 */
+  height: 40px;
+  top: -630px;
+  cursor: pointer;
+  margin: 60px 10px; /* 이미지 버튼 사이의 간격을 조정 */
+}
+
+.SetSlider{
+  position: relative;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.SetSlider img{
+  width: 200px; /* 이미지 버튼의 크기를 조정 */
+  height: 40px;
+  top: -630px;
+  cursor: pointer;
+  margin: 60px 10px; /* 이미지 버튼 사이의 간격을 조정 */
+}
+
 .LeftButton {
   width: 100px;
   height: 100px;
