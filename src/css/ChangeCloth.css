@@ -105,15 +105,8 @@ body{
   top: 30px;
   left: 1190px;
   background-size: 100%;
-  cursor: pointer;
-  transition-duration: 0.3s;
 }
 
-.LeftButton:active {
-  margin-left: 2px;
-  margin-top: 2px;
-  box-shadow: none;
-}
 
 .RightButton {
   width: 100px;
@@ -125,12 +118,21 @@ body{
   top: 30px;
   left: 850px;
   background-size: 100%;
-  cursor: pointer;
-  transition-duration: 0.3s;
 }
-
-.RightButton:active {
-  margin-left: 2px;
-  margin-top: 2px;
-  box-shadow: none;
-}
+  .NextBtn_Up{
+    width: 150px;
+    height: 74px;
+    position: absolute;
+    background-image: url('../images/NextBtn_Up.png');
+    top: 900px;
+    left: 1700px;
+    background-size: 100%;
+       /* 버튼 클릭 기능 */
+       transition-duration: 0.3s;
+  }
+    /* 버튼 클릭 효과 */
+    .NextBtn_Up:active{
+      margin-left: 2px;
+      margin-top: 2px;
+      box-shadow: none;
+    }

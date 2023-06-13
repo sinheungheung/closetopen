@@ -3,6 +3,7 @@ import { useState } from 'react';
 import '../css/ChangeCloth.css';
 import { useNavigate } from 'react-router-dom';
 
+
 // // 빈 이미지
 import Empty from '../images/Empty.png';
 import EmptyTop from '../images/EmptyTop.png'; //상의 초기화
@@ -123,6 +124,7 @@ const ChangeCloth = () => {
         {!currentSetIndex && <img src={setClothes[currentSetIndex]} alt="세트 이미지" />}
         <img src={require('../images/RightButton.png')} onClick={nextSetSlide} alt="오른쪽" className="RightButton" />
       </div>
+      <div className="NextBtn_Up"></div>
     </div>
   );
 };
