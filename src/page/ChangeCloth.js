@@ -99,7 +99,7 @@ const ChangeCloth = () => {
             src={!currentSetIndex ? bottomClothes[currentBottomIndex] : EmptyBottom}
           />
         )}
-        <img style={{ position: 'absolute', left: 4, top: 2, width: 493 }} src={setClothes[currentSetIndex]} />
+        <img style={{ position: 'absolute', left: 10, top: 40, width: 1200 }} src={setClothes[currentSetIndex]} />
       </div>
 
       {/* 상의 이미지 */}
