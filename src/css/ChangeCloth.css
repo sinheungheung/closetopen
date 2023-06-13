@@ -56,11 +56,11 @@ body{
 }
 
 .TopSlider img {
-  width: 200px; /* 이미지 버튼의 크기를 조정 */
-  height: 40px;
-  top: -630px;
+  width: 150px; /* 이미지 버튼의 크기를 조정 */
+  height: 30px;
+  top: -890px;
   cursor: pointer;
-  margin: 60px 10px; /* 이미지 버튼 사이의 간격을 조정 */
+  margin: 20px 180px; /* 이미지 버튼 사이의 간격을 조정 */
 }
 
 .BottomSlider{
@@ -72,11 +72,11 @@ body{
 }
 
 .BottomSlider img{
-  width: 200px; /* 이미지 버튼의 크기를 조정 */
-  height: 40px;
-  top: -630px;
+  width: 150px; /* 이미지 버튼의 크기를 조정 */
+  height: 30px;
+  top: -430px;
   cursor: pointer;
-  margin: 60px 10px; /* 이미지 버튼 사이의 간격을 조정 */
+  margin: 20px 180px; /* 이미지 버튼 사이의 간격을 조정 */
 }
 
 .SetSlider{
@@ -88,11 +88,11 @@ body{
 }
 
 .SetSlider img{
-  width: 200px; /* 이미지 버튼의 크기를 조정 */
-  height: 40px;
-  top: -630px;
+  width: 150px; /* 이미지 버튼의 크기를 조정 */
+  height: 30px;
+  top: -780px;
   cursor: pointer;
-  margin: 60px 10px; /* 이미지 버튼 사이의 간격을 조정 */
+  margin: 20px -40px; /* 이미지 버튼 사이의 간격을 조정 */
 }
 
 .LeftButton {
