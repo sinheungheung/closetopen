@@ -13,6 +13,7 @@ body{
 }
 
 .MainGame {
+    position: relative;
     width: 100vw;
     height: 100vh;
     background-repeat : no-repeat;
@@ -28,8 +29,8 @@ body{
     background-image: url('../images/closet-open.png');
     z-index: 1;
     /* 이미지 위치 */
-    top: -40px;
-    left: 20px;
+    top: 40px;
+    left: 70px;
     background-size: 110%;
   }
 
@@ -41,9 +42,8 @@ body{
     background-image: url('../images/Character.png');
     z-index: 2;
     /* 이미지 위치 */
-    top: -30px;
+    top: 30px;
     left: -180px;
-    background-size: 100%;
 }
 
 .TopSlider {
