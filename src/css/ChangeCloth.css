@@ -55,10 +55,11 @@ body{
 }
 
 .TopSlider img {
-  width: 50px; /* 이미지 버튼의 크기를 조정하세요 */
+  width: 200px; /* 이미지 버튼의 크기를 조정 */
   height: 50px;
+  top: -630px;
   cursor: pointer;
-  margin: 0 10px; /* 이미지 버튼 사이의 간격을 조정하세요 */
+  margin: 60px 10px; /* 이미지 버튼 사이의 간격을 조정 */
 }
 
 .LeftButton {
@@ -69,7 +70,7 @@ body{
   z-index: 8;
   /* 이미지 위치 */
   top: 30px;
-  left: 580px;
+  left: 1190px;
   background-size: 100%;
   cursor: pointer;
   transition-duration: 0.3s;
@@ -89,7 +90,7 @@ body{
   z-index: 8;
   /* 이미지 위치 */
   top: 30px;
-  left: 380px;
+  left: 850px;
   background-size: 100%;
   cursor: pointer;
   transition-duration: 0.3s;

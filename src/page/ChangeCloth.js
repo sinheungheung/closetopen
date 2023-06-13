@@ -80,7 +80,7 @@ const ChangeCloth = () => {
     height: 900,
     left: 10, 
     top: 40, 
-  };
+  }
 
   return (
     <div className="MainGame">
