@@ -108,7 +108,7 @@ body{
   }
   .parent > div:nth-child(8){
     width: 20px;
-    height: 22px;
+    height: 20px;
     background-image: url('../images/CloseButton.png');
     position: absolute;
     top: 80px;
