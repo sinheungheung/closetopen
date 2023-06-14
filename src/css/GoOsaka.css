@@ -78,7 +78,7 @@ body{
     z-index: 5;
   }
   .Glycosan-img {
-    border: 1px solid transparent;
+    border: 1.8px solid transparent;
     transition: border-color 0.3s ease-in-out;
     display: block;
     margin: auto;
