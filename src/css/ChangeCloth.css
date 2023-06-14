@@ -49,11 +49,12 @@ body{
 
 /* 여기서부터.. */
 .TopSlider {
-  position: relative;
-  width: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
+  width: 3000px;
+  height: 200px;
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
 }
 
 .TopSlider img {
@@ -64,6 +65,12 @@ body{
   margin: 20px 180px; /* 이미지 버튼 사이의 간격을 조정 */
 }
 
+.topClothes{
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  top: 990px;
+}
 .BottomSlider{
   position: relative;
   width: 300px;

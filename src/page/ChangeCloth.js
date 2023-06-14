@@ -82,13 +82,17 @@ const ChangeCloth = () => {
     top: -50,
   };
 
+  const location = [
+    -60,-50,-70,-80,-50,-60
+  ]
+
   return (
     <div className="MainGame">
       <div className="OpenCloset"></div>
       <div className="CharacterScreen">
         <img style={characterStyle} src="/static/media/Character.7095c84f89cd85df496c.png" />
         <img
-          style={{ position: 'absolute', left: -250, top: -60, width: 1500 }}
+          style={{ position: 'absolute', left: -250, top: location[currentTopIndex], width: 1500 }}
           src={!currentSetIndex ? topClothes[currentTopIndex] : EmptyTop}
           alt="상의 이미지"
         />
