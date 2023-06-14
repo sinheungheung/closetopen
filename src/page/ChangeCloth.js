@@ -30,7 +30,6 @@ import Onepiece from '../images/Onepiece-Empty.png';
 import Tteokbokkicoat from '../images/Tteokbokkicoat-Empty.png';
 import Kimono from '../images/Kimono-Empty.png';
 
-
 const ChangeCloth = () => {
   const movePage = useNavigate();
 
@@ -77,14 +76,20 @@ const ChangeCloth = () => {
   // 캐릭터 이미지 위치와 크기 수정하기
   const characterStyle = {
     position: 'relative',
-    width: 850,
-    height: 700,
-    left: -130,
-    top: -80
+    width: 800,
+    height: 650,
+    left: -100,
+    top: -30
   };
 
-  const location = [
-    10,10,-70,-80,-50,-60
+  const Toplocation = [
+    -27,-27,-27,-27,-27,-27,-27
+  ]
+  // (왼쪽버튼 순서) 1번째: 기본 티 2번째: ShortTshirt
+
+  const Bottomlocation = [
+    -20,-20,-20,-20,-20,-65,-20
+    // 1번째: 기본 바지 2번째: LongSkirt
   ]
 
   return (
@@ -93,16 +98,16 @@ const ChangeCloth = () => {
       <div className="CharacterScreen">
         <img style={characterStyle} src="/static/media/Character.7095c84f89cd85df496c.png" />
         <img
-          style={{ position: 'absolute', left: -120, top: location[currentTopIndex], width: 850 }}
+          style={{ position: 'absolute', left: -122, top: Toplocation[currentTopIndex], width: 850}}
           src={!currentSetIndex ? topClothes[currentTopIndex] : EmptyTop}
           alt="상의 이미지"
-        />
+      />
         <img
-          style={{ position: 'absolute', left: -250, top: -60, width: 1500 }}
+          style={{ position: 'absolute', left: -132, bottom: Bottomlocation[currentBottomIndex], width: 870 }}
           src={!currentSetIndex ? bottomClothes[currentBottomIndex] : EmptyBottom}
           alt="하의 이미지"
         />
-        <img style={{ position: 'absolute', left: -250, top: -60, width: 1500 }} src={setClothes[currentSetIndex]} alt="세트 이미지" />
+        <img style={{ position: 'absolute', left: -122, top: -26, width: 850 }} src={setClothes[currentSetIndex]} alt="세트 이미지" />
       </div>
 
       {/* 상의 이미지 */}
@@ -130,11 +135,6 @@ const ChangeCloth = () => {
         <img src={require('../images/RightButton.png')} onClick={nextSetSlide} alt="오른쪽" className="RightButton" />
       </div>
       <div className="NextBtn_Up"></div>
-
-      {/* 대표 이미지 */}
-      <div className= "Cardigan-Empty"></div>
-      <div className= "LongSkirt"></div>
-      <div className= "Kimono-Empty"></div>
     </div>
   );
 };

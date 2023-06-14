@@ -170,7 +170,7 @@ body{
       height: 500px;
       position: absolute;
       background-image: url('../images/Kimono-Empty.png');
-      z-index: 11;
+      z-index: 11px;
       /* 이미지 위치 */
        top: -40px;
       left: 230px;
