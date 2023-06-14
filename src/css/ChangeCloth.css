@@ -47,6 +47,7 @@ body{
     left: -180px;
 }
 
+/* 여기서부터.. */
 .TopSlider {
   position: relative;
   width: 300px;
@@ -119,6 +120,9 @@ body{
   left: 850px;
   background-size: 100%;
 }
+
+
+
   .NextBtn_Up{
     width: 150px;
     height: 74px;
