@@ -76,10 +76,10 @@ const ChangeCloth = () => {
   // 캐릭터 이미지 위치와 크기 수정하기
   const characterStyle = {
     position: 'relative',
-    width: 1500,
-    height: 1100,
-    left: -250,
-    top: -50,
+    width: 850,
+    height: 700,
+    left: -100,
+    top: -80
   };
 
   const location = [

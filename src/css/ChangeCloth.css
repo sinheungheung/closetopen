@@ -23,15 +23,14 @@ body{
 
   .MainGame > .OpenCloset{ 
     /*  OpenCloset */
-    width: 1500px; 
-    height: 1200px;
+    width: 1140px; 
+    height: 900px;
     position: absolute;
     background-image: url('../images/closet-open.png');
-    width: 1900px;
     z-index: 1;
     /* 이미지 위치 */
-    top: -100px;
-    left: -180px;
+    top: -70px;
+    left: -80px;
     background-size: 110%;
   }
 
