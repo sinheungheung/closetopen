@@ -41,9 +41,9 @@
 
 .line {
     position: absolute;
-    font-size: 27px;
+    font-size: 15px;
     text-align: left;
     left: 18%;
     top: 69%;
-    z-index: 5;
+    z-index: 5;      
   }
