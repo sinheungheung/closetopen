@@ -30,6 +30,7 @@ import Onepiece from '../images/Onepiece-Empty.png';
 import Tteokbokkicoat from '../images/Tteokbokkicoat-Empty.png';
 import Kimono from '../images/Kimono-Empty.png';
 
+
 const ChangeCloth = () => {
   const movePage = useNavigate();
 
@@ -78,12 +79,12 @@ const ChangeCloth = () => {
     position: 'relative',
     width: 850,
     height: 700,
-    left: -100,
+    left: -130,
     top: -80
   };
 
   const location = [
-    -60,-50,-70,-80,-50,-60
+    10,10,-70,-80,-50,-60
   ]
 
   return (
@@ -92,7 +93,7 @@ const ChangeCloth = () => {
       <div className="CharacterScreen">
         <img style={characterStyle} src="/static/media/Character.7095c84f89cd85df496c.png" />
         <img
-          style={{ position: 'absolute', left: -250, top: location[currentTopIndex], width: 1500 }}
+          style={{ position: 'absolute', left: -120, top: location[currentTopIndex], width: 850 }}
           src={!currentSetIndex ? topClothes[currentTopIndex] : EmptyTop}
           alt="상의 이미지"
         />
@@ -129,6 +130,11 @@ const ChangeCloth = () => {
         <img src={require('../images/RightButton.png')} onClick={nextSetSlide} alt="오른쪽" className="RightButton" />
       </div>
       <div className="NextBtn_Up"></div>
+
+      {/* 대표 이미지 */}
+      <div className= "Cardigan-Empty"></div>
+      <div className= "LongSkirt"></div>
+      <div className= "Kimono-Empty"></div>
     </div>
   );
 };

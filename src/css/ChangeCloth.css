@@ -30,7 +30,7 @@ body{
     z-index: 1;
     /* 이미지 위치 */
     top: -70px;
-    left: -80px;
+    left: -130px;
     background-size: 110%;
   }
 
@@ -49,45 +49,39 @@ body{
 /* 여기서부터.. */
 .TopSlider {
   position: absolute;
-  width: 3000px;
-  height: 200px;
-  /* display: flex; */
-  /* align-items: center;
-  justify-content: center; */
+  display: flex; 
+  align-items: center;
+  justify-content: center;
 }
 
 .TopSlider img {
-  width: 150px; /* 이미지 버튼의 크기를 조정 */
-  height: 30px;
-  top: -890px;
+  overflow: hidden;
+  width: 50px; /* 이미지 버튼의 크기를 조정 */
+  height: 50px;
+  top: -600px;
   cursor: pointer;
-  margin: 20px 180px; /* 이미지 버튼 사이의 간격을 조정 */
+  margin:  30px;/* 이미지 버튼 사이의 간격을 조정 */
 }
 
-.topClothes{
-  position: absolute;
-  width: 200px;
-  height: 100px;
-  top: 990px;
-}
+
 .BottomSlider{
-  position: relative;
-  width: 300px;
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .BottomSlider img{
-  width: 150px; /* 이미지 버튼의 크기를 조정 */
-  height: 30px;
+  overflow: hidden;
+  width: 50px; /* 이미지 버튼의 크기를 조정 */
+  height: 50px;
   top: -430px;
   cursor: pointer;
   margin: 20px 180px; /* 이미지 버튼 사이의 간격을 조정 */
 }
 
 .SetSlider{
-  position: relative;
+  position: absolute;
   width: 300px;
   display: flex;
   align-items: center;
@@ -95,9 +89,10 @@ body{
 }
 
 .SetSlider img{
-  width: 150px; /* 이미지 버튼의 크기를 조정 */
-  height: 30px;
-  top: -780px;
+  overflow: hidden;
+  width: 50px; /* 이미지 버튼의 크기를 조정 */
+  height: 50px;
+  top: -180px;
   cursor: pointer;
   margin: 20px -40px; /* 이미지 버튼 사이의 간격을 조정 */
 }
@@ -110,7 +105,7 @@ body{
   z-index: 8;
   /* 이미지 위치 */
   top: 30px;
-  left: 1190px;
+  left: 800px;
   background-size: 100%;
 }
 
@@ -122,8 +117,8 @@ body{
   background-image: url('../images/RightButton.png');
   z-index: 8;
   /* 이미지 위치 */
-  top: 30px;
-  left: 850px;
+  top: 20px;
+  left: 600px;
   background-size: 100%;
 }
 
@@ -146,3 +141,38 @@ body{
       margin-top: 2px;
       box-shadow: none;
     }
+
+    /* 대표 이미지 */
+    /* .MainGame>.Cardigan-Empty{
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      background-image: url('../images/Cardigan-Empty.png');
+      z-index: 9; */
+      /* 이미지 위치 */
+      /* top: 20px;
+      left: 200px;
+      background-size: 100%;
+    } */
+    /* .MainGame>.LongSkirt{
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      background-image: url('../images/LongSkirt.png');
+      z-index: 10;
+      /* 이미지 위치 */
+      /* top: 20px;
+      left: 600px;
+      background-size: 100%;
+    } */
+    .MainGame>.Kimono-Empty{
+      width: 750px;
+      height: 500px;
+      position: absolute;
+      background-image: url('../images/Kimono-Empty.png');
+      z-index: 11;
+      /* 이미지 위치 */
+       top: -40px;
+      left: 230px;
+      background-size: 100%;
+    } 
