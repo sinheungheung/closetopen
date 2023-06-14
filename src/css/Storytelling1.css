@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'StoryFont';
+    src: url('../fonts/StoryFont.ttf') format('truetype');
+  }
+
 .main {
     position: relative;
     width: 100vw;
@@ -40,8 +45,9 @@
 }
 
 .line {
+    font-family: 'StoryFont', sans-serif; /* 폰트 적용 */
     position: absolute;
-    font-size: 15px;
+    font-size: 16px;
     text-align: left;
     left: 18%;
     top: 69%;
