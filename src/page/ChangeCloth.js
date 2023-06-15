@@ -112,18 +112,18 @@ const ChangeCloth = () => {
   const characterStyle = {
     position: 'relative',
     width: 1600,
-    height: 1100,
-    left: -220,
-    top: -7
+    height: 1200,
+    left: -240,
+    top: -90
   };
 
   const Toplocation = [
-    -27,-27,-27,-27,-27,-27,-27
+    -40,-50,-45,-50,-40,-40,-40
   ]
   // (왼쪽버튼 순서) 1번째: 기본 티 2번째: ShortTshirt
 
   const Bottomlocation = [
-    -20,-20,-20,-20,-20,-65,-20
+    -60,-60,-50,-20,-20,-65,-20
     // 1번째: 기본 바지 2번째: LongSkirt
   ]
 
@@ -134,16 +134,19 @@ const ChangeCloth = () => {
 
   return (
     <div className="MainGame">
+      
+
+
       <div className="OpenCloset"></div>
       <div className="CharacterScreen">
         <img style={characterStyle} src="/static/media/Character.7095c84f89cd85df496c.png" />
         <img
-          style={{ position: 'absolute', left: -122, top: Toplocation[currentTopIndex], width: 850}}
+          style={{ position: 'absolute', left: -220, top: Toplocation[currentTopIndex], width: 1600}}
           src={!currentSetIndex ? topClothes[currentTopIndex] : EmptyTop}
           alt="상의 이미지"
       />
         <img
-          style={{ position: 'absolute', left: -132, bottom: Bottomlocation[currentBottomIndex], width: 870 }}
+          style={{ position: 'absolute', left: -220, bottom: Bottomlocation[currentBottomIndex], width: 1600 }}
           src={!currentSetIndex ? bottomClothes[currentBottomIndex] : EmptyBottom}
           alt="하의 이미지"
         />
@@ -175,9 +178,9 @@ const ChangeCloth = () => {
         <img src={require('../images/RightButton.png')} onClick={nextSetSlide} alt="오른쪽" className="RightButton" />
       </div>
       <div className="NextBtn_Up" onClick={handleSubmit}></div>
-      <div className="Cardigan-Empty"></div>
-      <div className="LongSkirt"></div>
-      <div className="Kimono-Empty"></div>
+      {/* <div className="Knit"></div>
+      <div className="LongSkirt"></div> */}
+      {/* <div className="Kimono"></div> */}
     </div>
   );
 };
