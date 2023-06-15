@@ -118,7 +118,7 @@ const ChangeCloth = () => {
   };
 
   const Toplocation = [
-    -40,-50,-45,-50,-40,-40,-40
+    -90,-90,-90,-90,-90,-90,-90
   ]
   // (왼쪽버튼 순서) 1번째: 기본 티 2번째: ShortTshirt
 
@@ -141,7 +141,7 @@ const ChangeCloth = () => {
       <div className="CharacterScreen">
         <img style={characterStyle} src="/static/media/Character.7095c84f89cd85df496c.png" />
         <img
-          style={{ position: 'absolute', left: -220, top: Toplocation[currentTopIndex], width: 1600}}
+          style={{ position: 'absolute', left: -240, top: Toplocation[currentTopIndex], width: 1600}}
           src={!currentSetIndex ? topClothes[currentTopIndex] : EmptyTop}
           alt="상의 이미지"
       />
