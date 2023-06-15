@@ -25,55 +25,55 @@ body{
   
   .parent > div:nth-child(2){
     /* 이미지 크기 */
-    width: 450px; 
-    height: 70px;
+    width: 600px; 
+    height: 140px;
     position: absolute;
     background-image: url('../images/OSAKA.png');
     /* 이미지 위치 */
-    top: 110px;
-    left: 150px;
+    top: 160px;
+    left: 250px;
     z-index: 1;
     /* 이미지 가로 세로 비율은 그대로, 크기 줄이기 */
     background-size: 100%;
    
   }
   .parent > div:nth-child(3){
-    width: 500px;
-    height: 60px;
+    width: 800px;
+    height: 100px;
     position: absolute;
     background-image: url('../images/OSAKA-ex.png');
-    top: 120px;
-    left: 480px;
+    top: 190px;
+    left: 900px;
     z-index: 2;
     background-size: 100%;
   }
   .parent > div:nth-child(4){
-    width: 200px;
-    height: 20px;
+    width: 340px;
+    height: 35px;
     background-image: url('../images/SomeArea.png');
     position: absolute;
-    top: 220px;
-    left: 150px;
+    top: 370px;
+    left: 260px;
     background-size: 100%;
     z-index: 3;
   }
   .parent > div:nth-child(5){
-    width: 260px;
-    height: 240px;
+    width: 470px;
+    height: 430px;
     background-image: url('../images/Harukas-img.png');
     position: absolute;
-    top: 280px;
-    left: 150px;
+    top: 440px;
+    left: 250px;
     background-size: 100%;
     z-index: 4;
   }
   .parent > div:nth-child(6){
-    width: 260px;
-    height: 240px;
+    width: 470px;
+    height: 430px;
     background-image: url('../images/Glycosan-img.png');
     position: absolute;
-    top: 280px;
-    left: 425px;
+    top: 440px;
+    left: 730px;
     background-size: 100%;
     z-index: 5;
   }
@@ -97,22 +97,22 @@ body{
      
     }
   .parent > div:nth-child(7){
-    width: 260px;
-    height: 240px;
+    width: 470px;
+    height: 430px;
     background-image: url('../images/Zoo-img.png');
     position: absolute;
-    top: 280px;
-    left: 700px;
+    top: 440px;
+    left: 1210px;
     background-size: 100%;
     z-index: 6;
   }
   .parent > div:nth-child(8){
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     background-image: url('../images/CloseButton.png');
     position: absolute;
-    top: 80px;
-    left: 960px;
+    top: 130px;
+    left: 1660px;
     background-size: 100%;
     z-index: 7;
     /* 버튼 클릭 기능 */
@@ -126,32 +126,32 @@ body{
      
     }
   .parent > div:nth-child(9){
-    width: 130px;
-    height: 20px;
+    width: 220px;
+    height: 30px;
     background-image: url('../images/Harukas-kr.png');
     position: absolute;
-    top: 530px;
-    left: 220px;
+    top: 900px;
+    left: 370px;
     background-size: 100%;
     z-index: 8;
   }
   .parent > div:nth-child(10){
-    width: 145px;
-    height: 18px;
+    width: 240px;
+    height: 30px;
     background-image: url('../images/Glycosan-kr.png');
     position: absolute;
-    top: 531px;
-    left: 480px;
+    top: 900px;
+    left: 850px;
     background-size: 100%;
     z-index: 9;
   }
   .parent > div:nth-child(11){
-    width: 120px;
-    height: 20px;
+    width: 190px;
+    height: 30px;
     background-image: url('../images/Zoo-kr.png');
     position: absolute;
-    top: 530px;
-    left: 770px;
+    top: 900px;
+    left: 1350px;
     background-size: 100%;
     z-index: 10;
   }
