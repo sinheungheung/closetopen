@@ -111,10 +111,10 @@ const ChangeCloth = () => {
   // 캐릭터 이미지 위치와 크기 수정하기
   const characterStyle = {
     position: 'relative',
-    width: 800,
-    height: 650,
-    left: -100,
-    top: -30
+    width: 1600,
+    height: 1100,
+    left: -220,
+    top: -7
   };
 
   const Toplocation = [
@@ -175,6 +175,9 @@ const ChangeCloth = () => {
         <img src={require('../images/RightButton.png')} onClick={nextSetSlide} alt="오른쪽" className="RightButton" />
       </div>
       <div className="NextBtn_Up" onClick={handleSubmit}></div>
+      <div className="Cardigan-Empty"></div>
+      <div className="LongSkirt"></div>
+      <div className="Kimono-Empty"></div>
     </div>
   );
 };

@@ -23,14 +23,14 @@ body{
 
   .MainGame > .OpenCloset{ 
     /*  OpenCloset */
-    width: 1140px; 
-    height: 900px;
+    width: 2000px; 
+    height: 1200px;
     position: absolute;
     background-image: url('../images/closet-open.png');
     z-index: 1;
     /* 이미지 위치 */
-    top: -70px;
-    left: -130px;
+    top: -100px;
+    left: -190px;
     background-size: 110%;
   }
 
@@ -125,12 +125,12 @@ body{
 
 
   .NextBtn_Up{
-    width: 150px;
-    height: 74px;
+    width: 170px;
+    height: 83px;
     position: absolute;
     background-image: url('../images/NextBtn_Up.png');
-    top: 900px;
-    left: 1700px;
+    top: 980px;
+    left: 1720px;
     background-size: 100%;
        /* 버튼 클릭 기능 */
        transition-duration: 0.3s;
@@ -143,28 +143,28 @@ body{
     }
 
     /* 대표 이미지 */
-    /* .MainGame>.Cardigan-Empty{
-      width: 100px;
+    .MainGame>.Cardigan-Empty{
+      width: 160px;
       height: 100px;
       position: absolute;
       background-image: url('../images/Cardigan-Empty.png');
-      z-index: 9; */
+      z-index: 9; 
       /* 이미지 위치 */
-      /* top: 20px;
+      top: 200px;
       left: 200px;
       background-size: 100%;
-    } */
-    /* .MainGame>.LongSkirt{
+    } 
+    .MainGame>.LongSkirt{
       width: 100px;
       height: 100px;
       position: absolute;
       background-image: url('../images/LongSkirt.png');
       z-index: 10;
       /* 이미지 위치 */
-      /* top: 20px;
+     top: 20px;
       left: 600px;
       background-size: 100%;
-    } */
+    }
     .MainGame>.Kimono-Empty{
       width: 750px;
       height: 500px;
