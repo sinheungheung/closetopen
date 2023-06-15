@@ -123,7 +123,7 @@ const ChangeCloth = () => {
   // (왼쪽버튼 순서) 1번째: 기본 티 2번째: ShortTshirt
 
   const Bottomlocation = [
-    -60,-60,-50,-20,-20,-65,-20
+    -50,-30,-30,-30,-30,-65,-30
     // 1번째: 기본 바지 2번째: LongSkirt
   ]
 
@@ -146,11 +146,11 @@ const ChangeCloth = () => {
           alt="상의 이미지"
       />
         <img
-          style={{ position: 'absolute', left: -220, bottom: Bottomlocation[currentBottomIndex], width: 1600 }}
+          style={{ position: 'absolute', left: -240, bottom: Bottomlocation[currentBottomIndex], width: 1600 }}
           src={!currentSetIndex ? bottomClothes[currentBottomIndex] : EmptyBottom}
           alt="하의 이미지"
         />
-        <img style={{ position: 'absolute', left: -122, top: -26, width: 850 }} src={setClothes[currentSetIndex]} alt="세트 이미지" />
+        <img style={{ position: 'absolute', left: -240, top: -90, width: 1600 }} src={setClothes[currentSetIndex]} alt="세트 이미지" />
       </div>
 
       {/* 상의 이미지 */}
