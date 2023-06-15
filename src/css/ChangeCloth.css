@@ -1,80 +1,84 @@
-.ChangeCloth{
+.ChangeCloth {
   width: 100vw;
   height: 100vh;
-  background-size: cover; 
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   /* object-fit: cover; */
 }
 
-body{
+body {
   overflow-x: hidden;
-  overflow-y: hidden; 
+  overflow-y: hidden;
 }
 
 .MainGame {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background-repeat : no-repeat;
-    background-size : cover;
-    background-image: url('../images/roombg.png');
-  }
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../images/roombg.png');
+}
 
-  .closet {
-    position: absolute;
-    height: 100%;
-    bottom: 3%;
-    left: 2%;
-  }
+.closet {
+  position: absolute;
+  height: 100%;
+  bottom: 3%;
+  left: 2%;
+}
 
-  .character {
-    position: absolute;
-    height: 100%;
-    right: 38%;
-    top: -5%;
+.character {
+  position: absolute;
+  height: 100%;
+  right: 38%;
+  top: -5%;
 }
 
 /* 여기서부터.. */
 .TopSlider {
   position: absolute;
-  display: flex; 
- margin-top: -160px;
- /* top: -20px; */
+  display: flex;
+  margin-top: -160px;
+  /* top: -20px; */
 
   margin-left: 30%;
 
-  align-items: center; 
+  align-items: center;
   justify-content: center;
 }
 
 .TopSlider img {
   overflow: hidden;
-  width: 50px; /* 이미지 버튼의 크기를 조정 */
+  width: 50px;
+  /* 이미지 버튼의 크기를 조정 */
   height: 50px;
   top: -600px;
   cursor: pointer;
-  margin:  30px;/* 이미지 버튼 사이의 간격을 조정 */
+  margin: 30px;
+  /* 이미지 버튼 사이의 간격을 조정 */
 }
 
 
-.BottomSlider{
+.BottomSlider {
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.BottomSlider img{
+.BottomSlider img {
   overflow: hidden;
-  width: 50px; /* 이미지 버튼의 크기를 조정 */
+  width: 50px;
+  /* 이미지 버튼의 크기를 조정 */
   height: 50px;
   top: -430px;
   cursor: pointer;
-  margin: 20px 180px; /* 이미지 버튼 사이의 간격을 조정 */
+  margin: 20px 180px;
+  /* 이미지 버튼 사이의 간격을 조정 */
 }
 
-.SetSlider{
+.SetSlider {
   position: absolute;
   width: 300px;
   display: flex;
@@ -82,13 +86,15 @@ body{
   justify-content: center;
 }
 
-.SetSlider img{
+.SetSlider img {
   overflow: hidden;
-  width: 50px; /* 이미지 버튼의 크기를 조정 */
+  width: 50px;
+  /* 이미지 버튼의 크기를 조정 */
   height: 50px;
   top: -180px;
   cursor: pointer;
-  margin: 20px -40px; /* 이미지 버튼 사이의 간격을 조정 */
+  margin: 20px -40px;
+  /* 이미지 버튼 사이의 간격을 조정 */
 }
 
 .LeftButton {
@@ -100,7 +106,7 @@ body{
   /* 이미지 위치 */
   top: 30px;
   left: 890px;
-  
+
   background-size: 100%;
 }
 
@@ -117,57 +123,54 @@ body{
   background-size: 100%;
 }
 
+.next-btn {
+  position: absolute;
+  width: 7%;
+  left: 90%;
+  bottom: 5%;
+  z-index: 3;
+}
 
+/* 버튼 클릭 효과 */
+.nextbtn:active {
+  margin-left: 2px;
+  margin-top: 2px;
+  box-shadow: none;
+}
 
-  .NextBtn_Up{
-    width: 170px;
-    height: 83px;
-    position: absolute;
-    background-image: url('../images/NextBtn_Up.png');
-    top: 980px;
-    left: 1720px;
-    background-size: 100%;
-       /* 버튼 클릭 기능 */
-       transition-duration: 0.3s;
-  }
-    /* 버튼 클릭 효과 */
-    .NextBtn_Up:active{
-      margin-left: 2px;
-      margin-top: 2px;
-      box-shadow: none;
-    }
+/* 대표 이미지 */
+.MainGame>.Knit {
+  width: 1600px;
+  height: 1500px;
+  position: absolute;
+  background-image: url('../images/Knit.png');
+  z-index: 9;
+  /* 이미지 위치 */
+  top: -200px;
+  left: 650px;
+  background-size: 100%;
+}
 
-    /* 대표 이미지 */
-    .MainGame>.Knit{
-      width: 1600px;
-      height: 1500px;
-      position: absolute;
-      background-image: url('../images/Knit.png');
-      z-index: 9; 
-      /* 이미지 위치 */
-      top: -200px;
-      left: 650px;
-      background-size: 100%;
-    } 
-    .MainGame>.LongSkirt{
-      width: 1600px;
-      height: 1500px;
-      position: absolute;
-      background-image: url('../images/LongSkirt.png');
-      z-index: 10;
-      /* 이미지 위치 */
-     top: -130px;
-      left: 650px;
-      background-size: 100%;
-    }
-    .MainGame>.Kimono{
-      width: 1600px;
-      height: 1500px;
-      position: absolute;
-      background-image: url('../images/Kimono.png');
-      z-index: 110;
-      /* 이미지 위치 */
-       top: -200px;
-      left: 300px;
-      background-size: 100%;
-    } 
+.MainGame>.LongSkirt {
+  width: 1600px;
+  height: 1500px;
+  position: absolute;
+  background-image: url('../images/LongSkirt.png');
+  z-index: 10;
+  /* 이미지 위치 */
+  top: -130px;
+  left: 650px;
+  background-size: 100%;
+}
+
+.MainGame>.Kimono {
+  width: 1600px;
+  height: 1500px;
+  position: absolute;
+  background-image: url('../images/Kimono.png');
+  z-index: 110;
+  /* 이미지 위치 */
+  top: -200px;
+  left: 300px;
+  background-size: 100%;
+}
