@@ -169,7 +169,7 @@ const ChangeCloth = () => {
         {!currentSetIndex && <img src={setClothes[currentSetIndex]} alt="세트 이미지" />}
         <img src={require('../images/RightButton.png')} onClick={nextSetSlide} alt="오른쪽" className="RightButton" />
       </div>
-      <div className="NextBtn_Up" onClick={handleSubmit}></div>
+      <img className="next-btn" src={`/images/nextbtn.png`}alt="" onClick={handleSubmit}/>
       {/* <div className="Knit"></div>
       <div className="LongSkirt"></div> */}
       {/* <div className="Kimono"></div> */}
