@@ -21,29 +21,18 @@ body{
     background-image: url('../images/roombg.png');
   }
 
-  .MainGame > .OpenCloset{ 
-    /*  OpenCloset */
-    width: 2000px; 
-    height: 1200px;
+  .closet {
     position: absolute;
-    background-image: url('../images/closet-open.png');
-    z-index: 1;
-    /* 이미지 위치 */
-    top: -100px;
-    left: -190px;
-    background-size: 110%;
+    height: 100%;
+    bottom: 3%;
+    left: 2%;
   }
 
-  .MainGame > .Character{
-    /* Character */
-    width: 1200px; 
-    height: 1000px;
+  .character {
     position: absolute;
-    background-image: url('../images/Character.png');
-    z-index: 2;
-    /* 이미지 위치 */
-    top: 30px;
-    left: -180px;
+    height: 100%;
+    right: 38%;
+    top: -5%;
 }
 
 /* 여기서부터.. */
