@@ -50,13 +50,13 @@ body{
 .TopSlider {
   position: absolute;
   display: flex; 
- margin-top: -260px;
- /* top: 20px; */
+ margin-top: -160px;
+ /* top: -20px; */
 
   margin-left: 30%;
 
-  /* align-items: center; */
-  /* justify-content: center; */
+  align-items: center; 
+  justify-content: center;
 }
 
 .TopSlider img {

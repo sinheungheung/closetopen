@@ -123,8 +123,9 @@ const ChangeCloth = () => {
   // (왼쪽버튼 순서) 1번째: 기본 티 2번째: ShortTshirt
 
   const Bottomlocation = [
-    -50,-30,-30,-30,-30,-65,-30
+    -50,-30,-30,-30,-30,-100,-30
     // 1번째: 기본 바지 2번째: LongSkirt
+    
   ]
 
   useEffect(() => {
@@ -146,7 +147,7 @@ const ChangeCloth = () => {
           alt="상의 이미지"
       />
         <img
-          style={{ position: 'absolute', left: -240, bottom: Bottomlocation[currentBottomIndex], width: 1600 }}
+          style={{ position: 'absolute', left: -240, bottom: Bottomlocation[(Bottomlocation==6) ?  currentBottomIndex: currentBottomIndex], width: 1600 }}
           src={!currentSetIndex ? bottomClothes[currentBottomIndex] : EmptyBottom}
           alt="하의 이미지"
         />
