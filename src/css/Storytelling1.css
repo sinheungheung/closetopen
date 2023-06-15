@@ -51,5 +51,6 @@
     text-align: left;
     left: 18%;
     top: 69%;
-    z-index: 5;      
+    z-index: 5;  
+    white-space: pre-wrap;    
   }
