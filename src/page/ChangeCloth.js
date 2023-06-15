@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
 import '../css/ChangeCloth.css';
 import { useNavigate } from 'react-router-dom';
-
+import axios from "axios";
 
 // // 빈 이미지
 import Empty from '../images/Empty.png';
@@ -40,6 +40,39 @@ const ChangeCloth = () => {
   const [currentTopIndex, setCurrentTopIndex] = useState(0);
   const [currentBottomIndex, setCurrentBottomIndex] = useState(0);
   const [currentSetIndex, setCurrentSetIndex] = useState(0);
+  
+  const [values, setValues] = useState({
+    top: ''
+    // top: '',
+    // bottom: '',
+    // set: ''
+  });
+
+   // 상의 이미지 변경 시 values에 추가하는 함수
+   const updateTopImage = () => {
+    setValues(prev => ({
+      ...prev,
+      top: topClothes[currentTopIndex]
+    }));
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const data = {
+      top: topClothes[currentTopIndex]
+    };
+    console.log("이거다 ", data.top);
+    axios.post('http://localhost:5000/game', data)
+      .then(res => {
+        console.log(res);
+        if (res.data.Status === "Success") {
+          movePage('/ChangeAccessories');
+        } else {
+          alert("Error");
+        }
+      })
+      .catch(err => console.log(err))
+  }
 
   const previousTopSlide = () => {
     const lastIndex1 = topClothes.length - 1;
@@ -50,11 +83,13 @@ const ChangeCloth = () => {
     const lastIndex2 = bottomClothes.length - 1;
     const index2 = currentBottomIndex === 0 ? lastIndex2 : currentBottomIndex - 1;
     setCurrentBottomIndex(index2);
+    // setValues(prev => ({...prev, [values.bottom] : [bottomClothes[currentBottomIndex]]}));
   };
   const previousSetSlide = () => {
     const lastIndex3 = setClothes.length - 1;
     const index3 = currentSetIndex === 0 ? lastIndex3 : currentSetIndex - 1;
     setCurrentSetIndex(index3);
+    // setValues(prev => ({...prev, [values.set] : [setClothes[currentSetIndex]]}));
   };
 
   const nextTopSlide = () => {
@@ -91,6 +126,11 @@ const ChangeCloth = () => {
     -20,-20,-20,-20,-20,-65,-20
     // 1번째: 기본 바지 2번째: LongSkirt
   ]
+
+  useEffect(() => {
+    console.log(values.top);
+    updateTopImage();  // useEffect에서 이미지 정보를 업데이트하도록 추가
+  }, [currentTopIndex]); 
 
   return (
     <div className="MainGame">
@@ -134,7 +174,7 @@ const ChangeCloth = () => {
         {!currentSetIndex && <img src={setClothes[currentSetIndex]} alt="세트 이미지" />}
         <img src={require('../images/RightButton.png')} onClick={nextSetSlide} alt="오른쪽" className="RightButton" />
       </div>
-      <div className="NextBtn_Up"></div>
+      <div className="NextBtn_Up" onClick={handleSubmit}></div>
     </div>
   );
 };

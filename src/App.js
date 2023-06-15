@@ -13,6 +13,7 @@ import ChangeCloth from './page/ChangeCloth';
 import Storytelling1 from './page/Storytelling1';
 
 import backgroundMusicFile from './sound/Music.mp3';
+import ChangeAccessories from './page/ChangeAccessories';
 
 function App() {
   const [isPlaying] = useState(true);
@@ -33,6 +34,7 @@ function App() {
         <Route path='/GoSapporo' element={<GoSapporo/>}/>
         <Route path='/GameStart' element={<GameStart/>}/>
         <Route path='/ChangeCloth' element={<ChangeCloth/>}/>
+        <Route path='/ChangeAccessories' element={<ChangeAccessories/>}/>
         <Route path='/firststorytelling' element={<Storytelling1/>}/>
       </Routes>
     </div>
