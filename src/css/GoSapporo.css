@@ -9,46 +9,46 @@
   
   .parent1 > div:nth-child(2){
     /* 이미지 크기 */
-    width: 350px; 
-    height: 59px;
+    width: 38%; 
+    height: 11.5%;
     position: absolute;
     background-image: url('../images/SAPPORO.png');
     /* 이미지 위치 */
-    top: 110px;
-    left: 150px;
+    top: 17%;
+    left: 12%;
     z-index: 1;
     /* 이미지 가로 세로 비율은 그대로, 크기 줄이기 */
     background-size: 100%;
    
   }
   .parent1 > div:nth-child(3){
-    width: 400px;
-    height: 65px;
+    width: 35%;
+    height: 10%;
     position: absolute;
     background-image: url('../images/SAPPORO-ex.png');
     position: absolute;
-    top: 110px;
-    left: 530px;
+    top: 18%;
+    left: 52%;
     z-index: 2;
     background-size: 100%;
   }
   .parent1 > div:nth-child(4){
-    width: 200px;
-    height: 20px;
+    width: 14%;
+    height: 2.5%;
     background-image: url('../images/SomeArea.png');
     position: absolute;
-    top: 220px;
-    left: 160px;
+    top: 36%;
+    left: 12.5%;
     background-size: 100%;
     z-index: 3;
   }
   .parent1 > div:nth-child(5){
-    width: 260px;
-    height: 240px;
+    width: 24%;
+    height: 39.2%;
     background-image: url('../images/IceFestival-img.png');
     position: absolute;
-    top: 280px;
-    left: 150px;
+    top: 43%;
+    left: 12%;
     background-size: 100%;
     z-index: 4;
   }
@@ -72,32 +72,32 @@
      
     }
   .parent1 > div:nth-child(6){
-    width: 260px;
-    height: 240px;
+    width: 24%;
+    height: 39.2%;
     background-image: url('../images/ArtMuseum-img.png');
     position: absolute;
-    top: 283px;
-    left: 425px;
+    top: 43%;
+    left: 38.5%;
     background-size: 100%;
     z-index: 5;
   }
   .parent1 > div:nth-child(7){
-    width: 260px;
-    height: 240px;
+    width: 24%;
+    height: 39.2%;
     background-image: url('../images/ShoppingStore-img.png');
     position: absolute;
-    top: 284px;
-    left: 700px;
+    top: 43%;
+    left: 65%;
     background-size: 100%;
     z-index: 6;
   }
   .parent1 > div:nth-child(8){
-    width: 20px;
-    height: 20px;
+    width: 2%;
+    height: 3.5%;
     background-image: url('../images/CloseButton.png');
     position: absolute;
-    top: 80px;
-    left: 960px;
+    top: 12%;
+    left: 86%;
     background-size: 100%;
     z-index: 7;
      /* 버튼 클릭 기능 */
@@ -111,33 +111,33 @@
      
     }
   .parent1 > div:nth-child(9){
-    width: 160px;
-    height: 18px;
+    width: 15%;
+    height: 3%;
     background-image: url('../images/IceFestival-kr.png');
     position: absolute;
-    top: 530px;
-    left: 200px;
+    top: 85%;
+    left: 17%;
     background-size: 100%;
     z-index: 8;
   }
   .parent1 > div:nth-child(10){
-    width: 130px;
-    height: 18px;
+    width: 12%;
+    height: 3%;
     background-image: url('../images/ArtMuseum-kr.png');
     position: absolute;
-    top: 530px;
-    left: 490px;
+    top: 85%;
+    left: 45%;
     background-size: 100%;
     z-index: 9;
   }
   .parent1 > div:nth-child(11){
-    width: 140px;
-    height: 18px;
+    width: 13%;
+    height: 3%;
     background-image: url('../images/ShoppingStore-kr.png');
     position: absolute;
-    top: 530px;
-    left: 760px;
+    top: 85%;
+    left: 70%;
     background-size: 100%;
     z-index: 10;
   }
-  
+ 
