@@ -21,18 +21,18 @@ body {
   background-image: url('../images/roombg.png');
 }
 
-.closet {
-  position: absolute;
-  height: 95%;
-  bottom: 3%;
-  left: 40%;
-}
-
 .character {
   position: absolute;
-  height: 100%;
+  height: 105%;
   right: 38%;
-  top: -5%;
+  top: -6%;
+}
+
+.closet {
+  position: absolute;
+  height: 93%;
+  bottom: 3%;
+  left: 35%;
 }
 
 /* 여기서부터.. */
@@ -125,9 +125,9 @@ body {
 
 .next-btn {
   position: absolute;
-  width: 7%;
+  width: 8%;
   left: 90%;
-  bottom: 5%;
+  bottom: 2%;
   z-index: 3;
 }
 
@@ -139,7 +139,7 @@ body {
 }
 
 /* 대표 이미지 */
-이미지 지워서 주석처리 */
+/* 이미지 지워서 주석처리 */
 .MainGame>.Knit {
   width: 1600px;
   height: 1500px;
