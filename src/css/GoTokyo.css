@@ -9,65 +9,65 @@
   
   .parent2 > div:nth-child(2){
     /* 이미지 크기 */
-    width: 300px; 
-    height: 72px;
+    width: 30%; 
+    height: 12.6%;
     position: absolute;
     background-image: url('../images/TOKYO.png');
     /* 이미지 위치 */
-    top: 110px;
-    left: 150px;
+    top: 17%;
+    left: 12%;
     z-index: 1;
     /* 이미지 가로 세로 비율은 그대로, 크기 줄이기 */
     background-size: 100%;
    
   }
   .parent2 > div:nth-child(3){
-    width: 520px;
-    height: 62px;
+    width: 47%;
+    height: 10%;
     position: absolute;
     background-image: url('../images/TOKYO-ex.png');
-    top: 115px;
-    left: 480px;
+    top: 18.5%;
+    left: 44%;
     z-index: 2;
     background-size: 100%;
   }
   .parent2 > div:nth-child(4){
-    width: 200px;
-    height: 20px;
+    width: 14%;
+    height: 2.5%;
     background-image: url('../images/SomeArea.png');
     position: absolute;
-    top: 230px;
-    left: 160px;
+    top: 36%;
+    left: 13.5%;
     background-size: 100%;
     z-index: 3;
   }
   .parent2 > div:nth-child(5){
-    width: 260px;
-    height: 240px;
+    width: 24%;
+    height: 39.2%;
     background-image: url('../images/Disneyland-img.png');
     position: absolute;
-    top: 280px;
-    left: 150px;
+    top: 43%;
+    left: 13%;
     background-size: 100%;
     z-index: 4;
   }
   .parent2 > div:nth-child(6){
-    width: 260px;
-    height: 240px;
+    width: 24%;
+    height: 39.2%;
     background-image: url('../images/UenoPark-img.png');
     position: absolute;
-    top: 283px;
-    left: 425px;
+    top: 43%;
+    left: 38%;
     background-size: 100%;
     z-index: 5;
   }
   .parent2 > div:nth-child(7){
-    width: 260px;
-    height: 240px;
+    width: 24%;
+    height: 39.2%;
     background-image: url('../images/Meiji-img.png');
     position: absolute;
-    top: 280px;
-    left: 700px;
+    top: 43%;
+    left: 63%;
     background-size: 100%;
     z-index: 6;
   }
@@ -91,12 +91,12 @@
      
     }
   .parent2 > div:nth-child(8){
-    width: 20px;
-    height: 20px;
+    width: 2%;
+    height: 3.5%;
     background-image: url('../images/CloseButton.png');
     position: absolute;
-    top: 80px;
-    left: 960px;
+    top: 12%;
+    left: 86%;
     background-size: 100%;
     z-index: 7;
     /* 버튼 클릭 기능 */
@@ -110,32 +110,32 @@
      
     }
   .parent2 > div:nth-child(9){
-    width: 100px;
-    height: 20px;
+    width: 9%;
+    height: 3%;
     background-image: url('../images/Disneyland-kr.png');
     position: absolute;
-    top: 530px;
-    left: 230px;
+    top: 85%;
+    left: 21%;
     background-size: 100%;
     z-index: 8;
   }
   .parent2 > div:nth-child(10){
-    width: 100px;
-    height: 20px;
+    width: 10%;
+    height: 3%;
     background-image: url('../images/UenoPark-kr.png');
     position: absolute;
-    top: 531px;
-    left:510px;
+    top: 85%;
+    left: 45%;
     background-size: 100%;
     z-index: 9;
   }
   .parent2 > div:nth-child(11){
-    width: 100px;
-    height: 20px;
+    width: 10%;
+    height: 3%;
     background-image: url('../images/Meiji-kr.png');
     position: absolute;
-    top: 530px;
-    left: 780px;
+    top: 85%;
+    left: 70%;
     background-size: 100%;
     z-index: 10;
   }

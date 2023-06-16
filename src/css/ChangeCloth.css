@@ -139,6 +139,7 @@ body {
 }
 
 /* 대표 이미지 */
+이미지 지워서 주석처리 */
 .MainGame>.Knit {
   width: 1600px;
   height: 1500px;
@@ -149,7 +150,7 @@ body {
   top: -200px;
   left: 650px;
   background-size: 100%;
-}
+} 
 
 .MainGame>.LongSkirt {
   width: 1600px;
@@ -161,7 +162,7 @@ body {
   top: -130px;
   left: 650px;
   background-size: 100%;
-}
+} 
 
 .MainGame>.Kimono {
   width: 1600px;
@@ -170,7 +171,7 @@ body {
   background-image: url('../images/Kimono.png');
   z-index: 110;
   /* 이미지 위치 */
-  top: -200px;
+   top: -200px;
   left: 300px;
   background-size: 100%;
-}
+} 

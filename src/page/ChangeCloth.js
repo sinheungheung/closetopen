@@ -108,6 +108,15 @@ const ChangeCloth = () => {
     setCurrentSetIndex(index3);
   };
 
+  // 캐릭터 이미지 위치와 크기 수정하기
+  const characterStyle = {
+    position: 'relative',
+    width: 1600,
+    height: 1200,
+    left: -240,
+    top: -90
+  };
+
   const Toplocation = [
     -90,-90,-90,-90,-90,-90,-90
   ]
@@ -127,9 +136,9 @@ const ChangeCloth = () => {
   return (
     <div className="MainGame">
 
-      <img className = "closet" src='/images/closet-open.png'/>
+      <div className="OpenCloset"></div>
       <div className="CharacterScreen">
-        <img className="character" src={`/images/character.png`} alt="" />
+        <img style={characterStyle} src="/static/media/Character.7095c84f89cd85df496c.png" />
         <img
           style={{ position: 'absolute', left: -240, top: Toplocation[currentTopIndex], width: 1600}}
           src={!currentSetIndex ? topClothes[currentTopIndex] : EmptyTop}
@@ -167,10 +176,10 @@ const ChangeCloth = () => {
         {!currentSetIndex && <img src={setClothes[currentSetIndex]} alt="세트 이미지" />}
         <img src={require('../images/RightButton.png')} onClick={nextSetSlide} alt="오른쪽" className="RightButton" />
       </div>
-      <img className="next-btn" src={`/images/nextbtn.png`}alt="" onClick={handleSubmit}/>
-      {/* <div className="Knit"></div>
-      <div className="LongSkirt"></div> */}
-      {/* <div className="Kimono"></div> */}
+      <div className="NextBtn_Up" onClick={handleSubmit}></div>
+      <div className="Knit"></div>
+      <div className="LongSkirt"></div> 
+      <div className="Kimono"></div>
     </div>
   );
 };
