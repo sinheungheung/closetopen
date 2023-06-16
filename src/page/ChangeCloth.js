@@ -126,8 +126,6 @@ const ChangeCloth = () => {
 
   return (
     <div className="MainGame">
-      
-
 
       <img className = "closet" src='/images/closet-open.png'/>
       <div className="CharacterScreen">
