@@ -25,12 +25,12 @@ body {
   position: absolute;
   height: 105%;
   right: 38%;
-  top: -6%;
+  top: -8%;
 }
 
 .closet {
   position: absolute;
-  height: 93%;
+  height: 97%;
   bottom: 3%;
   left: 35%;
 }
@@ -97,31 +97,84 @@ body {
   /* 이미지 버튼 사이의 간격을 조정 */
 }
 
-.LeftButton {
-  width: 100px;
-  height: 100px;
+.topLeftButton {
+  width: 5%;
   position: absolute;
-  background-image: url('../images/LeftButton.png');
   z-index: 9;
-  /* 이미지 위치 */
-  top: 30px;
-  left: 890px;
+  top: 27%;
+  left: 83%;
+}
 
-  background-size: 100%;
+.bottomLeftButton {
+  width: 5%;
+  position: absolute;
+  z-index: 9;
+  top: 60%;
+  left: 83%;
+}
+.setLeftButton {
+  width: 5%;
+  position: absolute;
+  z-index: 9;
+  top: 45%;
+  left: 63%;
+}
+
+.topRightButton {
+  width: 5%;
+  position: absolute;
+  z-index: 9;
+  top: 27%;
+  left: 66%;
+}
+
+.bottomRightButton {
+  width: 5%;
+  position: absolute;
+  z-index: 9;
+  top: 60%;
+  left: 66%;
+}
+
+.setRightButton {
+  width: 5%;
+  position: absolute;
+  z-index: 9;
+  top: 45%;
+  left: 45%;
+}
+
+.top{
+  width: 11%;
+  position: absolute;
+  z-index: 9;
+  top: 22%;
+  left: 71%;
+}
+
+.bottom{
+  width: 12%;
+  position: absolute;
+  z-index: 9;
+  top: 45%;
+  left: 71%;
+}
+
+.set{
+  width: 17%;
+  position: absolute;
+  z-index: 9;
+  top: 30%;
+  left: 48%;
 }
 
 
-.RightButton {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  background-image: url('../images/RightButton.png');
-  z-index: 9;
-  /* 이미지 위치 */
-  top: 20px;
-  left: 600px;
-  background-size: 100%;
-}
+
+
+
+
+
+
 
 .next-btn {
   position: absolute;

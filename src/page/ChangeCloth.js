@@ -7,7 +7,8 @@ import axios from "axios";
 // // 빈 이미지
 import Empty from '../images/Empty.png';
 import EmptyTop from '../images/EmptyTop.png'; //상의 초기화
-import EmptyBottom from '../images/EmptyBottom.png'; //하의 초기화
+// import EmptyBottom from '../images/EmptyBottom.png'; //하의 초기화
+import EmptyBottom from '../images/cloths/bottom.png'; //하의 초기화
 
 // 상의 이미지
 import ShortTshirt from '../images/ShortTshirt-Empty.png';
@@ -18,12 +19,19 @@ import Cardigan from '../images/Cardigan-Empty.png';
 import Blouse from '../images/Blouse-Empty.png';
 
 // 하의 이미지
-import LongSkirt from '../images/LongSkirt.png';
-import Slacks from '../images/Slacks.png';
-import JoggerPants from '../images/JoggerPants.png';
-import CargoPants from '../images/CargoPants.png';
-import Jeans from '../images/Jeans.png';
-import Skirt from '../images/Skirt.png';
+// import LongSkirt from '../images/LongSkirt.png';
+// import Slacks from '../images/Slacks.png';
+// import JoggerPants from '../images/JoggerPants.png';
+// import CargoPants from '../images/CargoPants.png';
+// import Jeans from '../images/Jeans.png';
+// import Skirt from '../images/Skirt.png';
+import LongSkirt from '../images/cloths/longskirt.png';
+import Slacks from '../images/cloths/slacks.png';
+import JoggerPants from '../images/cloths/joggerpants.png';
+import CargoPants from '../images/cloths/cargopants.png';
+import Jeans from '../images/cloths/jeans.png';
+import Skirt from '../images/cloths/shortskirt.png';
+
 
 // 세트 이미지
 import Onepiece from '../images/Onepiece-Empty.png';
@@ -36,6 +44,8 @@ const ChangeCloth = () => {
   const topClothes = [EmptyTop, ShortTshirt, Knit, WindBreaker, Short, Cardigan, Blouse];
   const bottomClothes = [EmptyBottom, LongSkirt, Slacks, JoggerPants, CargoPants, Jeans, Skirt];
   const setClothes = [Empty, Onepiece, Tteokbokkicoat, Kimono];
+
+  const t_bottomClothes = [EmptyBottom, LongSkirt, Slacks, JoggerPants, CargoPants, Jeans, Skirt];
 
   const [currentTopIndex, setCurrentTopIndex] = useState(0);
   const [currentBottomIndex, setCurrentBottomIndex] = useState(0);
@@ -144,30 +154,47 @@ const ChangeCloth = () => {
       </div>
 
       {/* 상의 이미지 */}
-      <div className="TopSlider">
+      <img src={require('../images/LeftButton.png')} onClick={previousTopSlide} alt="왼쪽" className="topLeftButton" />
+      <img src={require('../images/Knit.png')}  className="top" /> {/*임시 이미지*/}
+      <img src={require('../images/RightButton.png')} onClick={nextTopSlide} alt="오른쪽" className="topRightButton" />
+
+      {/* 하의 이미지 */}
+      <img src={require('../images/LeftButton.png')} onClick={previousBottomSlide} alt="왼쪽" className="bottomLeftButton" />
+      <img src={!currentSetIndex ? t_bottomClothes[currentBottomIndex] : '../images/cloths/longskirt.png'} className="bottom" />
+      <img src={require('../images/RightButton.png')} onClick={nextBottomSlide} alt="오른쪽" className="bottomRightButton" />
+
+     {/* 세트 이미지 */}
+      <img src={require('../images/LeftButton.png')} onClick={previousSetSlide} alt="왼쪽" className="setLeftButton" />
+      <img src={require('../images/cloths/kimono.png')}  className="set" />
+      <img src={require('../images/RightButton.png')} onClick={nextSetSlide} alt="오른쪽" className="setRightButton" />
+      
+      {/* 상의 이미지 */}
+      {/* <div className="TopSlider">
         <>
           <img src={require('../images/LeftButton.png')} onClick={previousTopSlide} alt="왼쪽" className="LeftButton" />
           <img src={topClothes[currentTopIndex]} alt="상의 이미지" />
           <img src={require('../images/RightButton.png')} onClick={nextTopSlide} alt="오른쪽" className="RightButton" />
         </>
-      </div>
+      </div> */}
+
+      {/* <img src={require('../images/LeftButton.png')} onClick={previousSetSlide} alt="왼쪽" className="setLeftButton" /> */}
 
       {/* 하의 이미지 */}
-      <div className="BottomSlider">
+      {/* <div className="BottomSlider">
         <>
           <img src={require('../images/LeftButton.png')} onClick={previousBottomSlide} alt="왼쪽" className="LeftButton" />
           <img src={bottomClothes[currentBottomIndex]} alt="하의 이미지" />
           <img src={require('../images/RightButton.png')} onClick={nextBottomSlide} alt="오른쪽" className="RightButton" />
         </>
-      </div>
+      </div> */}
 
       {/* 세트 이미지 */}
-      <div className="SetSlider">
+      {/* <div className="SetSlider">
         <img src={require('../images/LeftButton.png')} onClick={previousSetSlide} alt="왼쪽" className="LeftButton" />
         {!currentSetIndex && <img src={setClothes[currentSetIndex]} alt="세트 이미지" />}
         <img src={require('../images/RightButton.png')} onClick={nextSetSlide} alt="오른쪽" className="RightButton" />
       </div>
-      <img className="next-btn" src={`/images/nextbtn.png`}alt="" onClick={handleSubmit}/>
+      <img className="next-btn" src={`/images/nextbtn.png`}alt="" onClick={handleSubmit}/> */}
       {/* <div className="Knit"></div>
       <div className="LongSkirt"></div> */}
       {/* <div className="Kimono"></div> */}
