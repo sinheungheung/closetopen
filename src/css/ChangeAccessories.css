@@ -5,38 +5,84 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('../images/roombg.png');
-  }
-  
-  .character {
+}
+
+.character {
     position: absolute;
     height: 105%;
     right: 38%;
     top: -8%;
-  }
-  
-  .closet-a {
+}
+
+.closet-a {
     position: absolute;
     height: 80%;
     bottom: 3%;
     left: 30%;
-  }
+}
 
-  .top-a{
+.top-a {
     width: 21%;
     position: absolute;
     z-index: 9;
     left: 10%;
-  }
-  
-  .bottom-a{
+}
+
+.bottom-a {
     width: 15.5%;
     position: absolute;
     z-index: 8;
     left: 13.1%;
-  }
-  
-  .set-a{
+}
+
+.set-a {
     width: 20%;
     z-index: 10;
     left: 11%;
-  }
+}
+
+.accessorieLeftButton {
+    width: 5%;
+    position: absolute;
+    z-index: 9;
+    top: 45%;
+    left: 82%;
+}
+
+.accessorieRightButton {
+    width: 5%;
+    position: absolute;
+    z-index: 9;
+    top: 45%;
+    left: 46%;
+}
+
+.accessorie{
+    width: 10%;
+    position: absolute;
+    z-index: 9;
+    top: 37%;
+}
+
+.shoesLeftButton {
+    width: 5%;
+    position: absolute;
+    z-index: 9;
+    top: 63%;
+    left: 82%;
+}
+
+.shoesRightButton {
+    width: 5%;
+    position: absolute;
+    z-index: 9;
+    top: 63%;
+    left: 46%;
+}
+
+.shoes{
+    width: 10%;
+    position: absolute;
+    z-index: 9;
+    top: 60%;
+}

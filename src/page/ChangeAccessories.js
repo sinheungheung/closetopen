@@ -32,6 +32,35 @@ const ChangeAccessories = () => {
   const bottomIndex = bottomClothesName.findIndex(item => item === value.bottom);
   const setIndex = setClothesName.findIndex(item => item === value.set);
 
+
+  const accessories = ['/images/cloths/hat1.png', '/images/cloths/hat2.png', '/images/cloths/flower.png', '/images/cloths/glasses.png', '/images/cloths/headset.png', '/images/cloths/rebbon.png'];
+  const shoeses = ['/images/cloths/shoes1.png', '/images/cloths/shoes2.png', '/images/cloths/shoes3.png', '/images/cloths/shoes4.png', '/images/cloths/shoes5.png', '/images/cloths/shoes6.png'];
+
+  const [currentAccessorieIndex, setCurrenttAccessorieIndex] = useState(0);
+  const [currentShoesIndex, setCurrentShoesIndex] = useState(0);
+
+  const nextAccessorieSlide = () => {
+    const lastIndex1 = accessories.length - 1;
+    const index1 = currentAccessorieIndex === 0 ? lastIndex1 : currentAccessorieIndex - 1;
+    setCurrenttAccessorieIndex(index1);
+  };
+  const previousAccessorieSlide = () => {
+    const lastIndex1 = accessories.length - 1;
+    const index1 = currentAccessorieIndex === lastIndex1 ? 0 : currentAccessorieIndex + 1;
+    setCurrenttAccessorieIndex(index1);
+  };
+
+  const nextShoesSlide = () => {
+    const lastIndex1 = shoeses.length - 1;
+    const index1 = currentShoesIndex === 0 ? lastIndex1 : currentShoesIndex - 1;
+    setCurrentShoesIndex(index1);
+  };
+  const previousShoesSlide = () => {
+    const lastIndex1 = shoeses.length - 1;
+    const index1 = currentShoesIndex === lastIndex1 ? 0 : currentShoesIndex + 1;
+    setCurrentShoesIndex(index1);
+  };
+
   return (
     <div className="MainGame">
       <img className = "closet-a" src='/images/closet-open2.png'/>
@@ -55,6 +84,18 @@ const ChangeAccessories = () => {
           className='set-a'
         />
       </div>
+
+      <img src={require('../images/LeftButton.png')} onClick={previousAccessorieSlide} className="accessorieLeftButton" />
+      <img src={accessories[currentAccessorieIndex]} style={{left:'51%'}}className="accessorie"/> 
+      <img src={accessories[currentAccessorieIndex+1]} style={{left:'62%'}} className="accessorie"/> 
+      <img src={accessories[currentAccessorieIndex+2]} style={{left:'73%'}} className="accessorie"/> 
+      <img src={require('../images/RightButton.png')} onClick={nextAccessorieSlide} className="accessorieRightButton" />
+
+      <img src={require('../images/LeftButton.png')} onClick={previousShoesSlide} className="shoesLeftButton" />
+      <img src={shoeses[currentShoesIndex]} style={{left:'51%'}}className="shoes"/> 
+      <img src={shoeses[currentShoesIndex+1]} style={{left:'62%'}} className="shoes"/> 
+      <img src={shoeses[currentShoesIndex+2]} style={{left:'73%'}} className="shoes"/> 
+      <img src={require('../images/RightButton.png')} onClick={nextShoesSlide} className="shoesRightButton" />
     </div>
   )
 }
