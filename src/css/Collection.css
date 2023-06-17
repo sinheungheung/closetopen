@@ -34,26 +34,6 @@
     background-size: 100%;
     z-index: 2;
     }
-    .collection  > .CollectBox2{
-    width:1400px;
-    height: 1860px;
-    background-image: url('../images/CollectBox.png');
-    position: absolute;
-    top: 500px;
-    left: 1850px;
-    background-size: 100%;
-    z-index: 3;
-        }
-        .collection  > .CollectBox3{
-    width:1400px;
-    height: 1860px;
-    background-image: url('../images/CollectBox.png');
-    position: absolute;
-    top: 500px;
-    left: 3400px;
-    background-size: 100%;
-    z-index: 4;
-            }
 
     .collection  > .CollectLeft{
         width:300px;
