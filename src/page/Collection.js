@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../css/Collection.css";
 import { useNavigate } from "react-router-dom";
 
@@ -6,7 +6,7 @@ const Collection = () => {
   const navigate = useNavigate();
   const [hover, setHover] = useState(false);
   const [position, setPosition] = useState(0);
-  const [boxCount, setBoxCount] = useState(1); // Track the number of CollectBox elements
+  const [boxCount, setBoxCount] = useState(3); // Set the initial number of CollectBox elements
 
   // X를 누르면 /Storytelling2페이지로 이동
   function handleClick() {
@@ -38,6 +38,11 @@ const Collection = () => {
     }
     return boxes;
   };
+
+  useEffect(() => {
+    // Set the initial number of CollectBox elements to 3 on component mount
+    setBoxCount(3);
+  }, []);
 
   return (
     <div className="main">
