@@ -29,17 +29,18 @@ db.connect((err) =>{
 
 
 app.post('/game', (req, res)=>{
-    console.log(req.body.top);
-    //    const sql = "INSERT INTO collection ('top', 'bottom', 'set') VALUES (?, ?, ?)";
-    const sql = "INSERT INTO collection (`top`) VALUES (?)";
+    console.log(req.body);
+    const sql = "INSERT INTO collection (`top`, `bottom`, `set`) VALUES (?, ?, ?)";
     const values = [
-        req.body.top
-        // req.body.top,
-        // req.body.bottom,
-        // req.body.set
+        req.body.top,
+        req.body.bottom,
+        req.body.set
     ];
     db.query(sql, values, (err, result)=>{
-        if(err) return res.json({Error: "Inserting data Error in server"});
+        if(err){
+            console.log(err);
+        return res.json({Error: "Inserting data Error in server"});
+        }
         return res.json({Status : "Success"});
     })
 })
