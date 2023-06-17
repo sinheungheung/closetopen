@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
 import '../css/ChangeCloth.css';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import axios from "axios";
 
 const ChangeCloth = () => {
   const movePage = useNavigate();
+  const location = useLocation();
+  const place = location.state.value;
 
   // 상의 이미지
   const EmptyTop = ['/images/cloths/top.png', '/images/cloths/top-c.png'];
@@ -54,7 +56,7 @@ const ChangeCloth = () => {
       .then(res => {
         console.log(res);
         if (res.data.Status === "Success") {
-          movePage('/ChangeAccessories');
+          movePage('/ChangeAccessories', { state : { value : place}});
         } else {
           alert("Error");
         }

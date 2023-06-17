@@ -35,7 +35,7 @@ function Storytelling1() {
       setDisplayText('');
       setButtonDisabled(true);
     } else {
-      navigate('/ChangeCloth');
+      navigate('/ChangeCloth', { state : { value : place}}); 
     }
   };
 

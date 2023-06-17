@@ -1,11 +1,14 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
 import '../css/ChangeAccessories.css';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import axios from "axios";
 
 const ChangeAccessories = () => {
   const movePage = useNavigate();
+  const location = useLocation();
+  const place = location.state.value;
+
   const [value, setValues] = useState([]);
 
   useEffect(()=>{
@@ -85,7 +88,7 @@ const ChangeAccessories = () => {
     .then(res => {
       console.log(res);
       if (res.data.Status === "Success") {
-        movePage('/secondstorytelling');
+        movePage('/secondstorytelling', { state : { value : place}});
       } else {
         alert("Error");
       }
