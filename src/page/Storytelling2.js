@@ -36,7 +36,7 @@ function Storytelling2() {
   const [buttonDisabled, setButtonDisabled] = useState(false);
 
   const changeLine = () => {
-    if (line < 2) {
+    if (line < 4) {
       setLine(line + 1);
       setDisplayText('');
       setButtonDisabled(true);

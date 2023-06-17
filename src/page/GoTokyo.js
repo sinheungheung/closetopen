@@ -7,7 +7,7 @@ const movePage = useNavigate();
 const [hover, setHover] = useState(false);
 
 function goStory() {
-  navigate('/secondstorytelling', { state : { value : 'tokyo'}});
+  navigate('/firststorytelling', { state : { value : 'tokyo'}});
 }
 
 const handleMouseOver = () => {
