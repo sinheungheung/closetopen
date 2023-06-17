@@ -8,7 +8,7 @@ const ChangeAccessories = () => {
   const movePage = useNavigate();
   const location = useLocation();
   const place = location.state.value;
-
+  
   const [value, setValues] = useState([]);
 
   useEffect(()=>{
@@ -38,7 +38,10 @@ const ChangeAccessories = () => {
 
   const accessories = ['/images/cloths/hat1.png', '/images/cloths/hat2.png', '/images/cloths/flower.png', '/images/cloths/glasses.png', '/images/cloths/headset.png', '/images/cloths/rebbon.png'];
   const accessories_c = ['/images/cloths/hat1-c.png', '/images/cloths/hat2-c.png', '/images/cloths/flower-c.png', '/images/cloths/glasses-c.png', '/images/cloths/headset-c.png', '/images/cloths/rebbon-c.png'];
+  const accessories_db = ['hat1-c.png', 'hat2-c.png', 'flower-c.png', 'glasses-c.png', 'headset-c.png', 'rebbon-c.png'];
+
   const shoeses = ['/images/cloths/shoes1.png', '/images/cloths/shoes2.png', '/images/cloths/shoes3.png', '/images/cloths/shoes4.png', '/images/cloths/shoes5.png', '/images/cloths/shoes6.png'];
+  const shoeses_db = ['shoes1.png', 'shoes2.png', 'shoes3.png', 'shoes4.png', 'shoes5.png', 'shoes6.png'];
 
   const [currentAccessorieIndex, setCurrenttAccessorieIndex] = useState(0);
   const [currentShoesIndex, setCurrentShoesIndex] = useState(0);
@@ -81,8 +84,8 @@ const ChangeAccessories = () => {
     event.preventDefault();
     const data = {
       id:value.id,
-      accessorie:accessories_c[characterAccessorie],
-      shoes:shoeses[characterShoes]
+      accessorie:accessories_db[characterAccessorie],
+      shoes:shoeses_db[characterShoes]
     }
     axios.post('http://localhost:5000/game/accessorie', data)
     .then(res => {
