@@ -45,7 +45,7 @@
     width: 5%;
     position: absolute;
     z-index: 9;
-    top: 45%;
+    top: 48%;
     left: 82%;
 }
 
@@ -53,7 +53,7 @@
     width: 5%;
     position: absolute;
     z-index: 9;
-    top: 45%;
+    top: 48%;
     left: 46%;
 }
 
@@ -61,14 +61,14 @@
     width: 10%;
     position: absolute;
     z-index: 9;
-    top: 37%;
+    top: 40%;
 }
 
 .shoesLeftButton {
     width: 5%;
     position: absolute;
     z-index: 9;
-    top: 63%;
+    top: 65%;
     left: 82%;
 }
 
@@ -76,7 +76,7 @@
     width: 5%;
     position: absolute;
     z-index: 9;
-    top: 63%;
+    top: 65%;
     left: 46%;
 }
 
@@ -84,5 +84,18 @@
     width: 10%;
     position: absolute;
     z-index: 9;
-    top: 60%;
+    top: 62%;
+}
+
+.accessorie-c{
+    width: 16%;
+    position: absolute;
+    z-index: 9;
+}
+
+.shoes-c{
+    width: 16%;
+    position: absolute;
+    z-index: 9;
+    left: 13.1%; 
 }
