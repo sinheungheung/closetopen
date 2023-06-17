@@ -8,7 +8,7 @@ const GoOsaka = () => {
   const [hover, setHover] = useState(false);
 
   function goStory() {
-    navigate('/firststorytelling', { state : { value : 'osaka'}});
+    navigate('/secondstorytelling', { state : { value : 'osaka'}});
   }
   const handleMouseOver = () => {
     setHover(true);

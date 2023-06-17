@@ -11,7 +11,7 @@ import GoSapporo from './page/GoSapporo';
 import GameStart from './page/GameStart';
 import ChangeCloth from './page/ChangeCloth';
 import Storytelling1 from './page/Storytelling1';
-
+import Storytelling2 from './page/Storytelling2';
 import backgroundMusicFile from './sound/Music.mp3';
 import ChangeAccessories from './page/ChangeAccessories';
 
@@ -36,6 +36,7 @@ function App() {
         <Route path='/ChangeCloth' element={<ChangeCloth/>}/>
         <Route path='/ChangeAccessories' element={<ChangeAccessories/>}/>
         <Route path='/firststorytelling' element={<Storytelling1/>}/>
+        <Route path='/secondstorytelling' element={<Storytelling2/>}/>
       </Routes>
     </div>
   );
