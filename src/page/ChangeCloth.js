@@ -4,50 +4,37 @@ import '../css/ChangeCloth.css';
 import { useNavigate } from 'react-router-dom';
 import axios from "axios";
 
-// // 빈 이미지
-import EmptyTop from '../images/cloths/top.png'; //상의 초기화
-import EmptyTop_c from '../images/cloths/top-c.png';
-import EmptyBottom from '../images/cloths/bottom.png'; //하의 초기화
-
-// 상의 이미지
-import ShortTshirt from '../images/cloths/tshirt.png';
-import Knit from '../images/cloths/knit.png';
-import WindBreaker from '../images/cloths/windbreaker.png';
-import Shirt from '../images/cloths/shirt.png';
-import Cardigan from '../images/cloths/cardigan.png';
-import Blouse from '../images/cloths/blouse.png';
-// 캐릭터 상의(머리카락부분제외)
-import ShortTshirt_c from '../images/cloths/tshirt-c.png';
-import Knit_c from '../images/cloths/knit-c.png';
-import WindBreaker_c from '../images/cloths/windbreaker-c.png';
-import Shirt_c from '../images/cloths/shirt-c.png';
-import Cardigan_c from '../images/cloths/cardigan-c.png';
-import Blouse_c from '../images/cloths/blouse-c.png';
-
-// 하의 이미지
-import LongSkirt from '../images/cloths/longskirt.png';
-import Slacks from '../images/cloths/slacks.png';
-import JoggerPants from '../images/cloths/joggerpants.png';
-import CargoPants from '../images/cloths/cargopants.png';
-import Jeans from '../images/cloths/jeans.png';
-import Skirt from '../images/cloths/shortskirt.png';
-
-
-// 세트 이미지
-import Onepiece from '../images/cloths/onepiece.png';
-import Tteokbokkicoat from '../images/cloths/coat.png';
-import Kimono from '../images/cloths/kimono.png';
-
 const ChangeCloth = () => {
   const movePage = useNavigate();
 
-  const topClothes = [EmptyTop, ShortTshirt, Knit, WindBreaker, Shirt, Cardigan, Blouse];
-  const topClothes_c = [EmptyTop_c, ShortTshirt_c, Knit_c, WindBreaker_c, Shirt_c, Cardigan_c, Blouse_c];
-  const topClothes_db = ['top.png', 'tshirt.png', 'knit.png', 'windbreaker.png', 'shirt.png', 'cardigan.png', 'blouse.png'];
+  // 상의 이미지
+  const EmptyTop = ['/images/cloths/top.png', '/images/cloths/top-c.png'];
+  const ShortTshirt = ['/images/cloths/tshirt.png', '/images/cloths/tshirt-c.png'];
+  const Knit = ['/images/cloths/tshirt.png', '/images/cloths/tshirt-c.png'];
+  const WindBreaker = ['/images/cloths/windbreaker.png', '/images/cloths/windbreaker-c.png'];
+  const Shirt = ['/images/cloths/shirt.png', '/images/cloths/shirt-c.png'];
+  const Cardigan = ['/images/cloths/cardigan.png', '/images/cloths/cardigan-c.png'];
+  const Blouse = ['/images/cloths/blouse.png', '/images/cloths/blouse-c.png'];
+  const topClothes = [EmptyTop[0], ShortTshirt[0], Knit[0], WindBreaker[0], Shirt[0], Cardigan[0], Blouse[0]];
+  const topClothes_c = [EmptyTop[1], ShortTshirt[1], Knit[1], WindBreaker[1], Shirt[1], Cardigan[1], Blouse[1]];
+  const topClothes_db = ['top-c.png', 'tshirt-c.png', 'knit-c.png', 'windbreaker-c.png', 'shirt-c.png', 'cardigan-c.png', 'blouse-c.png'];
 
+
+  // 하의 이미지
+  const EmptyBottom = '../images/cloths/bottom.png'; 
+  const LongSkirt = '/images/cloths/longskirt.png';
+  const Slacks = '/images/cloths/slacks.png';
+  const JoggerPants = '/images/cloths/joggerpants.png';
+  const CargoPants = '/images/cloths/cargopants.png';
+  const Jeans = '/images/cloths/jeans.png';
+  const Skirt = '/images/cloths/shortskirt.png';
   const bottomClothes = [EmptyBottom, LongSkirt, Slacks, JoggerPants, CargoPants, Jeans, Skirt];
   const bottomClothes_db = ['bottom.png', 'longskirt.png', 'slacks.png', 'joggerpants.png', 'cargopants.png', 'jeans.png', 'shortskirt.png'];
 
+  // 세트 이미지
+  const Onepiece = '/images/cloths/onepiece.png';
+  const Tteokbokkicoat = '/images/cloths/coat.png';
+  const Kimono = '/images/cloths/kimono.png';
   const setClothes = ["", Onepiece, Tteokbokkicoat, Kimono];
   const setClothes_db = ["", 'onepiece.png', 'coat.png', 'kimono.png'];
 
@@ -63,7 +50,7 @@ const ChangeCloth = () => {
       set: setClothes_db[currentSetIndex]
     };
     console.log(data);
-    axios.post('http://localhost:5000/game', data)
+    axios.post('http://localhost:5000/game/cloth', data)
       .then(res => {
         console.log(res);
         if (res.data.Status === "Success") {
@@ -118,7 +105,7 @@ const ChangeCloth = () => {
   return (
     <div className="MainGame">
 
-      <img className = "closet" src='/images/closet-open.png'/>
+      <img className = "closet-c" src='/images/closet-open.png'/>
       <div className="CharacterScreen">
         <img className="character" src={`/images/character.png`} alt="" />
         <img
