@@ -1,29 +1,89 @@
-.Main{
-    position: relative;
+.main {
     width: 100vw;
     height: 100vh;
-    background-image: url('../images/roombg.png');
-    background-size: cover;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .collection {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-repeat: no-repeat;
-    background-position: center;
-}
-
-.Main > div:nth-child(1){
-    width: 2%;
-    height: 3.5%;
+    background-size: cover;
+    background-image: url('../images/roombg.png');
+  }
+  
+  .collection > div:nth-child(1) {
+    width: 3%;
+    height: 5.3%;
     background-image: url('../images/CloseButton.png');
     position: absolute;
-    top: 12%;
-    left: 86%;
+    top: 4%;
+    left: 95%;
     background-size: 100%;
     z-index: 1;
-    /* 버튼 클릭 기능 */
     transition-duration: 0.3s;
-}
-  /* 버튼 클릭 효과 */
-  .CloseButton:active{
+  }
+  
+  .CloseButton:active {
     margin-left: 2px;
     margin-top: 2px;
     box-shadow: none;
-     
-    }
+  }
+  
+  .collection > .CollectContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition-duration: 0.3s;
+  }
+  
+  .collection > .CollectContainer > div {
+    width: 1400px;
+    height: 1860px;
+    background-image: url('../images/CollectBox.png');
+    background-size: 100%;
+  }
+  
+  .collection > .CollectLeft {
+    width: 300px;
+    height: 300px;
+    background-image: url('../images/CollectLeft.png');
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    background-size: 100%;
+    z-index: 5;
+    transition-duration: 0.3s;
+  }
+  
+  .CollectLeft:active {
+    margin-left: 2px;
+    margin-top: 2px;
+    box-shadow: none;
+  }
+  
+  .collection > .CollectRight {
+    width: 300px;
+    height: 300px;
+    background-image: url('../images/CollectRight.png');
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    background-size: 100%;
+    z-index: 6;
+    transition-duration: 0.3s;
+  }
+  
+  .CollectRight:active {
+    margin-left: 2px;
+    margin-top: 2px;
+    box-shadow: none;
+  }
+  
