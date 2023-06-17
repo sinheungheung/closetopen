@@ -101,7 +101,7 @@ body {
   width: 5%;
   position: absolute;
   z-index: 9;
-  top: 27%;
+  top: 25%;
   left: 83%;
 }
 
@@ -109,7 +109,7 @@ body {
   width: 5%;
   position: absolute;
   z-index: 9;
-  top: 60%;
+  top: 56%;
   left: 83%;
 }
 .setLeftButton {
@@ -124,7 +124,7 @@ body {
   width: 5%;
   position: absolute;
   z-index: 9;
-  top: 27%;
+  top: 25%;
   left: 66%;
 }
 
@@ -132,7 +132,7 @@ body {
   width: 5%;
   position: absolute;
   z-index: 9;
-  top: 60%;
+  top: 56%;
   left: 66%;
 }
 
@@ -145,36 +145,49 @@ body {
 }
 
 .top{
-  width: 11%;
+  width: 18%;
   position: absolute;
   z-index: 9;
-  top: 22%;
-  left: 71%;
+  top: 20%;
+  left: 68%;
 }
 
 .bottom{
-  width: 12%;
+  width: 14%;
   position: absolute;
   z-index: 9;
-  top: 45%;
-  left: 71%;
+  top: 41%;
+  left: 70%;
 }
 
 .set{
-  width: 17%;
+  width: 20%;
   position: absolute;
-  z-index: 9;
-  top: 30%;
-  left: 48%;
+  z-index: 10;
+  top: 22%;
+  left: 46%;
 }
 
+.top-c{
+  width: 21%;
+  position: absolute;
+  z-index: 9;
+  top: 27%;
+  left: 10.2%;
+}
 
+.bottom-c{
+  width: 15.5%;
+  position: absolute;
+  z-index: 9;
+  left: 13.1%;
+}
 
-
-
-
-
-
+.set-c{
+  width: 20%;
+  z-index: 10;
+  left: 11%;
+}
 
 .next-btn {
   position: absolute;
