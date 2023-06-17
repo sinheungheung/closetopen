@@ -1,0 +1,42 @@
+.MainGame {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../images/roombg.png');
+  }
+  
+  .character {
+    position: absolute;
+    height: 105%;
+    right: 38%;
+    top: -8%;
+  }
+  
+  .closet-a {
+    position: absolute;
+    height: 80%;
+    bottom: 3%;
+    left: 30%;
+  }
+
+  .top-a{
+    width: 21%;
+    position: absolute;
+    z-index: 9;
+    left: 10%;
+  }
+  
+  .bottom-a{
+    width: 15.5%;
+    position: absolute;
+    z-index: 8;
+    left: 13.1%;
+  }
+  
+  .set-a{
+    width: 20%;
+    z-index: 10;
+    left: 11%;
+  }

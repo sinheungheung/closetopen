@@ -27,8 +27,8 @@ db.connect((err) =>{
     else console.log("MYSQL Connection Success");
 })
 
-
-app.post('/game', (req, res)=>{
+// 
+app.post('/game/cloth', (req, res)=>{
     console.log(req.body);
     const sql = "INSERT INTO collection (`top`, `bottom`, `set`) VALUES (?, ?, ?)";
     const values = [
@@ -42,6 +42,15 @@ app.post('/game', (req, res)=>{
         return res.json({Error: "Inserting data Error in server"});
         }
         return res.json({Status : "Success"});
+    })
+})
+
+app.get('/getcloths', (req, res)=>{
+    console.log(req.body);
+    const sql = "SELECT * FROM collection ORDER BY id DESC LIMIT 1";
+    db.query(sql, (err, result)=>{
+        if(err) return res.json({Error: "Inserting data Error in server"});
+        return res.json(result);
     })
 })
 
