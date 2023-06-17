@@ -14,6 +14,7 @@ import Storytelling1 from './page/Storytelling1';
 import Storytelling2 from './page/Storytelling2';
 import backgroundMusicFile from './sound/Music.mp3';
 import ChangeAccessories from './page/ChangeAccessories';
+import Collection from './page/Collection';
 
 function App() {
   const [isPlaying] = useState(true);
@@ -37,6 +38,7 @@ function App() {
         <Route path='/ChangeAccessories' element={<ChangeAccessories/>}/>
         <Route path='/firststorytelling' element={<Storytelling1/>}/>
         <Route path='/secondstorytelling' element={<Storytelling2/>}/>
+        <Route path='/Collection' element={<Collection/>}/>
       </Routes>
     </div>
   );

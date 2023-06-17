@@ -1,0 +1,29 @@
+.Main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/roombg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Main > div:nth-child(1){
+    width: 2%;
+    height: 3.5%;
+    background-image: url('../images/CloseButton.png');
+    position: absolute;
+    top: 12%;
+    left: 86%;
+    background-size: 100%;
+    z-index: 1;
+    /* 버튼 클릭 기능 */
+    transition-duration: 0.3s;
+}
+  /* 버튼 클릭 효과 */
+  .CloseButton:active{
+    margin-left: 2px;
+    margin-top: 2px;
+    box-shadow: none;
+     
+    }
