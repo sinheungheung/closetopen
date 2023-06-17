@@ -6,7 +6,7 @@ const Collection = () => {
   const navigate = useNavigate();
   const [hover, setHover] = useState(false);
   const [position, setPosition] = useState(0);
-  const [boxCount, setBoxCount] = useState(3); // Set the initial number of CollectBox elements
+  const [boxCount, setBoxCount] = useState(3); // 첫 시작화면에 CollectBox 3개 보여주기
 
   // X를 누르면 /Storytelling2페이지로 이동
   function handleClick() {
@@ -14,20 +14,20 @@ const Collection = () => {
   }
 
   function handleLeftClick() {
-    setPosition((prevPosition) => prevPosition - 1400); // Adjust the value according to your needs
-    setBoxCount((prevCount) => prevCount + 1); // Increment the box count
+    setPosition((prevPosition) => prevPosition - 1400); 
+    setBoxCount((prevCount) => prevCount + 1); 
   }
 
   function handleRightClick() {
-    setPosition((prevPosition) => prevPosition + 1400); // Adjust the value according to your needs
-    setBoxCount((prevCount) => prevCount + 1); // Increment the box count
+    setPosition((prevPosition) => prevPosition + 1400); 
+    setBoxCount((prevCount) => prevCount + 1); 
   }
 
-  // Generate CollectBox elements based on boxCount
+  
   const generateCollectBoxes = () => {
     const boxes = [];
     for (let i = 0; i < boxCount; i++) {
-      const leftPosition = 300 + i * 1550; // Adjust the left position according to your needs
+      const leftPosition = 300 + i * 1550; 
       boxes.push(
         <div
           className={`CollectBox CollectBox${i + 1}`}
@@ -40,7 +40,6 @@ const Collection = () => {
   };
 
   useEffect(() => {
-    // Set the initial number of CollectBox elements to 3 on component mount
     setBoxCount(3);
   }, []);
 
