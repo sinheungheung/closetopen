@@ -86,7 +86,7 @@
         transition-duration: 0.3s;
     }
      /* 버튼 클릭 효과 */
-     .CollectRight:active{
+    .CollectRight :active{
         margin-left: 2px;
         margin-top: 2px;
         box-shadow: none;      
