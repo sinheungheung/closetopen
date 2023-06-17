@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from "axios";
 
 const ChangeAccessories = () => {
-  
+  const movePage = useNavigate();
   const [value, setValues] = useState([]);
 
   useEffect(()=>{
@@ -32,7 +32,6 @@ const ChangeAccessories = () => {
   const topIndex = topClothesName.findIndex(item => item === value.top);
   const bottomIndex = bottomClothesName.findIndex(item => item === value.bottom);
   const setIndex = setClothesName.findIndex(item => item === value.set);
-
 
   const accessories = ['/images/cloths/hat1.png', '/images/cloths/hat2.png', '/images/cloths/flower.png', '/images/cloths/glasses.png', '/images/cloths/headset.png', '/images/cloths/rebbon.png'];
   const accessories_c = ['/images/cloths/hat1-c.png', '/images/cloths/hat2-c.png', '/images/cloths/flower-c.png', '/images/cloths/glasses-c.png', '/images/cloths/headset-c.png', '/images/cloths/rebbon-c.png'];
@@ -74,6 +73,25 @@ const ChangeAccessories = () => {
     const index = shoeses.findIndex(item => item === src);
     setCharacterShoes(index);
   };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const data = {
+      id:value.id,
+      accessorie:accessories_c[characterAccessorie],
+      shoes:shoeses[characterShoes]
+    }
+    axios.post('http://localhost:5000/game/accessorie', data)
+    .then(res => {
+      console.log(res);
+      if (res.data.Status === "Success") {
+        movePage('/secondstorytelling');
+      } else {
+        alert("Error");
+      }
+    })
+    .catch(err => console.log(err))
+  }
 
   // 악세사리 위치 지정
   const accessorieTopLocation = ["4%","1%","8%","4%","1%","4%","4%","4%"]
@@ -126,6 +144,9 @@ const ChangeAccessories = () => {
       <img src={shoeses[currentShoesIndex+1]} style={{left:'61.5%'}} onClick={() => clickShoesHandler(shoeses[currentShoesIndex+1])} className="shoes"/> 
       <img src={shoeses[currentShoesIndex+2]} style={{left:'72.5%'}} onClick={() => clickShoesHandler(shoeses[currentShoesIndex+2])} className="shoes"/> 
       <img src={require('../images/RightButton.png')} onClick={nextShoesSlide} className="shoesRightButton" />
+    
+      <img className="complete-btn" src={`/images/complete.png`} alt="" onClick={handleSubmit}/> 
+
     </div>
   )
 }

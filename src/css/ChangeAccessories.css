@@ -57,7 +57,7 @@
     left: 46%;
 }
 
-.accessorie{
+.accessorie {
     width: 10%;
     position: absolute;
     z-index: 9;
@@ -80,22 +80,30 @@
     left: 46%;
 }
 
-.shoes{
+.shoes {
     width: 10%;
     position: absolute;
     z-index: 9;
     top: 62%;
 }
 
-.accessorie-c{
+.accessorie-c {
     width: 16%;
     position: absolute;
     z-index: 9;
 }
 
-.shoes-c{
+.shoes-c {
     width: 16%;
     position: absolute;
     z-index: 9;
-    left: 13.1%; 
+    left: 13.1%;
+}
+
+.complete-btn {
+    position: absolute;
+    width: 8%;
+    left: 90%;
+    bottom: 2%;
+    z-index: 3;
 }

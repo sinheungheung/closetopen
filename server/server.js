@@ -27,7 +27,7 @@ db.connect((err) =>{
     else console.log("MYSQL Connection Success");
 })
 
-// 
+// 옷 데이터 저장
 app.post('/game/cloth', (req, res)=>{
     console.log(req.body);
     const sql = "INSERT INTO collection (`top`, `bottom`, `set`) VALUES (?, ?, ?)";
@@ -39,17 +39,36 @@ app.post('/game/cloth', (req, res)=>{
     db.query(sql, values, (err, result)=>{
         if(err){
             console.log(err);
-        return res.json({Error: "Inserting data Error in server"});
+            return res.json({Error: "Update data Error in server"});
         }
         return res.json({Status : "Success"});
     })
 })
 
+// 악세사리, 신발 데이터 업데이트
+app.post('/game/accessorie', (req, res)=>{
+    console.log(req.body);
+    const sql = "UPDATE collection SET accessorie=?, shoes=? WHERE id=?";
+    const values = [
+        req.body.id,
+        req.body.accessorie,
+        req.body.shoes
+    ];
+    db.query(sql, values, (err, result)=>{
+        if(err){
+            console.log(err);
+            return res.json({Error: "Update data Error in server"});
+        }
+        return res.json({Status : "Success"});
+    })
+})
+
+// 옷 데이터 가져오기
 app.get('/getcloths', (req, res)=>{
     console.log(req.body);
     const sql = "SELECT * FROM collection ORDER BY id DESC LIMIT 1";
     db.query(sql, (err, result)=>{
-        if(err) return res.json({Error: "Inserting data Error in server"});
+        if(err) return res.json({Error: "Select data Error in server"});
         return res.json(result);
     })
 })
