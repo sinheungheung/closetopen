@@ -5,20 +5,19 @@ import { useNavigate } from 'react-router-dom';
 import axios from "axios";
 
 // // 빈 이미지
-import Empty from '../images/Empty.png';
 import EmptyTop from '../images/cloths/top.png'; //상의 초기화
 import EmptyTop_c from '../images/cloths/top-c.png';
 import EmptyBottom from '../images/cloths/bottom.png'; //하의 초기화
 
 // 상의 이미지
-import ShortTshirt from '../images/cloths/shirt.png';
+import ShortTshirt from '../images/cloths/tshirt.png';
 import Knit from '../images/cloths/knit.png';
 import WindBreaker from '../images/cloths/windbreaker.png';
 import Shirt from '../images/cloths/shirt.png';
 import Cardigan from '../images/cloths/cardigan.png';
 import Blouse from '../images/cloths/blouse.png';
-
-import ShortTshirt_c from '../images/cloths/shirt-c.png';
+// 캐릭터 상의(머리카락부분제외)
+import ShortTshirt_c from '../images/cloths/tshirt-c.png';
 import Knit_c from '../images/cloths/knit-c.png';
 import WindBreaker_c from '../images/cloths/windbreaker-c.png';
 import Shirt_c from '../images/cloths/shirt-c.png';
@@ -44,34 +43,26 @@ const ChangeCloth = () => {
 
   const topClothes = [EmptyTop, ShortTshirt, Knit, WindBreaker, Shirt, Cardigan, Blouse];
   const topClothes_c = [EmptyTop_c, ShortTshirt_c, Knit_c, WindBreaker_c, Shirt_c, Cardigan_c, Blouse_c];
+  const topClothes_db = ['top.png', 'tshirt.png', 'knit.png', 'windbreaker.png', 'shirt.png', 'cardigan.png', 'blouse.png'];
+
   const bottomClothes = [EmptyBottom, LongSkirt, Slacks, JoggerPants, CargoPants, Jeans, Skirt];
-  const setClothes = [Empty, Onepiece, Tteokbokkicoat, Kimono];
+  const bottomClothes_db = ['bottom.png', 'longskirt.png', 'slacks.png', 'joggerpants.png', 'cargopants.png', 'jeans.png', 'shortskirt.png'];
+
+  const setClothes = ["", Onepiece, Tteokbokkicoat, Kimono];
+  const setClothes_db = ["", 'onepiece.png', 'coat.png', 'kimono.png'];
 
   const [currentTopIndex, setCurrentTopIndex] = useState(0);
   const [currentBottomIndex, setCurrentBottomIndex] = useState(0);
   const [currentSetIndex, setCurrentSetIndex] = useState(0);
-  
-  const [values, setValues] = useState({
-    top: ''
-    // top: '',
-    // bottom: '',
-    // set: ''
-  });
-
-   // 상의 이미지 변경 시 values에 추가하는 함수
-   const updateTopImage = () => {
-    setValues(prev => ({
-      ...prev,
-      top: topClothes[currentTopIndex]
-    }));
-  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = {
-      top: topClothes[currentTopIndex]
+      top: topClothes_db[currentTopIndex],
+      bottom: bottomClothes_db[currentBottomIndex],
+      set: setClothes_db[currentSetIndex]
     };
-    console.log("이거다 ", data.top);
+    console.log(data);
     axios.post('http://localhost:5000/game', data)
       .then(res => {
         console.log(res);
@@ -119,15 +110,10 @@ const ChangeCloth = () => {
   };
 
   // 옷 위치 지정
-  const Toplocation = ["27%","27%","27%","29%","28%","29.5%","27%","27%"]
+  const Toplocation = ["27%","26%","27%","29%","28%","29.5%","27%","27%"]
   const Bottomlocation = ["22%","11.3%","6.5%","7%","7%","6.5%","21%"]
   const bottomLeftlocation = ["13%","13.1%","13.3%","13%","13.3%","13.3%","13%"]
   const Setlocation = ["29.5%","29.5%","19%"]
-
-  useEffect(() => {
-    console.log(values.top);
-    updateTopImage();  // useEffect에서 이미지 정보를 업데이트하도록 추가
-  }, [currentTopIndex]); 
 
   return (
     <div className="MainGame">
@@ -168,36 +154,8 @@ const ChangeCloth = () => {
       <img src={setClothes[currentSetIndex]} className="set" />
       <img src={require('../images/RightButton.png')} onClick={nextSetSlide} alt="오른쪽" className="setRightButton" />
       
-      {/* 상의 이미지 */}
-      {/* <div className="TopSlider">
-        <>
-          <img src={require('../images/LeftButton.png')} onClick={previousTopSlide} alt="왼쪽" className="LeftButton" />
-          <img src={topClothes[currentTopIndex]} alt="상의 이미지" />
-          <img src={require('../images/RightButton.png')} onClick={nextTopSlide} alt="오른쪽" className="RightButton" />
-        </>
-      </div> */}
+      <img className="next-btn" src={`/images/nextbtn.png`}alt="" onClick={handleSubmit}/> 
 
-      {/* <img src={require('../images/LeftButton.png')} onClick={previousSetSlide} alt="왼쪽" className="setLeftButton" /> */}
-
-      {/* 하의 이미지 */}
-      {/* <div className="BottomSlider">
-        <>
-          <img src={require('../images/LeftButton.png')} onClick={previousBottomSlide} alt="왼쪽" className="LeftButton" />
-          <img src={bottomClothes[currentBottomIndex]} alt="하의 이미지" />
-          <img src={require('../images/RightButton.png')} onClick={nextBottomSlide} alt="오른쪽" className="RightButton" />
-        </>
-      </div> */}
-
-      {/* 세트 이미지 */}
-      {/* <div className="SetSlider">
-        <img src={require('../images/LeftButton.png')} onClick={previousSetSlide} alt="왼쪽" className="LeftButton" />
-        {!currentSetIndex && <img src={setClothes[currentSetIndex]} alt="세트 이미지" />}
-        <img src={require('../images/RightButton.png')} onClick={nextSetSlide} alt="오른쪽" className="RightButton" />
-      </div>
-      <img className="next-btn" src={`/images/nextbtn.png`}alt="" onClick={handleSubmit}/> */}
-      {/* <div className="Knit"></div>
-      <div className="LongSkirt"></div> */}
-      {/* <div className="Kimono"></div> */}
     </div>
   );
 };
