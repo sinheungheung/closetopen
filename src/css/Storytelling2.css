@@ -72,3 +72,40 @@
     z-index: 5;  
     white-space: pre-wrap;    
   }
+  .HomeBtn{
+    width: 10%;
+    height: 13%;
+    background-image: url('../images/HomeBtn.png');
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    background-size: 100%;
+    z-index: 6;
+    /* 버튼 클릭 기능 */
+    transition-duration: 0.3s;
+  }
+  /* 버튼 클릭 효과 */
+  .HomeBtn:active{
+    margin-left: 2px;
+    margin-top: 2px;
+    box-shadow: none;
+  }
+
+  .GocollectionBtn{
+    width: 15%;
+    height: 11%;
+    background-image: url('../images/GocollectionBtn.png');
+    position: absolute;
+    top: 2.5%;
+    left: 83%;
+    background-size: 100%;
+    z-index: 6;
+    /* 버튼 클릭 기능 */
+    transition-duration: 0.3s;
+  }
+  /* 버튼 클릭 효과 */
+  .GocollectionBtn:active{
+    margin-left: 2px;
+    margin-top: 2px;
+    box-shadow: none;
+  }

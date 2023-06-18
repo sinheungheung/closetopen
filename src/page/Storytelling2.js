@@ -3,10 +3,22 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import '../css/Storytelling2.css';
 
 function Storytelling2() {
-  const navigate = useNavigate();
+  const movePage = useNavigate();
   const location = useLocation();
   const place = location.state && location.state.value;
 
+
+// 버튼을 누르면 화면 이동
+const navigate1 = useNavigate();
+
+const navigate2 = useNavigate();
+
+function handleClick() {
+  navigate1('/StartPage');
+}
+function handleClick() {
+  navigate2('/Collection');
+}
   const tokyo_lines = [
     '옷을 골라줘서 고마워! 여기에 정말 잘 어울리는 옷인 것 같아~\n',
     '이 곳 메이지 신궁은 근대화에 큰 영향을 끼친 메이지 일왕 부부를 위해 세워진 신사라고 해.\n',
@@ -94,6 +106,8 @@ function Storytelling2() {
           )}
         </div>
       </div>
+      <div className="HomeBtn" onClick={handleClick}></div>
+      <div className="GocollectionBtn" onClick={handleClick}></div>
     </div>
   );
 }
