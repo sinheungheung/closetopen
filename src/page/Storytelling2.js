@@ -1,23 +1,57 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import axios from "axios";
 import '../css/Storytelling2.css';
 
 function Storytelling2() {
+  // 버튼을 누르면 화면 이동
+  const navigate = useNavigate();
   const movePage = useNavigate();
   const location = useLocation();
   const place = location.state && location.state.value;
 
+  const [value, setValues] = useState([]);
+  // 사용자가 선택한 옷 정보 가져오기
+  useEffect(() => {
+    axios.get('http://localhost:5000/getcloths')
+      .then(res => {
+        console.log(res.data[0]);
+        setValues(res.data[0]);
+      })
+      .catch(err => console.log(err))
+  }, [])
 
-// 버튼을 누르면 화면 이동
-const navigate = useNavigate();
+  const topClothesName = ['top-c.png', 'tshirt-c.png', 'knit-c.png', 'windbreaker-c.png', 'shirt-c.png', 'cardigan-c.png', 'blouse-c.png'];
+  const bottomClothesName = ['bottom.png', 'longskirt.png', 'slacks.png', 'joggerpants.png', 'cargopants.png', 'jeans.png', 'shortskirt.png'];
+  const setClothesName = ["", 'onepiece.png', 'coat.png', 'kimono.png'];
+  const accessorieClothesName = ['hat1-c.png', 'hat2-c.png', 'flower-c.png', 'glasses-c.png', 'headset-c.png', 'rebbon-c.png'];
+  const shoesClothesName = ['shoes1.png', 'shoes2.png', 'shoes3.png', 'shoes4.png', 'shoes5.png', 'shoes6.png'];
 
-const handleImageClick1 = () => {
-  movePage('/Button');
-};
+  // 옷 위치 지정
+  const Toplocation = ["27%","26%","27%","29%","28%","29.5%","27%","27%"]
+  const Bottomlocation = ["22%","11.3%","6.5%","7%","7%","6.5%","21%"]
+  const bottomLeftlocation = ["42%","42.1%","42.3%","42%","42.3%","42.3%","42%"]
+  const setlocation = ["29.5%","29.5%","19%"]
+  // 악세사리 위치 지정
+  const accessorieTopLocation = ["4%","1%","8%","4%","1%","4%","4%","4%"]
+  const accessorieLeftLocation = ["41%","41%","40.5%","40.7%","42%","46%"]
+  // 신발 위치 지정
+  const shoesTopLocation = ["78%","78.5%","78%","79%","78%","78.5%"]
 
-function handleImageClick2() {
-  navigate('/Collection', { state : { value : place}});
-}
+  // 베열에서 db에서 받은 값의 인덱스 찾기
+  const topIndex = topClothesName.findIndex(item => item === value.top);
+  const bottomIndex = bottomClothesName.findIndex(item => item === value.bottom);
+  const setIndex = setClothesName.findIndex(item => item === value.set);
+  const accessorieIndex = accessorieClothesName.findIndex(item => item === value.accessorie);
+  const shoesIndex = shoesClothesName.findIndex(item => item === value.shoes);
+  
+  const handleImageClick1 = () => {
+    movePage('/Button');
+  };
+
+  function handleImageClick2() {
+    navigate('/Collection', { state: { value: place } });
+  }
   const tokyo_lines = [
     '옷을 골라줘서 고마워! 여기에 정말 잘 어울리는 옷인 것 같아~\n',
     '이 곳 메이지 신궁은 근대화에 큰 영향을 끼친 메이지 일왕 부부를 위해 세워진 신사라고 해.\n',
@@ -52,8 +86,6 @@ function handleImageClick2() {
       setDisplayText('');
     } else {
       setButtonVisible(false);
-      // navigate('/');
-      // navigate('/', { state: { value: place } });
     }
   };
 
@@ -61,8 +93,8 @@ function handleImageClick2() {
     place === 'tokyo'
       ? tokyo_lines[line]
       : place === 'osaka'
-      ? osaka_lines[line]
-      : sapporo_lines[line];
+        ? osaka_lines[line]
+        : sapporo_lines[line];
 
   useEffect(() => {
     let currentIndex = 0;
@@ -92,6 +124,39 @@ function handleImageClick2() {
         {place === 'tokyo' && <img className="TokyoStory2" src={'../images/TokyoStory2.png'} alt="" />}
         {place === 'osaka' && <img className="OsakaStory2" src={'../images/OsakaStory2.png'} alt="" />}
         {place === 'sapporo' && <img className="SapporoStory2" src={'../images/SapporoStory2.png'} alt="" />}
+
+        {/* 캐릭터 */}
+        <div className="CharacterScreen">
+          <img className="character-s" src={`/images/character.png`} alt="" />
+          <img
+            style={{ position: 'absolute', top: Toplocation[topIndex] }}
+            src={`/images/cloths/${value.top}`}
+            alt="상의 이미지"
+            className='top-s'
+          />
+          <img
+            style={{ position: 'absolute', left: bottomLeftlocation[bottomIndex], bottom: Bottomlocation[bottomIndex] }}
+            src={`/images/cloths/${value.bottom}`}
+            alt="하의 이미지"
+            className='bottom-s'
+          />
+          <img style={{ position: 'absolute', top: setlocation[setIndex] }}
+            src={`/images/cloths/${value.set}`}
+            alt="세트 이미지"
+            className='set-s'
+          />
+          <img style={{ position: 'absolute', top: accessorieTopLocation[accessorieIndex], left: accessorieLeftLocation[accessorieIndex] }}
+            src={`/images/cloths/${value.accessorie}`}
+            alt="악세사리"
+            className='accessorie-s'
+          />
+          <img style={{ position: 'absolute', top:shoesTopLocation[shoesIndex]}}
+            src={`/images/cloths/${value.shoes}`}
+            alt="신발"
+            className='shoes-s'
+          />
+        </div>
+
         <div>
           <img className="textbox" src={`/images/textbox.png`} alt="" />
           <div className="line">{displayText}</div>
@@ -106,7 +171,7 @@ function handleImageClick2() {
         </div>
       </div>
       <div className="HomeBtn" onClick={handleImageClick1}></div>
-      <div className="GocollectionBtn"onClick={handleImageClick2}></div>
+      <div className="GocollectionBtn" onClick={handleImageClick2}></div>
     </div>
   );
 }

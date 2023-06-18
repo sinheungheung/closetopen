@@ -1,44 +1,48 @@
 @font-face {
-    font-family: 'StoryFont';
-    src: url('../fonts/StoryFont.ttf') format('truetype');
-  }
+  font-family: 'StoryFont';
+  src: url('../fonts/StoryFont.ttf') format('truetype');
+}
 
 .main {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    /* background-image: url('../images/roombg.png'); */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  /* background-image: url('../images/roombg.png'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.TokyoStory2{
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background-image: url('../images/TokyoStory2.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+
+.TokyoStory2 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../images/TokyoStory2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.OsakaStory2{
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background-image: url('../images/OsakaStory2.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+
+.OsakaStory2 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../images/OsakaStory2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.SapporoStory2{
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background-image: url('../images/SapporoStory2.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+
+.SapporoStory2 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../images/SapporoStory2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
 /* .character {
     position: absolute;
     height: 105%;
@@ -47,65 +51,109 @@
 } */
 
 .textbox {
-    position: absolute;
-    width: 80%;
-    left: 10%;
-    bottom: 10%;
-    z-index: 1;
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  bottom: 10%;
+  z-index: 1;
 }
 
 .nextbtn {
-    position: absolute;
-    width: 1.5%;
-    left: 81%;
-    bottom: 28.7%;
-    z-index: 3;
+  position: absolute;
+  width: 1.5%;
+  left: 81%;
+  bottom: 28.7%;
+  z-index: 3;
 }
 
 .line {
-    font-family: 'StoryFont', sans-serif; /* 폰트 적용 */
-    position: absolute;
-    font-size: 63px;
-    text-align: left;
-    left: 18%;
-    top: 69%;
-    z-index: 5;  
-    white-space: pre-wrap;    
-  }
-  .HomeBtn{
-    width: 10%;
-    height: 12%;
-    background-image: url('../images/HomeBtn.png');
-    position: absolute;
-    top: 2%;
-    left: 3%;
-    background-size: 100%;
-    z-index: 6;
-    /* 버튼 클릭 기능 */
-    transition-duration: 0.3s;
-  }
-  /* 버튼 클릭 효과 */
-  .HomeBtn:active{
-    margin-left: 2px;
-    margin-top: 2px;
-    box-shadow: none;
-  }
+  font-family: 'StoryFont', sans-serif;
+  /* 폰트 적용 */
+  position: absolute;
+  font-size: 63px;
+  text-align: left;
+  left: 18%;
+  top: 69%;
+  z-index: 5;
+  white-space: pre-wrap;
+}
 
-  .GocollectionBtn{
-    width: 15%;
-    height: 11%;
-    background-image: url('../images/GocollectionBtn.png');
-    position: absolute;
-    top: 2.5%;
-    left: 83%;
-    background-size: 100%;
-    z-index: 6;
-    /* 버튼 클릭 기능 */
-    transition-duration: 0.3s;
-  }
-  /* 버튼 클릭 효과 */
-  .GocollectionBtn:active{
-    margin-left: 2px;
-    margin-top: 2px;
-    box-shadow: none;
-  }
+.HomeBtn {
+  width: 10%;
+  height: 12%;
+  background-image: url('../images/HomeBtn.png');
+  position: absolute;
+  top: 2%;
+  left: 3%;
+  background-size: 100%;
+  z-index: 6;
+  /* 버튼 클릭 기능 */
+  transition-duration: 0.3s;
+}
+
+/* 버튼 클릭 효과 */
+.HomeBtn:active {
+  margin-left: 2px;
+  margin-top: 2px;
+  box-shadow: none;
+}
+
+.GocollectionBtn {
+  width: 15%;
+  height: 11%;
+  background-image: url('../images/GocollectionBtn.png');
+  position: absolute;
+  top: 2.5%;
+  left: 83%;
+  background-size: 100%;
+  z-index: 6;
+  /* 버튼 클릭 기능 */
+  transition-duration: 0.3s;
+}
+
+/* 버튼 클릭 효과 */
+.GocollectionBtn:active {
+  margin-left: 2px;
+  margin-top: 2px;
+  box-shadow: none;
+}
+
+.character-s {
+  position: absolute;
+  height: 105%;
+  right: 9%;
+  top: -8%;
+}
+
+
+.accessorie-s {
+  width: 16%;
+  position: absolute;
+  z-index: 9;
+}
+
+.shoes-s {
+  width: 16%;
+  position: absolute;
+  z-index: 9;
+  left: 42.1%;
+}
+
+.top-s {
+  width: 21%;
+  position: absolute;
+  z-index: 9;
+  left: 39%;
+}
+
+.bottom-s {
+  width: 15.5%;
+  position: absolute;
+  z-index: 8;
+}
+
+.set-s {
+  width: 20%;
+  z-index: 10;
+  left: 11%;
+}
