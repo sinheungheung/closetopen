@@ -15,18 +15,17 @@ const Collection = () => {
 
   function handleLeftClick() {
     setPosition((prevPosition) => prevPosition - 1400);
-    setBoxCount((prevCount) => prevCount + 1);
   }
 
   function handleRightClick() {
     setPosition((prevPosition) => prevPosition + 1400);
-    setBoxCount((prevCount) => prevCount + 1);
+    setBoxCount((prevCount) => prevCount + 3);
   }
 
   const generateCollectBoxes = () => {
     const boxes = [];
     for (let i = 0; i < boxCount; i++) {
-      const leftPosition = 300 + (i - position / 1400) * 1550;
+      const leftPosition = 300 + (i - Math.floor(position / 1400)) * 1550;
       boxes.push(
         <div
           className={`CollectBox CollectBox${i + 1}`}
