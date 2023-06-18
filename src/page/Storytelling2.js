@@ -16,7 +16,7 @@ const handleImageClick1 = () => {
 };
 
 function handleImageClick2() {
-  navigate('/Collection');
+  navigate('/Collection', { state : { value : place}});
 }
   const tokyo_lines = [
     '옷을 골라줘서 고마워! 여기에 정말 잘 어울리는 옷인 것 같아~\n',

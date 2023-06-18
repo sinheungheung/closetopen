@@ -1,16 +1,18 @@
 import React, { useState, useEffect } from "react";
 import "../css/Collection.css";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Collection = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const place = location.state.value;
   const [hover, setHover] = useState(false);
   const [position, setPosition] = useState(0);
   const [boxCount, setBoxCount] = useState(3); // 첫 시작화면에 CollectBox 3개 보여주기
 
   // X를 누르면 /Storytelling2페이지로 이동
   function handleClick() {
-    navigate("/secondstorytelling");
+    navigate("/secondstorytelling", { state : { value : place}});
   }
 
   function handleLeftClick() {
