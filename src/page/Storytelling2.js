@@ -33,15 +33,16 @@ function Storytelling2() {
 
   const [line, setLine] = useState(0);
   const [displayText, setDisplayText] = useState('');
-  const [buttonDisabled, setButtonDisabled] = useState(false);
+  const [buttonVisible, setButtonVisible] = useState(true);
 
   const changeLine = () => {
     if (line < 4) {
       setLine(line + 1);
       setDisplayText('');
-      setButtonDisabled(true);
     } else {
+      setButtonVisible(false);
       // navigate('/');
+      // navigate('/', { state: { value: place } });
     }
   };
 
@@ -63,7 +64,6 @@ function Storytelling2() {
           currentIndex++;
         } else {
           clearInterval(intervalId);
-          setButtonDisabled(false);
         }
       }, 100);
     };
@@ -77,20 +77,21 @@ function Storytelling2() {
 
   return (
     <div>
-    <div className="main2">
-      {place === 'tokyo' && <img className="TokyoStory2" src={'../images/TokyoStory2.png'} alt="" />} 
-      {place === 'osaka' && <img className="OsakaStory2" src={'../images/OsakaStory2.png'} alt="" />} 
-      {place === 'sapporo' && <img className="SapporoStory2" src={'../images/SapporoStory2.png'} alt="" />} 
-      <div>
-        <img className="textbox" src={`/images/textbox.png`} alt="" />
-        <div className="line">{displayText}</div>
-        <img
-          className="nextbtn"
-          src={`/images/storybtn.png`}
-          alt=""
-          onClick={changeLine}
-          disabled={buttonDisabled}
-        />
+      <div className="main2">
+        {place === 'tokyo' && <img className="TokyoStory2" src={'../images/TokyoStory2.png'} alt="" />}
+        {place === 'osaka' && <img className="OsakaStory2" src={'../images/OsakaStory2.png'} alt="" />}
+        {place === 'sapporo' && <img className="SapporoStory2" src={'../images/SapporoStory2.png'} alt="" />}
+        <div>
+          <img className="textbox" src={`/images/textbox.png`} alt="" />
+          <div className="line">{displayText}</div>
+          {buttonVisible && (
+            <img
+              className="nextbtn"
+              src={`/images/storybtn.png`}
+              alt=""
+              onClick={changeLine}
+            />
+          )}
         </div>
       </div>
     </div>
