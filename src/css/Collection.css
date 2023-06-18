@@ -1,73 +1,118 @@
 .collection {
-    width: 100vw;
-    height: 100vh;
-    background-repeat : no-repeat;
-    background-size : cover;
-    background-image: url('../images/roombg.png');
-  }
-
-.collection > div:nth-child(1){
-    width: 3%;
-    height: 5.3%;
-    background-image: url('../images/CloseButton.png');
-    position: absolute;
-    top: 4%;
-    left: 95%;
-    background-size: 100%;
-    z-index: 1;
-    /* 버튼 클릭 기능 */
-    transition-duration: 0.3s;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../images/roombg.png');
 }
-  /* 버튼 클릭 효과 */
-  .CloseButton:active{
-    margin-left: 2px;
-    margin-top: 2px;
-    box-shadow: none;
-    }
-    .collection  > .CollectBox{
-    width:1400px;
-    height: 1860px;
-    background-image: url('../images/CollectBox.png');
-    position: absolute;
-    top: 500px;
-    left: 300px;
-    background-size: 100%;
-    z-index: 2;
-    }
 
-    .collection  > .CollectLeft{
-        width:300px;
-        height: 300px;
-        background-image: url('../images/CollectLeft.png');
-        position: absolute;
-        top: 1300px;
-        left: 8px;
-        background-size: 100%;
-        z-index: 5;
-        /* 버튼 클릭 기능 */
-        transition-duration: 0.3s;
-    }
-      /* 버튼 클릭 효과 */
-      .CollectLeft:active{
-        margin-left: 2px;
-        margin-top: 2px;
-        box-shadow: none;      
-        }
-    .collection  > .CollectRight{
-        width:300px;
-        height:300px;
-        background-image: url('../images/CollectRight.png');
-        position: absolute;
-        top: 1300px;
-        left: 4800px;
-        background-size: 100%;
-        z-index: 6;
-        /* 버튼 클릭 기능 */
-        transition-duration: 0.3s;
-    }
-     /* 버튼 클릭 효과 */
-    .CollectRight :active{
-        margin-left: 2px;
-        margin-top: 2px;
-        box-shadow: none;      
-        }
+.collection>div:nth-child(1) {
+  width: 3%;
+  height: 5.3%;
+  background-image: url('../images/CloseButton.png');
+  position: absolute;
+  top: 4%;
+  left: 95%;
+  background-size: 100%;
+  z-index: 1;
+  /* 버튼 클릭 기능 */
+  transition-duration: 0.3s;
+}
+
+/* 버튼 클릭 효과 */
+.CloseButton:active {
+  margin-left: 2px;
+  margin-top: 2px;
+  box-shadow: none;
+}
+
+.collection>.CollectBox {
+  width: 1400px;
+  height: 1860px;
+  background-image: url('../images/CollectBox.png');
+  position: absolute;
+  top: 500px;
+  left: 300px;
+  background-size: 100%;
+  z-index: 2;
+}
+
+.collection>.CollectLeft {
+  width: 300px;
+  height: 300px;
+  background-image: url('../images/CollectLeft.png');
+  position: absolute;
+  top: 1300px;
+  left: 8px;
+  background-size: 100%;
+  z-index: 5;
+  /* 버튼 클릭 기능 */
+  transition-duration: 0.3s;
+}
+
+/* 버튼 클릭 효과 */
+.CollectLeft:active {
+  margin-left: 2px;
+  margin-top: 2px;
+  box-shadow: none;
+}
+
+.collection>.CollectRight {
+  width: 300px;
+  height: 300px;
+  background-image: url('../images/CollectRight.png');
+  position: absolute;
+  top: 1300px;
+  left: 4800px;
+  background-size: 100%;
+  z-index: 6;
+  /* 버튼 클릭 기능 */
+  transition-duration: 0.3s;
+}
+
+/* 버튼 클릭 효과 */
+.CollectRight :active {
+  margin-left: 2px;
+  margin-top: 2px;
+  box-shadow: none;
+}
+
+.character-co {
+  position: absolute;
+  height: 105%;
+  left: -37%;
+  top: -8%;
+}
+
+
+.accessorie-co {
+  width: 38%;
+  position: absolute;
+  z-index: 9;
+}
+
+.shoes-co {
+  width: 16%;
+  position: absolute;
+  z-index: 9;
+  left: 42.1%;
+}
+
+.top-co {
+  width: 48%;
+  position: absolute;
+  z-index: 9;
+  left: 27%;
+}
+
+.bottom-co {
+  width: 35%;
+  position: absolute;
+  z-index: 8;
+}
+
+.set-co {
+  width: 20%;
+  z-index: 10;
+  left: 11%;
+}
