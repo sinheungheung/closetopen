@@ -5,7 +5,7 @@ import '../css/Storytelling2.css';
 function Storytelling2() {
   const navigate = useNavigate();
   const location = useLocation();
-  const place = location.state.value;
+  const place = location.state && location.state.value;
 
   const tokyo_lines = [
     '옷을 골라줘서 고마워! 여기에 정말 잘 어울리는 옷인 것 같아~\n',
@@ -41,7 +41,7 @@ function Storytelling2() {
       setDisplayText('');
       setButtonDisabled(true);
     } else {
-    //   navigate('/ChangeCloth');
+      // navigate('/');
     }
   };
 
@@ -78,9 +78,9 @@ function Storytelling2() {
   return (
     <div>
     <div className="main2">
-      {place === 'tokyo' && <img className="TokyoStory2" src={`/images/TokyoStory2.png`} alt="" />} 
-      {place === 'osaka' && <img className="OsakaStory2" src={`/images/OsakaStory2.png`} alt="" />} 
-      {place === 'sapporo' && <img className="SapporoStory2" src={`/images/SapporoStory2.png`} alt="" />} 
+      {place === 'tokyo' && <img className="TokyoStory2" src={'../images/TokyoStory2.png'} alt="" />} 
+      {place === 'osaka' && <img className="OsakaStory2" src={'../images/OsakaStory2.png'} alt="" />} 
+      {place === 'sapporo' && <img className="SapporoStory2" src={'../images/SapporoStory2.png'} alt="" />} 
       <div>
         <img className="textbox" src={`/images/textbox.png`} alt="" />
         <div className="line">{displayText}</div>
