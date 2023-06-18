@@ -50,9 +50,9 @@ app.post('/game/accessorie', (req, res)=>{
     console.log(req.body);
     const sql = "UPDATE collection SET accessorie=?, shoes=? WHERE id=?";
     const values = [
-        req.body.id,
         req.body.accessorie,
-        req.body.shoes
+        req.body.shoes,
+        req.body.id
     ];
     db.query(sql, values, (err, result)=>{
         if(err){
