@@ -9,15 +9,14 @@ function Storytelling2() {
 
 
 // 버튼을 누르면 화면 이동
-const navigate1 = useNavigate();
+const navigate = useNavigate();
 
-const navigate2 = useNavigate();
+const handleImageClick1 = () => {
+  movePage('/Button');
+};
 
-function handleClick() {
-  navigate1('/StartPage');
-}
-function handleClick() {
-  navigate2('/Collection');
+function handleImageClick2() {
+  navigate('/Collection');
 }
   const tokyo_lines = [
     '옷을 골라줘서 고마워! 여기에 정말 잘 어울리는 옷인 것 같아~\n',
@@ -106,8 +105,8 @@ function handleClick() {
           )}
         </div>
       </div>
-      <div className="HomeBtn" onClick={handleClick}></div>
-      <div className="GocollectionBtn" onClick={handleClick}></div>
+      <div className="HomeBtn" onClick={handleImageClick1}></div>
+      <div className="GocollectionBtn"onClick={handleImageClick2}></div>
     </div>
   );
 }
