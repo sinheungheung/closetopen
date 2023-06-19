@@ -36,9 +36,9 @@
 }
 
 .set-a {
-    width: 20%;
-    z-index: 10;
-    left: 11%;
+    width: 21%;
+    left: 10%;
+    z-index: 15;
 }
 
 .accessorieLeftButton {

@@ -184,9 +184,9 @@ body {
 }
 
 .set-c{
-  width: 20%;
-  z-index: 10;
-  left: 11%;
+  width: 21%;
+  left: 10%;
+  z-index: 15;
 }
 
 .next-btn {

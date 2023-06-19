@@ -92,10 +92,10 @@
 }
 
 .shoes-co {
-  width: 16%;
+  width: 37%;
   position: absolute;
   z-index: 9;
-  left: 42.1%;
+  left: 34%;
 }
 
 .top-co {
@@ -112,7 +112,7 @@
 }
 
 .set-co {
-  width: 20%;
-  z-index: 10;
-  left: 11%;
+  width: 47%;
+  left: 27%;
+  z-index: 15;
 }
