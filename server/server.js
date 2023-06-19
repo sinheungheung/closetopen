@@ -75,7 +75,7 @@ app.get('/getcloths', (req, res)=>{
 
 app.get('/getall', (req, res)=>{
     console.log(req.body);
-    const sql = "SELECT * FROM collection";
+    const sql = "SELECT * FROM collection order by id desc";
     db.query(sql, (err, result)=>{
         if(err) return res.json({Error: "Select data Error in server"});
         return res.json(result);
