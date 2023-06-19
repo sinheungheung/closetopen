@@ -28,7 +28,7 @@ const Collection = () => {
 
   const topClothesName = ['top-c.png', 'tshirt-c.png', 'knit-c.png', 'windbreaker-c.png', 'shirt-c.png', 'cardigan-c.png', 'blouse-c.png'];
   const bottomClothesName = ['bottom.png', 'longskirt.png', 'slacks.png', 'joggerpants.png', 'cargopants.png', 'jeans.png', 'shortskirt.png'];
-  const setClothesName = ["", 'onepiece.png', 'coat.png', 'kimono.png'];
+  const setClothesName = ["", 'onepiece-c.png', 'coat-c.png', 'kimono-c.png'];
   const accessorieClothesName = ['hat1-c.png', 'hat2-c.png', 'flower-c.png', 'glasses-c.png', 'headset-c.png', 'rebbon-c.png'];
   const shoesClothesName = ['shoes1.png', 'shoes2.png', 'shoes3.png', 'shoes4.png', 'shoes5.png', 'shoes6.png'];
 
@@ -36,10 +36,10 @@ const Collection = () => {
   const Toplocation = ["27%", "26%", "27%", "29%", "28%", "29.5%", "27%", "27%"]
   const Bottomlocation = ["24%", "11.3%", "6.5%", "7%", "8.8%", "8.8%", "23%"] //2
   const bottomLeftlocation = ["33.5%", "42.1%", "42.3%", "42%", "35%", "35%", "34%"] //9
-  const setlocation = ["29.5%", "29.5%", "19%"]
+  const setLocation = ["29.3%","29.5%","29.3%","29.3%"]
   // 악세사리 위치 지정
   const accessorieTopLocation = ["4%", "1%", "8%", "4%", "1%", "4%", "4%", "4%"]
-  const accessorieLeftLocation = ["31%", "31%", "30.5%", "30.7%", "32%", "36%"]
+  const accessorieLeftLocation = ["31%", "31%", "30.5%", "30.7%", "32%", "43%"]
   // 신발 위치 지정
   const shoesTopLocation = ["78%", "78.5%", "78%", "79%", "78%", "78.5%"]
 
@@ -49,7 +49,6 @@ const Collection = () => {
   }
 
   function handleLeftClick() {
-    console.log(value);
     setPosition((prevPosition) => prevPosition - 1400);
   }
 
@@ -84,33 +83,42 @@ const Collection = () => {
             {/* 캐릭터 */}
             <div className="CharacterScreen">
               <img className="character-co" src={`/images/character.png`} alt="" />
-              <img
+                <img
                 style={{ position: 'absolute', top: Toplocation[topIndex] }}
                 src={`/images/cloths/${value[i].top}`}
                 alt="상의 이미지"
                 className='top-co'
               />
-              <img
+                <img
                 style={{ position: 'absolute', left: bottomLeftlocation[bottomIndex], bottom: Bottomlocation[bottomIndex] }}
                 src={`/images/cloths/${value[i].bottom}`}
                 alt="하의 이미지"
                 className='bottom-co'
-              />
-              <img style={{ position: 'absolute', top: setlocation[setIndex] }}
+                />
+            
+              {(value[i].set) !== "" &&(
+                <img style={{ position: 'absolute', top: setLocation[setIndex] }}
                 src={`/images/cloths/${value[i].set}`}
                 alt="세트 이미지"
                 className='set-co'
-              />
+                />
+              )}
+              
+              {(value[i].accessorie) !== "" &&(
               <img style={{ position: 'absolute', top: accessorieTopLocation[accessorieIndex], left: accessorieLeftLocation[accessorieIndex] }}
                 src={`/images/cloths/${value[i].accessorie}`}
                 alt="악세사리"
                 className='accessorie-co'
               />
+              )}
+
+              {(value[i].shoes) !== "" &&(
               <img style={{ position: 'absolute', top: shoesTopLocation[shoesIndex] }}
                 src={`/images/cloths/${value[i].shoes}`}
                 alt="신발"
                 className='shoes-co'
               />
+              )}
             </div>
           </div>
         );

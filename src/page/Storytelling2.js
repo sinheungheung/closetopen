@@ -23,7 +23,7 @@ function Storytelling2() {
 
   const topClothesName = ['top-c.png', 'tshirt-c.png', 'knit-c.png', 'windbreaker-c.png', 'shirt-c.png', 'cardigan-c.png', 'blouse-c.png'];
   const bottomClothesName = ['bottom.png', 'longskirt.png', 'slacks.png', 'joggerpants.png', 'cargopants.png', 'jeans.png', 'shortskirt.png'];
-  const setClothesName = ["", 'onepiece.png', 'coat.png', 'kimono.png'];
+  const setClothesName = ["", 'onepiece-c.png', 'coat-c.png', 'kimono-c.png'];
   const accessorieClothesName = ['hat1-c.png', 'hat2-c.png', 'flower-c.png', 'glasses-c.png', 'headset-c.png', 'rebbon-c.png'];
   const shoesClothesName = ['shoes1.png', 'shoes2.png', 'shoes3.png', 'shoes4.png', 'shoes5.png', 'shoes6.png'];
 
@@ -31,7 +31,7 @@ function Storytelling2() {
   const Toplocation = ["27%","26%","27%","29%","28%","29.5%","27%","27%"]
   const Bottomlocation = ["22%","11.3%","6.5%","7%","7%","6.5%","21%"]
   const bottomLeftlocation = ["42%","42.1%","42.3%","42%","42.3%","42.3%","42%"]
-  const setlocation = ["29.5%","29.5%","19%"]
+  const setLocation = ["", "29.5%","29.5%","29%"]
   // 악세사리 위치 지정
   const accessorieTopLocation = ["4%","1%","8%","4%","1%","4%","4%","4%"]
   const accessorieLeftLocation = ["41%","41%","40.5%","40.7%","42%","46%"]
@@ -128,6 +128,7 @@ function Storytelling2() {
         {/* 캐릭터 */}
         <div className="CharacterScreen">
           <img className="character-s" src={`/images/character.png`} alt="" />
+          
           <img
             style={{ position: 'absolute', top: Toplocation[topIndex] }}
             src={`/images/cloths/${value.top}`}
@@ -140,21 +141,30 @@ function Storytelling2() {
             alt="하의 이미지"
             className='bottom-s'
           />
-          <img style={{ position: 'absolute', top: setlocation[setIndex] }}
+
+          {(value.set) !== "" &&(
+          <img style={{ position: 'absolute', top: setLocation[setIndex] }}
             src={`/images/cloths/${value.set}`}
             alt="세트 이미지"
             className='set-s'
           />
+          )}
+             
+          {(value.accessorie) !== "" &&( 
           <img style={{ position: 'absolute', top: accessorieTopLocation[accessorieIndex], left: accessorieLeftLocation[accessorieIndex] }}
             src={`/images/cloths/${value.accessorie}`}
             alt="악세사리"
             className='accessorie-s'
           />
+          )}
+
+          {(value.shoes) !== "" &&(
           <img style={{ position: 'absolute', top:shoesTopLocation[shoesIndex]}}
             src={`/images/cloths/${value.shoes}`}
             alt="신발"
             className='shoes-s'
           />
+          )}
         </div>
 
         <div>

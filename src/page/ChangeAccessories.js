@@ -23,14 +23,14 @@ const ChangeAccessories = () => {
 
   const topClothesName = ['top-c.png', 'tshirt-c.png', 'knit-c.png', 'windbreaker-c.png', 'shirt-c.png', 'cardigan-c.png', 'blouse-c.png'];
   const bottomClothesName = ['bottom.png', 'longskirt.png', 'slacks.png', 'joggerpants.png', 'cargopants.png', 'jeans.png', 'shortskirt.png'];
-  const setClothesName = ["", 'onepiece.png', 'coat.png', 'kimono.png'];
+  const setClothesName = ["", 'onepiece-c.png', 'coat-c.png', 'kimono-c.png']
 
   // 옷 위치 지정
   const Toplocation = ["27%","26%","27%","29%","28%","29.5%","27%","27%"]
   const Bottomlocation = ["22%","11.3%","6.5%","7%","7%","6.5%","21%"]
   const bottomLeftlocation = ["13%","13.1%","13.3%","13%","13.3%","13.3%","13%"]
-  const setlocation = ["29.5%","29.5%","19%"]
-
+  const setlocation = ["","29.5%","29.3%","29.3%"]
+  
   // 베열에서 db에서 받은 값의 인덱스 찾기
   const topIndex = topClothesName.findIndex(item => item === value.top);
   const bottomIndex = bottomClothesName.findIndex(item => item === value.bottom);
@@ -122,11 +122,15 @@ const ChangeAccessories = () => {
           alt="하의 이미지"
           className='bottom-a'
         />
+
+        {(value.set) !== "" &&(
         <img style={{ position: 'absolute', top: setlocation[setIndex]}} 
           src={`/images/cloths/${value.set}`}
           alt="세트 이미지" 
           className='set-a'
         />
+        )}
+        
         <img style={{ position: 'absolute', top:accessorieTopLocation[characterAccessorie], left:accessorieLeftLocation[characterAccessorie]}} 
           src={accessories_c[characterAccessorie]}
           alt="악세사리" 

@@ -12,7 +12,7 @@ const ChangeCloth = () => {
   // 상의 이미지
   const EmptyTop = ['/images/cloths/top.png', '/images/cloths/top-c.png'];
   const ShortTshirt = ['/images/cloths/tshirt.png', '/images/cloths/tshirt-c.png'];
-  const Knit = ['/images/cloths/tshirt.png', '/images/cloths/tshirt-c.png'];
+  const Knit = ['/images/cloths/knit.png', '/images/cloths/knit-c.png'];
   const WindBreaker = ['/images/cloths/windbreaker.png', '/images/cloths/windbreaker-c.png'];
   const Shirt = ['/images/cloths/shirt.png', '/images/cloths/shirt-c.png'];
   const Cardigan = ['/images/cloths/cardigan.png', '/images/cloths/cardigan-c.png'];
@@ -34,11 +34,13 @@ const ChangeCloth = () => {
   const bottomClothes_db = ['bottom.png', 'longskirt.png', 'slacks.png', 'joggerpants.png', 'cargopants.png', 'jeans.png', 'shortskirt.png'];
 
   // 세트 이미지
+  const set_empty = '/images/cloths/set-empty.png';
   const Onepiece = '/images/cloths/onepiece.png';
   const Tteokbokkicoat = '/images/cloths/coat.png';
   const Kimono = '/images/cloths/kimono.png';
-  const setClothes = ["", Onepiece, Tteokbokkicoat, Kimono];
-  const setClothes_db = ["", 'onepiece.png', 'coat.png', 'kimono.png'];
+  const setClothes = [set_empty, Onepiece, Tteokbokkicoat, Kimono];
+  const setClothes_c = ["", '/images/cloths/onepiece-c.png', '/images/cloths/coat-c.png', '/images/cloths/kimono-c.png']
+  const setClothes_db = ["", 'onepiece-c.png', 'coat-c.png', 'kimono-c.png'];
 
   const [currentTopIndex, setCurrentTopIndex] = useState(0);
   const [currentBottomIndex, setCurrentBottomIndex] = useState(0);
@@ -73,13 +75,12 @@ const ChangeCloth = () => {
     const lastIndex2 = bottomClothes.length - 1;
     const index2 = currentBottomIndex === 0 ? lastIndex2 : currentBottomIndex - 1;
     setCurrentBottomIndex(index2);
-    // setValues(prev => ({...prev, [values.bottom] : [bottomClothes[currentBottomIndex]]}));
   };
+
   const previousSetSlide = () => {
     const lastIndex3 = setClothes.length - 1;
     const index3 = currentSetIndex === 0 ? lastIndex3 : currentSetIndex - 1;
     setCurrentSetIndex(index3);
-    // setValues(prev => ({...prev, [values.set] : [setClothes[currentSetIndex]]}));
   };
 
   const nextTopSlide = () => {
@@ -102,7 +103,7 @@ const ChangeCloth = () => {
   const Toplocation = ["27%","26%","27%","29%","28%","29.5%","27%","27%"]
   const Bottomlocation = ["22%","11.3%","6.5%","7%","7%","6.5%","21%"]
   const bottomLeftlocation = ["13%","13.1%","13.3%","13%","13.3%","13.3%","13%"]
-  const Setlocation = ["29.5%","29.5%","19%"]
+  const Setlocation = ["","29.5%","29.3%","29.3%"]
 
   return (
     <div className="MainGame">
@@ -110,22 +111,32 @@ const ChangeCloth = () => {
       <img className = "closet-c" src='/images/closet-open.png'/>
       <div className="CharacterScreen">
         <img className="character" src={`/images/character.png`} alt="" />
-        <img
-          style={{ position: 'absolute', top: Toplocation[currentTopIndex]}}
-          src={!currentSetIndex ? topClothes_c[currentTopIndex] : EmptyTop}
-          alt="상의 이미지"
-          className='top-c'
-      />
-        <img
-          style={{ position: 'absolute',left:bottomLeftlocation[currentBottomIndex], bottom: Bottomlocation[(Bottomlocation==6) ?  currentBottomIndex: currentBottomIndex] }}
-          src={!currentSetIndex ? bottomClothes[currentBottomIndex] : EmptyBottom}
-          alt="하의 이미지"
-          className='bottom-c'
-        />
-        <img style={{ position: 'absolute', top: Setlocation[currentTopIndex]}} 
-        src={setClothes[currentSetIndex]} 
-        alt="세트 이미지" 
-        className='set-c'/>
+
+         { (currentTopIndex > 1 || currentBottomIndex > 1) && (
+          <>
+          <img style={{ position: 'absolute', top: Toplocation[currentTopIndex]}}
+            src={topClothes_c[currentTopIndex]}
+            alt="상의 이미지"
+            className='top-c'
+          />
+          
+          <img
+            style={{ position: 'absolute',left:bottomLeftlocation[currentBottomIndex], bottom: Bottomlocation[(Bottomlocation==6) ?  currentBottomIndex: currentBottomIndex] }}
+            src={bottomClothes[currentBottomIndex]}
+            alt="하의 이미지"
+            className='bottom-c'
+          />
+          </>
+        )}
+
+        { (currentSetIndex > 1) && (
+          <img style={{ position: 'absolute', top: Setlocation[currentSetIndex]}} 
+            src={setClothes_c[currentSetIndex]} 
+            alt="세트 이미지" 
+            className='set-c'
+          />
+        )}
+
       </div>
 
       {/* 상의 이미지 */}
