@@ -34,8 +34,8 @@ const Collection = () => {
 
   // 옷 위치 지정
   const Toplocation = ["27%", "26%", "27%", "29%", "28%", "29.5%", "27%", "27%"] // top-top
-  const Bottomlocation = ["24%", "11.3%", "6.5%", "7%", "8.8%", "8.8%", "23%"] // bottom-top
-  const bottomLeftlocation = ["33.5%", "42.1%", "42.3%", "42%", "35%", "35%", "34%"] //bottom-bottom
+  const Bottomlocation = ["24%", "13.5%", "9%", "9%", "8.8%", "8.8%", "23%"] // bottom-top
+  const bottomLeftlocation = ["33.5%", "34%", "34.8%", "34.8%", "35%", "35%", "34%"] //bottom-bottom
   const setLocation = ["19.3%","20.2%","29.3%","29.3%"]
   // 악세사리 위치 지정
   const accessorieTopLocation = ["4%", "1%", "8%", "4%", "1%", "4%", "4%", "4%"]
