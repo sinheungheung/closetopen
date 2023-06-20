@@ -29,7 +29,7 @@ const ChangeAccessories = () => {
   const Toplocation = ["27%","26%","27%","29%","28%","29.5%","27%","27%"]
   const Bottomlocation = ["22%","11.3%","6.5%","7%","7%","6.5%","21%"]
   const bottomLeftlocation = ["13%","13.1%","13.3%","13%","13.3%","13.3%","13%"]
-  const setlocation = ["","29.5%","29.3%","29.3%"]
+  const setlocation = ["","19.4%","29.3%","29.3%"]
   
   // 베열에서 db에서 받은 값의 인덱스 찾기
   const topIndex = topClothesName.findIndex(item => item === value.top);

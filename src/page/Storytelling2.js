@@ -31,7 +31,7 @@ function Storytelling2() {
   const Toplocation = ["27%","26%","27%","29%","28%","29.5%","27%","27%"]
   const Bottomlocation = ["22%","11.3%","6.5%","7%","7%","6.5%","21%"]
   const bottomLeftlocation = ["42%","42.1%","42.3%","42%","42.3%","42.3%","42%"]
-  const setLocation = ["", "29.5%","29.5%","29%"]
+  const setLocation = ["", "19.5%","29.5%","29%"]
   // 악세사리 위치 지정
   const accessorieTopLocation = ["4%","1%","8%","4%","1%","4%","4%","4%"]
   const accessorieLeftLocation = ["41%","41%","40.5%","40.7%","42%","46%"]

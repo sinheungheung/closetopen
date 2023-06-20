@@ -93,6 +93,7 @@ const ChangeCloth = () => {
     const index2 = currentBottomIndex === lastIndex2 ? 0 : currentBottomIndex + 1;
     setCurrentBottomIndex(index2);
   };
+
   const nextSetSlide = () => {
     const lastIndex3 = setClothes.length - 1;
     const index3 = currentSetIndex === lastIndex3 ? 0 : currentSetIndex + 1;
@@ -103,7 +104,7 @@ const ChangeCloth = () => {
   const Toplocation = ["27%","26%","27%","29%","28%","29.5%","27%","27%"]
   const Bottomlocation = ["22%","11.3%","6.5%","7%","7%","6.5%","21%"]
   const bottomLeftlocation = ["13%","13.1%","13.3%","13%","13.3%","13.3%","13%"]
-  const Setlocation = ["","29.5%","29.3%","29.3%"]
+  const Setlocation = ["","19.4%","29.3%","29.3%"]
 
   return (
     <div className="MainGame">
@@ -129,7 +130,7 @@ const ChangeCloth = () => {
           </>
         )}
 
-        { (currentSetIndex > 1) && (
+        { (currentSetIndex >= 1) && (
           <img style={{ position: 'absolute', top: Setlocation[currentSetIndex]}} 
             src={setClothes_c[currentSetIndex]} 
             alt="세트 이미지" 
