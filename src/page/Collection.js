@@ -49,12 +49,12 @@ const Collection = () => {
   }
 
   function handleLeftClick() {
-    setPosition((prevPosition) => prevPosition - 4200); // 버튼을 누르면 1400만큼씩 화면이동이 빨라진다
+    setPosition((prevPosition) => prevPosition - 5600); // 버튼을 누르면 1400만큼씩 화면이동이 빨라진다 
   }
 
   function handleRightClick() {
     if(value.length > 0){
-      setPosition((prevPosition) => prevPosition + 4200);
+      setPosition((prevPosition) => prevPosition + 5600);
       setBoxCount((prevCount) => prevCount + 1);
     }
   }
