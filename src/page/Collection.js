@@ -33,9 +33,9 @@ const Collection = () => {
   const shoesClothesName = ['shoes1.png', 'shoes2.png', 'shoes3.png', 'shoes4.png', 'shoes5.png', 'shoes6.png'];
 
   // 옷 위치 지정
-  const Toplocation = ["27%", "26%", "27%", "29%", "28%", "29.5%", "27%", "27%"]
-  const Bottomlocation = ["24%", "11.3%", "6.5%", "7%", "8.8%", "8.8%", "23%"] //2
-  const bottomLeftlocation = ["33.5%", "42.1%", "42.3%", "42%", "35%", "35%", "34%"] //9
+  const Toplocation = ["27%", "26%", "27%", "29%", "28%", "29.5%", "27%", "27%"] // top-top
+  const Bottomlocation = ["24%", "11.3%", "6.5%", "7%", "8.8%", "8.8%", "23%"] // bottom-top
+  const bottomLeftlocation = ["33.5%", "42.1%", "42.3%", "42%", "35%", "35%", "34%"] //bottom-bottom
   const setLocation = ["19.3%","20.2%","29.3%","29.3%"]
   // 악세사리 위치 지정
   const accessorieTopLocation = ["4%", "1%", "8%", "4%", "1%", "4%", "4%", "4%"]
@@ -49,12 +49,12 @@ const Collection = () => {
   }
 
   function handleLeftClick() {
-    setPosition((prevPosition) => prevPosition - 1400);
+    setPosition((prevPosition) => prevPosition - 4200); // 버튼을 누르면 1400만큼씩 화면이동이 빨라진다
   }
 
   function handleRightClick() {
     if(value.length > 0){
-      setPosition((prevPosition) => prevPosition + 1400);
+      setPosition((prevPosition) => prevPosition + 4200);
       setBoxCount((prevCount) => prevCount + 1);
     }
   }
