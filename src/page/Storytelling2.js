@@ -108,7 +108,7 @@ function Storytelling2() {
         } else {
           clearInterval(intervalId);
         }
-      }, 100);
+      }, 60); // 글자 타이핑 속도
     };
 
     startTyping();

@@ -59,7 +59,7 @@ function Storytelling1() {
           clearInterval(intervalId);
           setButtonDisabled(false);
         }
-      }, 100);
+      }, 60); // 글자 타이핑 속도
     };
 
     startTyping();
