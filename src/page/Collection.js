@@ -49,15 +49,15 @@ const Collection = () => {
   }
 
   function handleLeftClick() {
-    setPosition((prevPosition) => prevPosition - 5600); // 버튼을 누르면 1400만큼씩 화면이동이 빨라진다 
+    setPosition((prevPosition) => prevPosition - 42900);
   }
-
+  
   function handleRightClick() {
-    if(value.length > 0){
-      setPosition((prevPosition) => prevPosition + 5600);
+    if (value.length > 0) {
+      setPosition((prevPosition) => prevPosition + 42900);
       setBoxCount((prevCount) => prevCount + 1);
     }
-  }
+  }  
 
   const generateCollectBoxes = () => {
     if (value.length > 0) {
@@ -72,7 +72,7 @@ const Collection = () => {
         const accessorieIndex = accessorieClothesName.findIndex(item => item === value[i].accessorie);
         const shoesIndex = shoesClothesName.findIndex(item => item === value[0].shoes);
        
-        const leftPosition = 300 + (i - Math.floor(position / 1400)) * 1550;
+        const leftPosition = 200 + (i - Math.floor(position / 1400)) * 1650; 
         boxes.push(
           <div
             className={`CollectBox CollectBox${i + 1}`}
