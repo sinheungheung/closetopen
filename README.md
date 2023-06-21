@@ -1,6 +1,12 @@
 # 👕👖 クローゼットオープン! 👗👠
 > 2023년도 IT SHOW_글로벌 일본 인턴십 작품
 
+<div align="center"> 
+  
+![image](https://github.com/eunjin2118/closetopen/assets/80873447/73b2d4a7-940d-450d-889d-c706dc03ffbc)
+  
+</div>
+
 |Osaka| Tokyo | Sapporo |
 |------|---|---|
 |![image](https://github.com/eunjin2118/closetopen/assets/80873447/56595dc3-bcad-4916-a185-22a42d818398)|![image](https://github.com/eunjin2118/closetopen/assets/80873447/7772f698-8309-4041-b5cc-fef1b39b4308)|![image](https://github.com/eunjin2118/closetopen/assets/80873447/7b44dcc5-a744-42b4-a13f-f5e5340d04ee)|
