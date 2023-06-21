@@ -16,5 +16,4 @@ const movePage = useNavigate();
     </div>
   )
 }
-
 export default StartPage;
