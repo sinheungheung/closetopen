@@ -121,9 +121,9 @@ function Storytelling2() {
   return (
     <div>
       <div className="main2">
-        {place === 'tokyo' && <img className="TokyoStory2" src={'../images/TokyoStory2.png'} alt="" />}
-        {place === 'osaka' && <img className="OsakaStory2" src={'../images/OsakaStory2.png'} alt="" />}
-        {place === 'sapporo' && <img className="SapporoStory2" src={'../images/SapporoStory2.png'} alt="" />}
+        {place === 'tokyo' && <img className="TokyoStory2" alt="" />}
+        {place === 'osaka' && <img className="OsakaStory2" alt="" />}
+        {place === 'sapporo' && <img className="SapporoStory2" alt="" />}
 
         {/* 캐릭터 */}
         <div className="CharacterScreen">
